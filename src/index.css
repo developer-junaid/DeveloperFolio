@@ -96,5 +96,66 @@ body {
 }
 
 .svg {
-  height: 90%;
+  height: 80%;
+}
+
+/* Services */
+
+.services-container {
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  color: white;
+  background: #1f1e1e;
+  font-size: 20px;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+
+.techs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30vh;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.techs i {
+  margin: 20px;
+  font-size: 90px;
+}
+
+.techs li {
+  list-style-type: none;
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+}
+
+.techs .html {
+  color: rgb(204 78 29);
+}
+
+.techs .css {
+  color: #5898dc;
+}
+
+.techs .javascript {
+  color: #ecec1c;
+}
+
+.techs .bootstrap {
+  color: #9300ff;
+}
+
+.techs .react {
+  color: #29c2ff;
+}
+
+.techs .python {
+  color: #82e1ff;
 }

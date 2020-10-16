@@ -7,6 +7,7 @@ const Nav = () => {
             <span className='logo'>&lt; Dev-Junaid /&gt;</span>
             <ul className='nav-links'>
                 <li className='link'><a href='#'>Home</a></li>
+                <li className='link'><a href='#'>Services</a></li>
                 <li className='link'><a href='#'>About</a></li>
                 <li className='link'><a href='#'>Achievements</a></li>
                 <li className='link'><a href='#'>Portfolio</a></li>

@@ -9,8 +9,12 @@ function Main() {
   return (
     <div className="main-container">
       <Nav />
-      <Home />
-      <Services />
+      <section id="home">
+        <Home />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
     </div>
   );
 }

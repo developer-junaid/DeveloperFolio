@@ -17,13 +17,12 @@ const Nav = () => {
       }}
     >
       <span className="logo">&lt; Dev-Junaid /&gt;</span>
-      <nav>
         <ul className="nav-links">
           <li className="link">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li className="link">
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li className="link">
             <a href="#">About</a>
@@ -38,7 +37,6 @@ const Nav = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-      </nav>
     </motion.div>
   );
 };

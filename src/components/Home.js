@@ -21,7 +21,7 @@ const contentVariants = {
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container" id='home'>
       <motion.div
         className="content-container"
         variants={contentVariants}

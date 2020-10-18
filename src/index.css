@@ -6,32 +6,34 @@
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.89);
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
 }
 
 /* Nav */
 .nav-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
   font-family: "Exo 2", sans-serif;
   display: flex;
-  /* background: #1019109c; */
-  background: #f1edf5f6;
-  font-size: 17px;
+  background: #fafafadc;
+
   flex-direction: row;
   padding: 20px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: 9vh;
 }
 
 .logo {
   font-family: "Acme", sans-serif;
-
-  /* font-family: 'Permanent Marker', cursive; */
-  /* font-family: 'Patrick Hand', cursive; */
-  /* font-family: 'Leckerli One', cursive; */
-  /* font-family: 'Lilita One', cursive; */
   font-size: 30px;
   color: #3f22b1;
 }
@@ -45,7 +47,10 @@ body {
   display: inline-block;
   text-decoration: none;
   color: black;
-  font-weight: bolder;
+  font-family: "Merienda One", cursive;
+  font-size: 20px;
+  font-weight: 500;
+  font-variant: small-caps;
   line-height: 50px;
   /* border-bottom: 2px solid white; */
   margin: 20px;
@@ -62,7 +67,7 @@ body {
   padding: 20px;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .content-container {
@@ -93,6 +98,7 @@ body {
 }
 
 .svg-container {
+  margin-top: 20px;
   width: 50vw;
   height: 100%;
   display: flex;
@@ -101,7 +107,7 @@ body {
 }
 
 .svg {
-  height: 80%;
+  height: 75%;
 }
 
 /* Services */

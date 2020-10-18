@@ -17,26 +17,28 @@ const Nav = () => {
       }}
     >
       <span className="logo">&lt; Dev-Junaid /&gt;</span>
-      <ul className="nav-links">
-        <li className="link">
-          <a href="#">Home</a>
-        </li>
-        <li className="link">
-          <a href="#">Services</a>
-        </li>
-        <li className="link">
-          <a href="#">About</a>
-        </li>
-        <li className="link">
-          <a href="#">Achievements</a>
-        </li>
-        <li className="link">
-          <a href="#">Portfolio</a>
-        </li>
-        <li className="link">
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+      <nav>
+        <ul className="nav-links">
+          <li className="link">
+            <a href="#s1">Home</a>
+          </li>
+          <li className="link">
+            <a href="#s2">Services</a>
+          </li>
+          <li className="link">
+            <a href="#">About</a>
+          </li>
+          <li className="link">
+            <a href="#">Achievements</a>
+          </li>
+          <li className="link">
+            <a href="#">Portfolio</a>
+          </li>
+          <li className="link">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </motion.div>
   );
 };

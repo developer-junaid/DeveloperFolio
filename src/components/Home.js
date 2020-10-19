@@ -33,13 +33,13 @@ const Home = () => {
         <h1 className="main-content">
           Hi, I’m Junaid
           <motion.span
-            role="img"
             className="hand"
-            aria-label="Hand"
             animate={{ rotate: [0, 20, 0, 20, 0, 0, 0, 0, 0, 0] }}
             transition={{ yoyo: Infinity, duration: 1.7 }}
           >
-            👋
+            <span role="img" aria-label="Hand waving">
+              👋
+            </span>
           </motion.span>{" "}
         </h1>
         <h2 className="skill-content">

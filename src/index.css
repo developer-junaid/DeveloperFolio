@@ -35,12 +35,12 @@ body {
   box-shadow: 2px 2px 4px gray;
   height: 9vh;
   border-radius: 2px;
-  background: rgb(255 255 255 / 74%);
+  background: rgb(255 255 255);
 }
 
 .logo {
   font-family: "Acme", sans-serif;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   color: #f9004d;
   cursor: pointer;
 }
@@ -58,10 +58,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  line-height: 9vh;
-  margin: 1rem;
+  line-height: 9.1vh;
+  margin: 0.8rem;
 }
 
 .nav-links .anchor:hover {
@@ -79,9 +79,9 @@ body {
   display: flex;
   color: white;
   flex-direction: row;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(29, 27, 27);
   height: 100%;
-  padding: 1.2rem;
+  padding: 1rem;
   align-items: center;
   width: 100%;
   height: 100vh;
@@ -92,26 +92,26 @@ body {
   height: 100%;
   flex-direction: column;
   display: flex;
-  padding: 2rem;
+  padding: 1.8rem;
   justify-content: center;
 }
 
 .main-content {
-  font-size: 3.6rem;
+  font-size: 3rem;
 }
 
 .skill-content {
-  margin: 1rem 0;
-  color: #f9004d;
+  margin: 0.9rem 0;
+  color: #f9004fec;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
-  font-weight: 450;
-  font-size: 1.7rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .hand {
   display: inline-block;
-  margin: 1rem;
+  margin: 0.9rem;
 }
 
 .welcome-content {
@@ -121,7 +121,7 @@ body {
 .svg-container {
   margin-top: 1.5rem;
   width: 50vw;
-  height: 40rem;
+  height: 36rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,16 +134,69 @@ body {
 /* Services */
 
 .services-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  flex-direction: column;
+  font-family: "Exo 2", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+
+.services-wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+
+  height: 40vh;
+  flex-direction: row;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  text-align: center;
+  margin: 1rem;
+  box-shadow: 4px 4px 10px gray;
+  height: 9rem;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.services img {
+  height: 3.7rem;
+}
+
+.services li {
+  list-style-type: none;
+  font-family: "Acme", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Skills */
+
+.skills-container {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   flex-direction: column;
   padding: 2rem;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.skills-container h1 {
+  margin: 2rem 0;
 }
 
 .techs {
@@ -152,21 +205,22 @@ body {
   justify-content: space-evenly;
   width: 100%;
   box-shadow: 4px 4px 20px gray;
-  height: 40vh;
+  height: 12rem;
   border-radius: 20px;
   padding: 3rem;
+  margin: 2rem;
   text-align: center;
 }
 
 .techs i {
-  margin: 1.2rem;
-  font-size: 5rem;
+  margin: 1.1rem;
+  font-size: 4.8rem;
 }
 
 .techs li {
   list-style-type: none;
   font-family: "Acme", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .techs .html {
@@ -185,8 +239,16 @@ body {
   color: #9300ff;
 }
 
+.techs .sass {
+  color: #c300ff;
+}
+
 .techs .react {
   color: #29c2ff;
+}
+
+.techs .typescript {
+  color: #042f67;
 }
 
 .techs .python {
@@ -198,13 +260,137 @@ body {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   flex-direction: column;
   padding: 2rem;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.portfolio-container h1 {
+  margin: 1.3rem 0;
+}
+
+.projects-container {
+  min-height: 60vh;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.projects {
+  height: 25rem;
+  /* border: 1px solid black; */
+  width: 23rem;
+  margin: 1rem;
+  box-shadow: 5px 5px 15px gray;
+  border-radius: 10px;
+}
+
+.project-images {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 70%;
+  /* border: 1px solid black; */
+}
+
+/* Images */
+#coronaTracker {
+  background-image: url("./images/covid.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#shoeStore {
+  background-image: url("./images/nike.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#quizApp {
+  background-image: url("./images/quiz.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#expenseTracker {
+  background-image: url("./images/expense.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#matiari {
+  background-image: url("./images/matiari.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.project-links .text {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 50%;
+  color: #f9004d;
+  font-family: "Acme", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-links .icons {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#github {
+  background-color: rgb(51, 51, 51);
+}
+
+#github:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+#live {
+  background-color: rgb(16, 88, 16);
+}
+
+#live:hover {
+  background-color: rgb(16, 65, 88);
+}
+
+.icons i {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  width: 2.6rem;
+  border-radius: 2.6rem;
+  margin: 0px 5px 10px;
+  transition: all 0.2s ease-in 0s;
 }
 
 /* Education */
@@ -212,7 +398,7 @@ body {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   flex-direction: column;
   padding: 2rem;
   align-items: center;
@@ -226,7 +412,7 @@ body {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   flex-direction: column;
   padding: 2rem;
   align-items: center;
@@ -240,11 +426,59 @@ body {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   flex-direction: column;
   padding: 2rem;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
   height: 100vh;
+}
+
+/* Experience */
+.experience-container {
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+
+/* General */
+
+.button:hover {
+  background-color: #fff;
+  color: #55198b;
+  transition: all 0.3s ease 0s;
+  transform: translateY(-3px);
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #55198b;
+  border: 1px solid #55198b;
+  color: #fff;
+  font-weight: 700;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
 }

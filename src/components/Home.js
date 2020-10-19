@@ -43,7 +43,8 @@ const Home = () => {
           </motion.span>{" "}
         </h1>
         <h2 className="skill-content">
-          Web Developer | Open Source Contributor
+          Web Developer | Open Source Contributor | React Developer | Front End
+          Developer
         </h2>
         <h1>
           {" "}

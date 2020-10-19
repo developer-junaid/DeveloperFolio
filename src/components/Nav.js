@@ -35,7 +35,7 @@ const Nav = () => {
       <ul className="nav-links">
         <li className="link">
           <Link
-            className="anchor"
+            className={navbar ? "anchor is-active" : "anchor"}
             activeClass="active"
             to="home"
             spy={true}
@@ -47,6 +47,7 @@ const Nav = () => {
             Home
           </Link>
         </li>
+
         <li className="link">
           <Link
             className="anchor"
@@ -59,6 +60,21 @@ const Nav = () => {
             duration={500}
           >
             Services
+          </Link>
+        </li>
+
+        <li className="link">
+          <Link
+            className="anchor"
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            delay={100}
+            offset={0}
+            duration={500}
+          >
+            Skills
           </Link>
         </li>
 
@@ -89,6 +105,21 @@ const Nav = () => {
             duration={500}
           >
             Education
+          </Link>
+        </li>
+
+        <li className="link">
+          <Link
+            className="anchor"
+            activeClass="active"
+            to="experience"
+            delay={100}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Experience
           </Link>
         </li>
 

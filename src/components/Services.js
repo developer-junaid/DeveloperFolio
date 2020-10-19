@@ -1,38 +1,28 @@
 import React from "react";
 import "./../index.css";
+import uiImage from "./../images/ui.svg";
+import webImage from "./../images/web.svg";
 
 const Services = () => {
-  return (
-    <section className="services-container" name="services" id="services">
-      <h1>What I Am Good At &nbsp;&nbsp;?</h1>
-
-      <div className="techs">
-        <li>
-          <i className="fab html fa-html5"></i> <p>HTML5</p>
-        </li>
-        <li>
-          <i className="fab css fa-css3"></i>
-          <p>CSS3</p>
-        </li>
-        <li>
-          <i className="fab bootstrap fa-bootstrap"></i>
-          <p>Bootstrap</p>
-        </li>
-        <li>
-          <i className="fab javascript fa-js"></i>
-          <p>Javascript</p>
-        </li>
-        <li>
-          <i className="fab react fa-react"></i>
-          <p>React</p>
-        </li>
-        <li>
-          <i className="fab python fa-python"></i>
-          <p>Python</p>
-        </li>
-      </div>
-    </section>
-  );
+    return (
+        <section className="services-container" name="services" id="services">
+            <h1>Services I Provide</h1>
+            <div className="services-wrapper">
+                <div className="services">
+                    <li>
+                        <img src={uiImage} alt="" />
+                        <p>Web Development</p>
+                    </li>
+                </div>
+                <div className="services">
+                    <li>
+                        <img src={webImage} alt="" />
+                        <p>React Development</p>
+                    </li>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default Services;

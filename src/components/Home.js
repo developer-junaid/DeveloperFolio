@@ -19,8 +19,6 @@ const contentVariants = {
   },
 };
 
-//Test change
-
 const Home = () => {
   return (
     <section className="home-container" id="home" name="home">
@@ -35,7 +33,9 @@ const Home = () => {
         <h1 className="main-content">
           Hi, I’m Junaid
           <motion.span
+            role="img"
             className="hand"
+            aria-label="Hand"
             animate={{ rotate: [0, 20, 0, 20, 0, 0, 0, 0, 0, 0] }}
             transition={{ yoyo: Infinity, duration: 1.7 }}
           >
@@ -45,7 +45,13 @@ const Home = () => {
         <h2 className="skill-content">
           Web Developer | Open Source Contributor
         </h2>
-        <h1> from Pakistan 🇵🇰</h1>
+        <h1>
+          {" "}
+          from Pakistan{" "}
+          <span role="img" aria-label="Pakistan Flag">
+            🇵🇰
+          </span>
+        </h1>
       </motion.div>
 
       <motion.div

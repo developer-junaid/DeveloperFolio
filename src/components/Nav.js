@@ -81,6 +81,21 @@ const Nav = () => {
           <Link
             className="anchor"
             activeClass="active"
+            to="education"
+            delay={100}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Education
+          </Link>
+        </li>
+
+        <li className="link">
+          <Link
+            className="anchor"
+            activeClass="active"
             to="achievements"
             delay={100}
             spy={true}

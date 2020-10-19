@@ -8,12 +8,14 @@ import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Achievements from "../components/Achievements";
 import Contact from "../components/Contact";
+import Services from "../components/Services";
 
 function Main() {
   return (
     <div className="main-container">
       <Nav />
       <Home />
+      <Services />
       <Skills />
       <Portfolio />
       <Education />

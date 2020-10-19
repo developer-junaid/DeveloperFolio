@@ -35,7 +35,7 @@ const Nav = () => {
       <ul className="nav-links">
         <li className="link">
           <Link
-            className="anchor"
+            className={navbar ? "anchor is-active" : "anchor"}
             activeClass="active"
             to="home"
             spy={true}
@@ -47,6 +47,22 @@ const Nav = () => {
             Home
           </Link>
         </li>
+
+        <li className="link">
+          <Link
+            className="anchor"
+            activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            delay={100}
+            offset={0}
+            duration={500}
+          >
+            Services
+          </Link>
+        </li>
+
         <li className="link">
           <Link
             className="anchor"

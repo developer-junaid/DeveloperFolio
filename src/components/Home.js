@@ -19,9 +19,11 @@ const contentVariants = {
   },
 };
 
+//Test change
+
 const Home = () => {
   return (
-    <section className="home-container" id='home' name='home'>
+    <section className="home-container" id="home" name="home">
       <motion.div
         className="content-container"
         variants={contentVariants}

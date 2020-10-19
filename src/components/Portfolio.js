@@ -85,7 +85,7 @@ const Portfolio = () => {
         </div>
 
       </div>
-      <a rel="noopener noreferrer" href="https://github.com/developer-junaid/" className='button-link' ><button className='button'>More Projects</button></a>
+      <a rel="noopener noreferrer" target='_blank' href="https://github.com/developer-junaid/" className='button-link' ><button className='button'>More Projects</button></a>
     </section>
   );
 };

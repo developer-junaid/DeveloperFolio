@@ -93,36 +93,7 @@ const Nav = () => {
           </Link>
         </li>
 
-        <li className="link">
-          <Link
-            className="anchor"
-            activeClass="active"
-            to="education"
-            delay={100}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Education
-          </Link>
-        </li>
-
-        <li className="link">
-          <Link
-            className="anchor"
-            activeClass="active"
-            to="experience"
-            delay={100}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Experience
-          </Link>
-        </li>
-
+      
         <li className="link">
           <Link
             className="anchor"

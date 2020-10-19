@@ -41,7 +41,7 @@ body {
 .logo {
   font-family: "Acme", sans-serif;
   font-size: 1.8rem;
-  color: #f9004d;
+  color: #55198b;
   cursor: pointer;
 }
 
@@ -58,19 +58,20 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 9.1vh;
   margin: 0.8rem;
 }
 
 .nav-links .anchor:hover {
-  color: #f9004d;
+  color: #55198b;
 }
 
 .anchor.active {
-  color: #f9004d;
-  border-bottom: 2px solid #f9004d;
+  color: #55198b;
+  font-weight: 800;
+  border-bottom: 2px solid #55198b;
 }
 
 /* Home */
@@ -102,7 +103,7 @@ body {
 
 .skill-content {
   margin: 0.9rem 0;
-  color: #f9004fec;
+  color: #01ffbbdc;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
   font-weight: 400;
@@ -138,12 +139,15 @@ body {
   justify-content: center;
   display: flex;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   flex-direction: column;
   font-family: "Exo 2", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
   padding: 2rem;
+}
+.services-container {
+  margin-top: 8rem;
 }
 
 .services-wrapper {
@@ -151,8 +155,8 @@ body {
   justify-content: center;
   display: flex;
   width: 100%;
-
-  height: 40vh;
+  margin-top: 4rem;
+  height: 30vh;
   flex-direction: row;
 }
 
@@ -192,7 +196,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 .skills-container h1 {
@@ -270,7 +274,7 @@ body {
 }
 
 .portfolio-container h1 {
-  margin: 1.3rem 0;
+  margin:3rem 0;
 }
 
 .projects-container {
@@ -289,8 +293,9 @@ body {
   /* border: 1px solid black; */
   width: 23rem;
   margin: 1rem;
-  box-shadow: 5px 5px 15px gray;
+  box-shadow: 5px 5px 10px gray;
   border-radius: 10px;
+  border: 1px solid gray;
 }
 
 .project-images {
@@ -345,8 +350,9 @@ body {
   /* border: 1px solid black; */
   width: 100%;
   height: 50%;
-  color: #f9004d;
+  color: #55198b;
   font-family: "Acme", sans-serif;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,20 +399,6 @@ body {
   transition: all 0.2s ease-in 0s;
 }
 
-/* Education */
-.education-container {
-  font-family: "Exo 2", sans-serif;
-  display: flex;
-  color: rgb(0, 0, 0);
-  font-size: 1.3rem;
-  flex-direction: column;
-  padding: 2rem;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100vh;
-}
-
 /* Achievements */
 .achievements-container {
   font-family: "Exo 2", sans-serif;
@@ -435,18 +427,30 @@ body {
   height: 100vh;
 }
 
-/* Experience */
-.experience-container {
+/* Footer */
+.footer-container {
   font-family: "Exo 2", sans-serif;
   display: flex;
-  color: rgb(0, 0, 0);
-  font-size: 1.3rem;
-  flex-direction: column;
+  color: white;
+  font-size: 0.7rem;
+  background: rgb(58, 55, 55);
   padding: 2rem;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  height: 8vh;
+}
+
+.footer-container a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  color: #9300ff;
+  text-shadow: 1px 1px 1px black;
+}
+
+.footer-container a:hover {
+  color: #5bbd22c5;
 }
 
 /* General */
@@ -477,8 +481,18 @@ body {
   text-align: center;
   text-decoration: none;
   display: block;
+  outline: none;
   margin-top: 40px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
+}
+
+.heading {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  text-shadow: 1px 1px 5px gray;
+
+  color: #55198b;
 }

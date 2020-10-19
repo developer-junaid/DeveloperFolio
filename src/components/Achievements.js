@@ -8,7 +8,7 @@ const Achievements = () => {
       name="achievements"
       id="achievements"
     >
-      <h1>Achievements</h1>
+      <h1 className="heading">Achievements</h1>
     </section>
   );
 };

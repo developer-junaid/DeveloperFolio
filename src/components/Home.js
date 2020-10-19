@@ -21,7 +21,7 @@ const contentVariants = {
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <section className="home-container" id='home' name='home'>
       <motion.div
         className="content-container"
         variants={contentVariants}
@@ -41,7 +41,7 @@ const Home = () => {
           </motion.span>{" "}
         </h1>
         <h2 className="skill-content">
-          ( Web Developer | Open Source Contributor )
+          Web Developer | Open Source Contributor
         </h2>
         <h1> from Pakistan 🇵🇰</h1>
       </motion.div>
@@ -53,7 +53,7 @@ const Home = () => {
       >
         <img className="svg" src={man} alt="" />
       </motion.div>
-    </div>
+    </section>
   );
 };
 

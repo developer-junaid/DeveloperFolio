@@ -3,18 +3,21 @@ import "./../index.css";
 import Nav from "../components/Nav";
 import Home from "../components/Home";
 import Services from "../components/Services";
-import { Link as Scroll } from 'react-scroll';
+import Portfolio from "../components/Portfolio";
+import Education from "../components/Education";
+import Achievements from "../components/Achievements";
+import Contact from "../components/Contact";
 
 function Main() {
   return (
-    <div className="fullpage">
-      <section id='s1' className='section s1'>
-        <Nav />
-        <Home />
-      </section>
-      <section id='s2' className="section s2">
-        <Services />
-      </section>
+    <div className="main-container">
+      <Nav />
+      <Home />
+      <Services />
+      <Portfolio />
+      <Education />
+      <Achievements />
+      <Contact />
     </div>
   );
 }

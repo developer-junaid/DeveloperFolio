@@ -51,14 +51,14 @@ const Nav = () => {
           <Link
             className="anchor"
             activeClass="active"
-            to="services"
+            to="skills"
             spy={true}
             smooth={true}
             delay={100}
             offset={0}
             duration={500}
           >
-            Services
+            Skills
           </Link>
         </li>
 
@@ -89,6 +89,21 @@ const Nav = () => {
             duration={500}
           >
             Education
+          </Link>
+        </li>
+
+        <li className="link">
+          <Link
+            className="anchor"
+            activeClass="active"
+            to="experience"
+            delay={100}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Experience
           </Link>
         </li>
 

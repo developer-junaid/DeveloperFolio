@@ -1,9 +1,9 @@
 import React from "react";
 import "./../index.css";
 
-const Services = () => {
+const Skills = () => {
   return (
-    <section className="services-container" name="services" id="services">
+    <section className="skills-container" name="skills" id="skills">
       <h1>What I Am Good At &nbsp;&nbsp;?</h1>
 
       <div className="techs">
@@ -35,4 +35,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Skills;

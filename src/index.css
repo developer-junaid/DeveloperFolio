@@ -131,9 +131,9 @@ body {
   height: 75%;
 }
 
-/* Services */
+/* Skills */
 
-.services-container {
+.skills-container {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
@@ -237,6 +237,20 @@ body {
 
 /* Contact */
 .contact-container {
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Experience */
+.experience-container {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);

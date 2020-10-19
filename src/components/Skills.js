@@ -1,13 +1,10 @@
 import React from "react";
 import "./../index.css";
 
-
 const Skills = () => {
   return (
     <section className="skills-container" name="skills" id="skills">
-
-
-      <h1>What I Am Good At &nbsp;&nbsp;?</h1>
+      <h1 className="heading">What I Am Good At &nbsp;&nbsp;?</h1>
 
       <div className="techs">
         <li>

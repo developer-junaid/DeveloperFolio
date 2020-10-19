@@ -2,6 +2,7 @@ import React from "react";
 import "./../index.css";
 import man from "./../images/man.svg";
 import { motion } from "framer-motion";
+import { animateScroll as scroll } from "react-scroll";
 
 const contentVariants = {
   initial: {
@@ -43,8 +44,7 @@ const Home = () => {
           </motion.span>{" "}
         </h1>
         <h2 className="skill-content">
-          Web Developer | Open Source Contributor | React Developer | Front End
-          Developer
+          Web UI/UX Developer | React Developer | Open Source Contributor
         </h2>
         <h1>
           {" "}
@@ -53,6 +53,10 @@ const Home = () => {
             🇵🇰
           </span>
         </h1>
+
+        <button className="button" onClick={() => scroll.scrollToBottom()}>
+          Contact Me
+        </button>
       </motion.div>
 
       <motion.div

@@ -21,7 +21,7 @@ const contentVariants = {
 
 const Home = () => {
   return (
-    <div className="home-container" >
+    <section className="home-container" id='home' name='home'>
       <motion.div
         className="content-container"
         variants={contentVariants}
@@ -53,7 +53,7 @@ const Home = () => {
       >
         <img className="svg" src={man} alt="" />
       </motion.div>
-    </div>
+    </section>
   );
 };
 

@@ -6,8 +6,8 @@
 
 body {
   width: 100%;
+  background: #fff;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.89);
 }
 
 .main-container {
@@ -22,26 +22,27 @@ body {
   z-index: 1;
   font-family: "Exo 2", sans-serif;
   display: flex;
-  background: #fafafadc;
+  background: rgb(255 255 255 / 90%);
   flex-direction: row;
   padding: 20px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: 9vh;
 }
 
 .nav-container.active {
-  box-shadow: 2px 2px 7px gray;
-  height: 8vh;
+  box-shadow: 2px 2px 4px gray;
+  height: 9vh;
   border-radius: 2px;
-  background: #fafafaa6;
+  background: rgb(255 255 255 / 74%);
 }
 
 .logo {
   font-family: "Acme", sans-serif;
   font-size: 30px;
-  color: #3f22b1;
+  color: #f9004d;
+  cursor: pointer;
 }
 
 .link {
@@ -49,18 +50,23 @@ body {
   float: left;
 }
 
-.nav-links a {
+.nav-links .anchor {
   display: inline-block;
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 50px;
-  /* border-bottom: 2px solid white; */
+  line-height: 9vh;
   margin: 15px;
+}
+
+.anchor.active {
+  color: #f9004d;
+  border-bottom: 2px solid #f9004d;
 }
 
 /* Home */
@@ -70,6 +76,8 @@ body {
   color: white;
   font-size: 15px;
   flex-direction: row;
+  background-color: rgb(0, 0, 0);
+
   height: 100%;
   padding: 20px;
   align-items: center;
@@ -92,7 +100,11 @@ body {
 
 .skill-content {
   margin: 20px 0;
-  font-weight: bold;
+  color: #f9004d;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  font-weight: 450;
 }
 
 .hand {
@@ -123,7 +135,6 @@ body {
   font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
-  background: #fff;
   font-size: 20px;
   flex-direction: column;
   padding: 40px;
@@ -178,4 +189,46 @@ body {
 
 .techs .python {
   color: #82e1ff;
+}
+
+/* Portfolio */
+.portfolio-container {
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Achievements */
+.achievements-container {
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Contact */
+.contact-container {
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
 }

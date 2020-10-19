@@ -3,7 +3,7 @@ import "./../index.css";
 
 const Services = () => {
   return (
-    <div className="services-container">
+    <section className="services-container" name="services" id="services">
       <h1>What I Am Good At &nbsp;&nbsp;?</h1>
 
       <div className="techs">
@@ -31,7 +31,7 @@ const Services = () => {
           <p>Python</p>
         </li>
       </div>
-    </div>
+    </section>
   );
 };
 

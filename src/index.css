@@ -313,6 +313,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
+  border-bottom: 1px solid #55198b;
   height: 70%;
   /* border: 1px solid black; */
 }

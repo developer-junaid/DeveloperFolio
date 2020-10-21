@@ -3,14 +3,19 @@ import "./../index.css";
 
 const Contact = () => {
   return (
-    <section className="contact-container" name="contact" id="contact">
+    <section
+      data-aos="zoom-in"
+      className="contact-container"
+      name="contact"
+      id="contact"
+    >
       <h1 className="heading">Contact</h1>
 
       <div className="cards-container">
         {/* Card 1 - Email */}
         <div className="cards">
           <div className="contact-icons">
-            <i className='fas fa-envelope' ></i>
+            <i className="fas fa-envelope"></i>
           </div>
           <div className="contact-text">
             <span>Email</span>
@@ -23,7 +28,7 @@ const Contact = () => {
         {/* Card 2 - Social Media */}
         <div className="cards">
           <div className="contact-icons">
-            <i className='fas fa-globe' ></i>
+            <i className="fas fa-globe"></i>
           </div>
           <div className="contact-text">
             <span>Social Media</span>
@@ -35,8 +40,7 @@ const Contact = () => {
               target="_blank"
               href="https://github.com/developer-junaid/"
             >
-              <i className="fab fa-github" title="github" id='github'>
-              </i>
+              <i className="fab fa-github" title="github" id="github"></i>
             </a>
 
             {/* facebook */}
@@ -45,8 +49,7 @@ const Contact = () => {
               target="_blank"
               href="https://www.facebook.com/profile.php?id=100041078220896"
             >
-              <i className="fab fa-facebook" title="facebook" id='facebook'>
-              </i>
+              <i className="fab fa-facebook" title="facebook" id="facebook"></i>
             </a>
 
             {/* linkedIn */}
@@ -55,10 +58,8 @@ const Contact = () => {
               target="_blank"
               href="https://www.linkedin.com/in/developer-junaid/"
             >
-              <i className="fab fa-linkedin" title="linkedin" id='linkedin' >
-              </i>
+              <i className="fab fa-linkedin" title="linkedin" id="linkedin"></i>
             </a>
-
 
             {/* Twitter */}
             <a
@@ -66,8 +67,7 @@ const Contact = () => {
               target="_blank"
               href="https://twitter.com/Junaid084869/"
             >
-              <i className="fab fa-twitter" title="twitter" id='twitter'>
-              </i>
+              <i className="fab fa-twitter" title="twitter" id="twitter"></i>
             </a>
 
             {/* Instagram */}
@@ -76,19 +76,19 @@ const Contact = () => {
               target="_blank"
               href="https://www.instagram.com/developerjunaid/"
             >
-              <i className="fab fa-instagram" title="instagram" id='instagram'>
-              </i>
+              <i
+                className="fab fa-instagram"
+                title="instagram"
+                id="instagram"
+              ></i>
             </a>
-
-
-
           </div>
         </div>
 
         {/* Card 3 - Phone */}
         <div className="cards">
           <div className="contact-icons">
-            <i className='fas fa-phone' ></i>
+            <i className="fas fa-phone"></i>
           </div>
           <div className="contact-text">
             <span>Phone</span>
@@ -97,11 +97,7 @@ const Contact = () => {
             <span>(+92) 313 3084869 </span>
           </div>
         </div>
-
-
-
       </div>
-
     </section>
   );
 };

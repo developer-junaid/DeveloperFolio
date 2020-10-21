@@ -3,7 +3,12 @@ import "./../index.css";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio-container" name="portfolio" id="portfolio">
+    <section
+      data-aos="fade-up"
+      className="portfolio-container"
+      name="portfolio"
+      id="portfolio"
+    >
       <h1 className="heading">Projects I have Built</h1>
       <div className="projects-container">
         {/* Project 1 - Corona Tracker */}

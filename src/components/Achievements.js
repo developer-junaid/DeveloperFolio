@@ -4,6 +4,7 @@ import "./../index.css";
 const Achievements = () => {
   return (
     <section
+      data-aos="fade-up"
       className="achievements-container"
       name="achievements"
       id="achievements"

@@ -32,10 +32,11 @@ body {
 }
 
 .nav-container.active {
+  background: rgba(231, 221, 221, 0.836);
   box-shadow: 2px 2px 4px gray;
   height: 9vh;
   border-radius: 2px;
-  background: rgb(255 255 255);
+  /* background: rgb(255 255 255); */
 }
 
 .logo {
@@ -102,16 +103,17 @@ body {
 }
 
 .skill-content {
-  margin: 0.9rem 0;
+  margin: 0.6rem 0;
   color: #01ffbbdc;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .skill-animation {
   height: 60px;
+  width: 100%;
 }
 
 .hand {
@@ -144,7 +146,7 @@ body {
   justify-content: center;
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   flex-direction: column;
   font-family: "Exo 2", sans-serif;
   color: rgb(0, 0, 0);
@@ -171,6 +173,8 @@ body {
   justify-content: space-evenly;
   width: 30%;
   text-align: center;
+  background: #e7dddd5c;
+
   margin: 1rem;
   box-shadow: 6px 6px 10px gray;
   height: 9rem;
@@ -205,7 +209,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
 }
 
 .skills-container h1 {
@@ -217,6 +221,8 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  background: #e7dddd5c;
+
   box-shadow: 6px 6px 20px gray;
   height: 12rem;
   border-radius: 20px;
@@ -306,6 +312,7 @@ body {
   /* border: 1px solid black; */
   width: 23rem;
   margin: 1rem;
+  background: #e7dddd5c;
   box-shadow: 7px 7px 10px gray;
   border-radius: 10px;
 }
@@ -494,6 +501,7 @@ body {
   border-radius: 20px;
   flex-direction: column;
   width: 16rem;
+  background: #e7dddd5c;
   height: 9rem;
   margin: 1rem;
   padding: 1.3rem 0;
@@ -655,6 +663,7 @@ body {
   background-color: #55198b;
   border: 1px solid #55198b;
   color: #fff;
+
   font-weight: 700;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -667,7 +676,7 @@ body {
   text-decoration: none;
   display: block;
   outline: none;
-  margin-top: 40px;
+  margin-top: 3.6rem;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
@@ -678,6 +687,6 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   text-shadow: 1px 1px 5px gray;
-
+  margin: 2rem 0;
   color: #55198b;
 }

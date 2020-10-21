@@ -3,7 +3,12 @@ import "./../index.css";
 
 const Skills = () => {
   return (
-    <section className="skills-container" name="skills" id="skills">
+    <section
+      data-aos="fade-right"
+      className="skills-container"
+      name="skills"
+      id="skills"
+    >
       <h1 className="heading">What I Am Good At &nbsp;&nbsp;?</h1>
 
       <div className="techs">

@@ -75,6 +75,10 @@ body {
   border-bottom: 2px solid #55198b;
 }
 
+.menu-icon {
+  display: none;
+}
+
 /* Home */
 .home-container {
   font-family: "Exo 2", sans-serif;
@@ -86,7 +90,7 @@ body {
   padding: 1rem;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .content-container {
@@ -95,6 +99,7 @@ body {
   flex-direction: column;
   display: flex;
   padding: 1.8rem;
+  margin-top: 3rem;
   justify-content: center;
 }
 
@@ -114,6 +119,7 @@ body {
 .skill-animation {
   height: 60px;
   width: 100%;
+  margin: 1rem;
 }
 
 .hand {
@@ -164,6 +170,7 @@ body {
   width: 100%;
   margin-top: 4rem;
   height: 30vh;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
@@ -171,10 +178,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 30%;
+  width: 400px;
   text-align: center;
   background: #e7dddd5c;
-
   margin: 1rem;
   box-shadow: 6px 6px 10px gray;
   height: 9rem;
@@ -305,6 +311,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   /* border: 2px solid black; */
 }
 
@@ -477,7 +484,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .profile-image {
@@ -678,7 +685,6 @@ body {
   width: -moz-max-content;
   width: max-content;
   padding: 13px 22px;
-  margin-right: 50px;
   text-transform: uppercase;
   border-radius: 6px;
   text-align: center;
@@ -686,7 +692,7 @@ body {
   display: block;
   outline: none;
   margin-top: 3.6rem;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -718,4 +724,121 @@ body {
   }
 }
 
-/* 760 Nav */
+/*900 Mobile Nav Version */
+
+@media screen and (max-width: 900px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    position: absolute;
+    top: 9vh;
+    text-align: center;
+    align-items: center;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.active {
+    background: rgba(255, 255, 255, 0.911);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    display: block;
+    position: relative;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-links .anchor {
+    display: block;
+    line-height: 9.1vh;
+    width: 100vw;
+    margin: 0.4rem;
+  }
+
+  .anchor.active {
+    color: white;
+    font-weight: 800;
+    border: none;
+    background: rgba(0, 0, 0, 0.534);
+  }
+
+  .nav-links.active .anchor:hover {
+    color: black;
+  }
+}
+
+/* 700 */
+
+@media screen and (max-width: 700px) {
+  .svg-container {
+    margin-top: 1.5rem;
+    width: 50vw;
+    height: 36rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .svg {
+    height: 60%;
+  }
+}
+
+/* 550 */
+@media screen and (max-width: 550px) {
+  .content-container {
+    font-size: 0.7rem;
+  }
+
+  .main-content {
+    font-size: 2rem;
+  }
+
+  .skill-content {
+    margin: 0.6rem 0;
+    font-size: 1.2rem;
+  }
+
+  .hand {
+    font-size: 1.8rem;
+  }
+
+  .welcome-content {
+    font-size: 0.7rem;
+  }
+}
+
+/* 500 */
+@media screen and (max-width: 500px) {
+  .svg {
+    height: 40%;
+  }
+}
+
+/* 415 */
+
+@media screen and (max-width: 415px) {
+  .skill-content {
+    font-size: 1rem;
+  }
+}
+
+/* 395*/
+
+@media screen and (max-width: 395px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+  .button {
+    font-size: 0.8rem;
+  }
+}

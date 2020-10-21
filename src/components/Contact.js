@@ -10,7 +10,7 @@ const Contact = () => {
       id="contact"
     >
       <div className="profile-image">
-        
+
       </div>
       <h1 className="heading">Contact</h1>
 

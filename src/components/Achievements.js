@@ -1,6 +1,7 @@
 import React from "react";
 import "./../index.css";
 import { motion } from "framer-motion";
+import ciscoImage from "./../images/certificates/PCAP (Certified Associate in Python Programming).png";
 
 const boxVariants = {
   hover: {
@@ -96,7 +97,7 @@ const Achievements = () => {
           whileHover="hover"
           className="projects"
         >
-          <a rel="noopener noreferrer" target="_blank" href="#">
+          <a rel="noopener noreferrer" target="_blank" href={ciscoImage}>
             <div className="project-images" id="ciscoPython"></div>
           </a>
 
@@ -105,7 +106,7 @@ const Achievements = () => {
               <h3>Programming Associate in Python (Cisco)</h3>
             </div>
             <div className="icons">
-              <a rel="noopener noreferrer" href="#" target="_blank">
+              <a rel="noopener noreferrer" href={ciscoImage} target="_blank">
                 {" "}
                 <i
                   className="fas fa-external-link-alt"

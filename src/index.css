@@ -110,9 +110,14 @@ body {
   font-size: 1.5rem;
 }
 
+.skill-animation {
+  height: 60px;
+}
+
 .hand {
   display: inline-block;
   margin: 0.9rem;
+  cursor: pointer;
 }
 
 .welcome-content {
@@ -422,7 +427,38 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+/* Images */
+#reactBasic {
+  background-image: url("./images/certificates/ReactBasic\(HackerRank\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#html5 {
+  background-image: url("./images/certificates/html5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#git {
+  background-image: url("./images/certificates/Git.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#ciscoPython {
+  background-image: url("./images/certificates/PCAP\ \(Certified\ Associate\ in\ Python\ Programming\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#specPython {
+  background-image: url("./images/certificates/specialization.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Contact */

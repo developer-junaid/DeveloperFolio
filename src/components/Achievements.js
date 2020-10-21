@@ -1,5 +1,15 @@
 import React from "react";
 import "./../index.css";
+import { motion } from "framer-motion";
+
+const boxVariants = {
+  hover: {
+    scale: 1.06,
+    transition: {
+      type: "spring",
+    },
+  },
+};
 
 const Achievements = () => {
   return (
@@ -12,7 +22,11 @@ const Achievements = () => {
       <h1 className="heading">Achievements</h1>
       <div className="projects-container">
         {/* Project 1 - React Basic */}
-        <div className="projects">
+        <motion.div
+          variants={boxVariants}
+          whileHover="hover"
+          className="projects"
+        >
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -39,10 +53,14 @@ const Achievements = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 2 - HTML5 */}
-        <div className="projects">
+        <motion.div
+          variants={boxVariants}
+          whileHover="hover"
+          className="projects"
+        >
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -70,10 +88,14 @@ const Achievements = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 3 - Cisco Python */}
-        <div className="projects">
+        <motion.div
+          variants={boxVariants}
+          whileHover="hover"
+          className="projects"
+        >
           <a rel="noopener noreferrer" target="_blank" href="#">
             <div className="project-images" id="ciscoPython"></div>
           </a>
@@ -93,10 +115,14 @@ const Achievements = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 4 - Git */}
-        <div className="projects">
+        <motion.div
+          variants={boxVariants}
+          whileHover="hover"
+          className="projects"
+        >
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -124,10 +150,14 @@ const Achievements = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 5 - Specialization Python */}
-        <div className="projects">
+        <motion.div
+          variants={boxVariants}
+          whileHover="hover"
+          className="projects"
+        >
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -155,7 +185,7 @@ const Achievements = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

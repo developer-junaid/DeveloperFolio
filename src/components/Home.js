@@ -24,7 +24,7 @@ const contentVariants = {
 const childrenVariants = {
   initial: {
     opacity: 0,
-    y: 100
+    y: 100,
   },
 
   animate: {
@@ -32,18 +32,17 @@ const childrenVariants = {
     y: 0,
     transition: {
       duration: 0.7,
-      type: 'spring',
-      delay: 0.5
-    }
+      type: "spring",
+      delay: 0.5,
+    },
   },
 
   exit: {
     opacity: 0,
     y: -200,
-    transition: { duration: 0.2 }
-  }
-
-}
+    transition: { duration: 0.2 },
+  },
+};
 
 const Home = () => {
   // State
@@ -60,9 +59,8 @@ const Home = () => {
         setShowHeadingOne(true);
         setShowHeadingTwo(false);
       }
-    }, 3000)
-  }, [showHeadingOne, showHeadingTwo])
-
+    }, 3000);
+  }, [showHeadingOne, showHeadingTwo]);
 
   return (
     <section className="home-container" id="home" name="home">
@@ -93,14 +91,14 @@ const Home = () => {
         <div className="skill-animation">
           <AnimatePresence>
             {showHeadingOne && (
-              <motion.h2 className="skill-content"
+              <motion.h2
+                className="skill-content"
                 variants={childrenVariants}
-                exit='exit'
-                animate='animate'
-                initial='initial'
+                exit="exit"
+                animate="animate"
+                initial="initial"
               >
-
-                Web UI/UX Developer | Open Source Contributor
+                Web UI/UX Developer | React Developer
               </motion.h2>
             )}
           </AnimatePresence>
@@ -110,11 +108,11 @@ const Home = () => {
               <motion.h2
                 className="skill-content"
                 variants={childrenVariants}
-                exit='exit'
-                animate='animate'
-                initial='initial'
+                exit="exit"
+                animate="animate"
+                initial="initial"
               >
-                React Developer
+                Open Source Contributor | AI Enthusiast
               </motion.h2>
             )}
           </AnimatePresence>
@@ -141,7 +139,7 @@ const Home = () => {
       >
         <img className="svg" src={man} alt="" />
       </motion.div>
-    </section >
+    </section>
   );
 };
 

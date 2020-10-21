@@ -308,17 +308,14 @@ body {
 }
 
 .projects {
-  height: 25rem;
+  height: 23rem;
   /* border: 1px solid black; */
-  width: 23rem;
+  width: 21rem;
   margin: 1rem;
   background: #e7dddd5c;
   box-shadow: 7px 7px 10px gray;
+  cursor: pointer;
   border-radius: 10px;
-}
-
-.projects:hover {
-  border: 1px solid gray;
 }
 
 .project-images {

@@ -36,7 +36,6 @@ body {
   box-shadow: 2px 2px 4px gray;
   height: 9vh;
   border-radius: 2px;
-  /* background: rgb(255 255 255); */
 }
 
 .logo {
@@ -312,12 +311,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: 2px solid black; */
 }
 
 .projects {
   height: 23rem;
-  /* border: 1px solid black; */
   width: 21rem;
   margin: 1rem;
   background: #e7dddd5c;
@@ -332,7 +329,6 @@ body {
   width: 100%;
   border-bottom: 1px solid #55198b;
   height: 70%;
-  /* border: 1px solid black; */
 }
 
 /* Images */
@@ -372,11 +368,9 @@ body {
   height: 30%;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .project-links .text {
-  /* border: 1px solid black; */
   width: 100%;
   height: 50%;
   color: #55198b;
@@ -388,7 +382,6 @@ body {
 }
 
 .project-links .icons {
-  /* border: 1px solid black; */
   width: 100%;
   height: 50%;
   display: flex;

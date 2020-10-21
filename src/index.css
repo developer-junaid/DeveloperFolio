@@ -224,9 +224,10 @@ body {
   background: #e7dddd5c;
 
   box-shadow: 6px 6px 20px gray;
-  height: 12rem;
+  min-height: 12rem;
   border-radius: 20px;
   padding: 3rem;
+  flex-wrap: wrap;
   margin: 2rem;
   text-align: center;
 }
@@ -479,6 +480,17 @@ body {
   height: 100vh;
 }
 
+.profile-image {
+  margin: 1rem;
+  box-shadow: 6px 6px 10px gray;
+  width: 170px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-image: url("./images/junaid.png");
+  background-size: cover;
+  height: 170px;
+}
+
 .cards-container {
   display: flex;
   flex-direction: row;
@@ -687,3 +699,23 @@ body {
   margin: 2rem 0;
   color: #55198b;
 }
+
+/* Media Queries */
+/* 1150 Breakpoint */
+@media screen and (max-width: 1150px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .content-container {
+    padding-top: 5rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .svg-container {
+    width: 100vw;
+  }
+}
+
+/* 760 Nav */

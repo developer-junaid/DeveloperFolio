@@ -4,17 +4,15 @@
 :link: http://junaid-qureshi.surge.sh/
 
 ### Demo Video
-:link: #
+:link: https://youtu.be/DNfXLD9lPi0
 
 
 ## Images 
-<img src='./' />
-<img src='./' />
-
-
+<img src='./project_images/portfolio_PC.png/' />
 
 
 ## Mobile Responsive
+<img src='./project_images/portfolio_mobile.png/' />
 
 
 ## Run Locally 

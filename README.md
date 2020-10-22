@@ -4,7 +4,7 @@
 :link: http://junaid-qureshi.surge.sh/
 
 ### Demo Video
-:link: https://youtu.be/DNfXLD9lPi0
+:link: https://youtu.be/Fpl3JJ-g7Bc
 
 
 ## Images 

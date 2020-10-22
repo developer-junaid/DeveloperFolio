@@ -8,11 +8,11 @@
 
 
 ## Images 
-<img src='./project_images/portfolio_PC.png/' />
+<img src='./project_images/portfolio.png/' />
 
 
 ## Mobile Responsive
-<img src='./project_images/portfolio_mobile.png/' />
+<img src='./project_images/mobile.png/' />
 
 
 ## Run Locally 

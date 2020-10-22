@@ -20,7 +20,6 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
-  font-family: "Exo 2", sans-serif;
   display: flex;
   background: #fff;
   flex-direction: row;
@@ -55,9 +54,8 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Varela Round", sans-serif;
+
   font-size: 1rem;
   font-weight: 400;
   line-height: 9.1vh;
@@ -80,7 +78,7 @@ body {
 
 /* Home */
 .home-container {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Varela Round", sans-serif;
   display: flex;
   color: white;
   flex-direction: row;
@@ -109,8 +107,8 @@ body {
 .skill-content {
   margin: 0.6rem 0;
   color: #9c72be;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  font-family: "Varela Round", sans-serif;
+
   font-weight: 400;
   font-size: 1.6rem;
 }
@@ -199,8 +197,9 @@ body {
 
 .services li {
   list-style-type: none;
-  font-family: "Acme", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 /* Skills */
@@ -249,8 +248,9 @@ body {
 
 .techs li {
   list-style-type: none;
-  font-family: "Acme", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .techs .html {
@@ -375,8 +375,8 @@ body {
   width: 100%;
   height: 50%;
   color: black;
-  font-family: "Acme", sans-serif;
-  font-size: 1rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -647,8 +647,8 @@ body {
 
 .footer-container a {
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  font-family: "Varela Round", sans-serif;
+
   color: #9300ff;
   text-shadow: 1px 1px 1px black;
 }
@@ -693,11 +693,8 @@ body {
 }
 
 .heading {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  text-shadow: 1px 1px 5px gray;
   margin: 2rem 0;
+  font-family: "Varela Round", sans-serif;
   color: black;
 }
 

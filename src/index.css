@@ -22,18 +22,18 @@ body {
   z-index: 1;
   font-family: "Exo 2", sans-serif;
   display: flex;
-  background: rgb(255 255 255 / 90%);
+  background: #fff;
   flex-direction: row;
   padding: 1.2rem;
   align-items: center;
+  box-shadow: 2px 2px 4px gray;
   justify-content: space-between;
   width: 100%;
   height: 9vh;
 }
 
 .nav-container.active {
-  background: rgba(231, 221, 221, 0.836);
-  box-shadow: 2px 2px 4px gray;
+  background: fff;
   height: 9vh;
   border-radius: 2px;
 }
@@ -108,7 +108,7 @@ body {
 
 .skill-content {
   margin: 0.6rem 0;
-  color: #01ffbbdc;
+  color: #9c72be;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
   font-weight: 400;
@@ -118,7 +118,7 @@ body {
 .skill-animation {
   height: 60px;
   width: 100%;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .hand {
@@ -179,9 +179,10 @@ body {
   justify-content: space-evenly;
   width: 400px;
   text-align: center;
-  background: #e7dddd5c;
+  /* background: #e7dddd5c; */
   margin: 1rem;
-  box-shadow: 6px 6px 10px gray;
+  /* box-shadow: 0 10px 10px -14px rgba(0,0,0,.2); */
+  box-shadow: 3px 2px 10px gray;
   height: 9rem;
   border-radius: 20px;
   padding: 3rem;
@@ -226,9 +227,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  background: #e7dddd5c;
+  /* background: #e7dddd5c; */
 
-  box-shadow: 6px 6px 20px gray;
+  box-shadow: 3px 2px 10px gray;
   min-height: 12rem;
   border-radius: 20px;
   padding: 3rem;
@@ -317,8 +318,8 @@ body {
   height: 23rem;
   width: 21rem;
   margin: 1rem;
-  background: #e7dddd5c;
-  box-shadow: 7px 7px 10px gray;
+  /* background: #e7dddd5c; */
+  box-shadow: 3px 2px 10px gray;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -373,7 +374,7 @@ body {
 .project-links .text {
   width: 100%;
   height: 50%;
-  color: #55198b;
+  color: black;
   font-family: "Acme", sans-serif;
   font-size: 1rem;
   display: flex;
@@ -506,11 +507,11 @@ body {
   justify-content: center;
   text-align: center;
   display: flex;
-  box-shadow: 5px 5px 14px gray;
+  box-shadow: 3px 2px 10px gray;
   border-radius: 20px;
   flex-direction: column;
   width: 16rem;
-  background: #e7dddd5c;
+  /* background: #e7dddd5c; */
   height: 9rem;
   margin: 1rem;
   padding: 1.3rem 0;
@@ -633,10 +634,11 @@ body {
 .footer-container {
   font-family: "Exo 2", sans-serif;
   display: flex;
-  color: white;
+  color: black;
   font-size: 0.7rem;
-  background: rgb(58, 55, 55);
+  /* background: rgb(58, 55, 55); */
   padding: 2rem;
+  border-top: 2px solid black;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
@@ -696,7 +698,7 @@ body {
     sans-serif;
   text-shadow: 1px 1px 5px gray;
   margin: 2rem 0;
-  color: #55198b;
+  color: black;
 }
 
 /* Media Queries */

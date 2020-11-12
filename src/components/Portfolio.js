@@ -1,6 +1,6 @@
-import React from "react";
-import "./../index.css";
-import { motion } from "framer-motion";
+import React from "react"
+import "./../index.css"
+import { motion } from "framer-motion"
 
 const boxVariants = {
   hover: {
@@ -9,7 +9,7 @@ const boxVariants = {
       type: "spring",
     },
   },
-};
+}
 
 const Portfolio = () => {
   return (
@@ -30,7 +30,7 @@ const Portfolio = () => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="http://covid19-virus-tracker.surge.sh/"
+            href="https://online-corona-tracker.web.app/"
           >
             <div className="project-images" id="coronaTracker"></div>
           </a>
@@ -43,7 +43,7 @@ const Portfolio = () => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://github.com/developer-junaid/coronavirustracker"
+                href="https://github.com/developer-junaid/Corona-Virus-Tracker"
               >
                 <i className="fab fa-github" title="github repo" id="github">
                   {" "}
@@ -51,7 +51,7 @@ const Portfolio = () => {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="http://covid19-virus-tracker.surge.sh/"
+                href="https://online-corona-tracker.web.app/"
                 target="_blank"
               >
                 {" "}
@@ -87,7 +87,7 @@ const Portfolio = () => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://github.com/developer-junaid/shoeStore"
+                href="https://github.com/developer-junaid/Nike-Shoe-Store"
               >
                 <i className="fab fa-github" title="github repo" id="github">
                   {" "}
@@ -204,19 +204,19 @@ const Portfolio = () => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="http://your-expense-tracker.surge.sh/"
+            href="https://your-expense-tracker.web.app/"
           >
             <div className="project-images" id="expenseTracker"></div>
           </a>
           <div className="project-links">
             <div className="text">
-              <h3>Expense Tracker</h3>
+              <h3>"PWA" Expense Tracker</h3>
             </div>
             <div className="icons">
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://github.com/developer-junaid/expenseTracker"
+                href="https://github.com/developer-junaid/Expense-Tracker"
               >
                 <i className="fab fa-github" title="github repo" id="github">
                   {" "}
@@ -224,7 +224,7 @@ const Portfolio = () => {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="http://your-expense-tracker.surge.sh/"
+                href="https://your-expense-tracker.web.app/"
                 target="_blank"
               >
                 {" "}
@@ -247,7 +247,7 @@ const Portfolio = () => {
         <button className="button">More Projects</button>
       </a>
     </section>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

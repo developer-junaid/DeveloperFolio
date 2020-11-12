@@ -34,5 +34,5 @@
 - - custom css animation
 - - framer-motion
 
-- Surge
+- Firebase
 - Github Actions

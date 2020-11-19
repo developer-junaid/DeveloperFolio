@@ -118,13 +118,13 @@ const Portfolio = () => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="http://online-quiz-app.surge.sh/"
+            href="https://our-quiz.web.app/"
           >
             <div className="project-images" id="quizApp"></div>
           </a>
           <div className="project-links">
             <div className="text">
-              <h3>Quiz Application</h3>
+              <h3>"PWA" Quiz App</h3>
             </div>
             <div className="icons">
               <a
@@ -138,7 +138,7 @@ const Portfolio = () => {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="http://online-quiz-app.surge.sh/"
+                href="https://our-quiz.web.app/"
                 target="_blank"
               >
                 {" "}

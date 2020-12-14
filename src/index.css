@@ -332,32 +332,39 @@ body {
   height: 70%;
 }
 
-/* Images */
+/* Images Proportion (877 * 679)*/
 #coronaTracker {
-  background-image: url("./images/covid.png");
+  background-image: url("./images/projects/covid.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #shoeStore {
-  background-image: url("./images/nike.png");
+  background-image: url("./images/projects/nike.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #quizApp {
-  background-image: url("./images/quiz.png");
+  background-image: url("./images/projects/quiz.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #expenseTracker {
-  background-image: url("./images/expense.png");
+  background-image: url("./images/projects/expense.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #matiari {
-  background-image: url("./images/matiari.png");
+  background-image: url("./images/projects/matiari.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#spacexWebsite {
+  background-image: url("./images/projects/spacex.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -436,7 +443,7 @@ body {
   min-height: 100vh;
 }
 
-/* Images */
+/* Images Proportion (877 * 679) */
 #reactBasic {
   background-image: url("./images/certificates/ReactBasic\(HackerRank\).png");
   background-size: cover;
@@ -463,6 +470,12 @@ body {
 
 #specPython {
   background-image: url("./images/certificates/specialization.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#smitPython {
+  background-image: url("./images/certificates/SMITPython.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

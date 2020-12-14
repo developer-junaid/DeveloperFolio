@@ -2,6 +2,11 @@ import React from "react";
 import "./../index.css";
 import { motion } from "framer-motion";
 import ciscoImage from "./../images/certificates/PCAP (Certified Associate in Python Programming).png";
+import reactBasicImage from "./../images/certificates/ReactBasic(HackerRank).png";
+import HTML5Image from "./../images/certificates/html5.png";
+import gitImage from "./../images/certificates/Git.png";
+import pythonImage from "./../images/certificates/specialization.png";
+import smitPythonImage from "./../images/certificates/SMITPython.png";
 
 const boxVariants = {
   hover: {
@@ -22,17 +27,13 @@ const Achievements = () => {
     >
       <h1 className="heading">Achievements</h1>
       <div className="projects-container">
-        {/* Project 1 - React Basic */}
+        {/* Certification 1 - React Basic */}
         <motion.div
           variants={boxVariants}
           whileHover="hover"
           className="projects"
         >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.hackerrank.com/certificates/6b34ec5a135a"
-          >
+          <a rel="noopener noreferrer" target="_blank" href={reactBasicImage}>
             <div className="project-images" id="reactBasic"></div>
           </a>
 
@@ -48,25 +49,22 @@ const Achievements = () => {
               >
                 <i
                   className="fas fa-external-link-alt"
-                  title="live preview"
+                  title="url"
                   id="live"
                 ></i>
               </a>
             </div>
           </div>
         </motion.div>
+        {/* // */}
 
-        {/* Project 2 - HTML5 */}
+        {/* Certification 2 - HTML5 */}
         <motion.div
           variants={boxVariants}
           whileHover="hover"
           className="projects"
         >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.coursera.org/account/accomplishments/certificate/G83XS5DQJCN8"
-          >
+          <a rel="noopener noreferrer" target="_blank" href={HTML5Image}>
             <div className="project-images" id="html5"></div>
           </a>
 
@@ -90,8 +88,9 @@ const Achievements = () => {
             </div>
           </div>
         </motion.div>
+        {/* // */}
 
-        {/* Project 3 - Cisco Python */}
+        {/* Certification 3 - Cisco Python */}
         <motion.div
           variants={boxVariants}
           whileHover="hover"
@@ -117,18 +116,15 @@ const Achievements = () => {
             </div>
           </div>
         </motion.div>
+        {/* // */}
 
-        {/* Project 4 - Git */}
+        {/* Certification 4 - Git */}
         <motion.div
           variants={boxVariants}
           whileHover="hover"
           className="projects"
         >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.coursera.org/account/accomplishments/certificate/37AM696AMTE5"
-          >
+          <a rel="noopener noreferrer" target="_blank" href={gitImage}>
             <div className="project-images" id="git"></div>
           </a>
 
@@ -152,18 +148,15 @@ const Achievements = () => {
             </div>
           </div>
         </motion.div>
+        {/* // */}
 
-        {/* Project 5 - Specialization Python */}
+        {/* Certification 5 - Specialization Python */}
         <motion.div
           variants={boxVariants}
           whileHover="hover"
           className="projects"
         >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.coursera.org/account/accomplishments/specialization/certificate/DGENHCAN2NWE"
-          >
+          <a rel="noopener noreferrer" target="_blank" href={pythonImage}>
             <div className="project-images" id="specPython"></div>
           </a>
 
@@ -187,6 +180,38 @@ const Achievements = () => {
             </div>
           </div>
         </motion.div>
+        {/* // */}
+        {/* Certification 6 - Specialization Python */}
+        <motion.div
+          variants={boxVariants}
+          whileHover="hover"
+          className="projects"
+        >
+          <a rel="noopener noreferrer" target="_blank" href={smitPythonImage}>
+            <div className="project-images" id="smitPython"></div>
+          </a>
+
+          <div className="project-links">
+            <div className="text">
+              <h3>Online Python Programming (SMIT)</h3>
+            </div>
+            <div className="icons">
+              <a
+                rel="noopener noreferrer"
+                href={smitPythonImage}
+                target="_blank"
+              >
+                {" "}
+                <i
+                  className="fas fa-external-link-alt"
+                  title="url"
+                  id="live"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </motion.div>
+        {/* // */}
       </div>
     </section>
   );

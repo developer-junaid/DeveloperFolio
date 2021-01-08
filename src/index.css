@@ -672,6 +672,10 @@ body {
 
 /* General */
 
+.button-wrapper {
+  width: 100%;
+}
+
 .button:hover {
   background-color: #fff;
   color: #55198b;
@@ -687,22 +691,22 @@ body {
   background-color: #55198b;
   border: 1px solid #55198b;
   color: #fff;
-
   font-weight: 700;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 200px;
   padding: 13px 22px;
   text-transform: uppercase;
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
-  display: block;
   outline: none;
   margin-top: 3.6rem;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
+}
+
+.contact-btn {
+  margin-right: 1rem;
 }
 
 .heading {
@@ -795,6 +799,17 @@ body {
 
   .svg {
     height: 60%;
+  }
+}
+
+/* 500 */
+@media screen and (max-width: 500px) {
+  button {
+    width: 90%;
+  }
+
+  .contact-btn {
+    margin-right: 0;
   }
 }
 

@@ -127,9 +127,21 @@ const Home = () => {
           </span>
         </h1>
 
-        <button className="button" onClick={() => scroll.scrollToBottom()}>
-          Contact Me
-        </button>
+        <div className="button-wrapper">
+          <button
+            className="button contact-btn"
+            onClick={() => scroll.scrollToBottom()}
+          >
+            Contact Me
+          </button>
+          <a
+            href="https://drive.google.com/file/d/1OcuCy-u_jIeTwEokAnPcnu77F8mDP66V/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button">Resume</button>
+          </a>
+        </div>
       </motion.div>
 
       <motion.div

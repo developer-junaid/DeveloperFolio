@@ -369,6 +369,12 @@ body {
   background-repeat: no-repeat;
 }
 
+#diariesApp {
+  background-image: url("./images/projects/diaries.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .project-links {
   display: flex;
   flex-direction: column;

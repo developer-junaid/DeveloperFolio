@@ -1,7 +1,7 @@
 import React from "react";
-import "./../index.css";
-import uiImage from "./../images/ui.svg";
-import webImage from "./../images/web.svg";
+import "./../../index.css";
+import uiImage from "./../../images/ui.svg";
+import webImage from "./../../images/web.svg";
 
 const Services = () => {
   return (

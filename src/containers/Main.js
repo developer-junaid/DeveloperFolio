@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./../index.css";
-import Nav from "../components/Nav";
-import Home from "../components/Home";
-import Skills from "../components/Skills";
-import Portfolio from "../components/Portfolio";
-import Achievements from "../components/Achievements";
-import Contact from "../components/Contact";
-import Services from "../components/Services";
-import Footer from "../components/Footer";
+import Nav from "../components/Nav/Nav";
+import Home from "../components/Home/Home";
+import Skills from "../components/Skills/Skills";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Achievements from "../components/Achievements/Achievements";
+import Contact from "../components/Contact/Contact";
+import Services from "../components/Services/Services";
+import Footer from "../components/Footer/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

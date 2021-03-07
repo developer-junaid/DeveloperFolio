@@ -1,5 +1,5 @@
 import React from "react";
-import "./../index.css";
+import "./../../index.css";
 
 const Contact = () => {
   return (
@@ -9,9 +9,7 @@ const Contact = () => {
       name="contact"
       id="contact"
     >
-      <div className="profile-image">
-
-      </div>
+      <div className="profile-image"></div>
       <h1 className="heading">Contact</h1>
 
       <div className="cards-container">

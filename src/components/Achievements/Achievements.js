@@ -1,12 +1,12 @@
 import React from "react";
-import "./../index.css";
+import "./../../index.css";
 import { motion } from "framer-motion";
-import ciscoImage from "./../images/certificates/PCAP (Certified Associate in Python Programming).png";
-import reactBasicImage from "./../images/certificates/ReactBasic(HackerRank).png";
-import HTML5Image from "./../images/certificates/html5.png";
-import gitImage from "./../images/certificates/Git.png";
-import pythonImage from "./../images/certificates/specialization.png";
-import smitPythonImage from "./../images/certificates/SMITPython.png";
+import ciscoImage from "./../../images/certificates/PCAP (Certified Associate in Python Programming).png";
+import reactBasicImage from "./../../images/certificates/ReactBasic(HackerRank).png";
+import HTML5Image from "./../../images/certificates/html5.png";
+import gitImage from "./../../images/certificates/Git.png";
+import pythonImage from "./../../images/certificates/specialization.png";
+import smitPythonImage from "./../../images/certificates/SMITPython.png";
 
 const boxVariants = {
   hover: {

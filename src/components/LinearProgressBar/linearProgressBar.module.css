@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  margin: 1rem 0.2rem;
+}
+
+.skillbar {
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 0.2rem;
+}
+
+.skillbar .skillbarTitle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skillbar .skillbarPercent {
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skillbarBar {
+  background-color: #ffffff;
+  width: 100%;
+  height: 8px;
+  border: 1px solid rgba(39, 38, 38, 0.521);
+  border-radius: 6px;
+}
+
+.skillbarBar .skillbarChild {
+  width: 0;
+  height: 100%;
+  background-color: #ff5454;
+  -webkit-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}

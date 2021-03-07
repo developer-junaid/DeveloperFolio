@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./../index.css";
-import man from "./../images/man.svg";
+import "./../../index.css";
+import man from "./../../images/man.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 

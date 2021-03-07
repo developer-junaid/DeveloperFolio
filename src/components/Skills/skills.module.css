@@ -1,0 +1,13 @@
+.techs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  box-shadow: 3px 2px 10px gray;
+  min-height: 12rem;
+  border-radius: 20px;
+  padding: 3rem;
+  flex-wrap: wrap;
+  margin: 2rem;
+  border: 1px solid gray;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./../index.css";
+import "./../../index.css";
 import { motion } from "framer-motion";
 import { animateScroll as scroll, Link } from "react-scroll";
 
@@ -42,7 +42,7 @@ const Nav = () => {
         <i className={navClicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       {/* // */}
-      <ul className={ navClicked ? "nav-links active" : "nav-links" }>
+      <ul className={navClicked ? "nav-links active" : "nav-links"}>
         <li className="link">
           <Link
             className={navbar ? "anchor is-active" : "anchor"}

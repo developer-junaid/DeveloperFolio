@@ -1,6 +1,6 @@
 import React from "react";
-import LinearProgressBar from "../LinearProgressBar/LinearProgressBar";
 import classes from "./skills.module.css";
+import LinearProgress from "@bit/developer-junaid.collection.linear-progress";
 
 const Skills = () => {
   return (
@@ -13,23 +13,28 @@ const Skills = () => {
       <h1 className="heading">What I Am Good At &nbsp;&nbsp;?</h1>
 
       <div className={classes.techs}>
-        <LinearProgressBar label="HTML" value={100} />
-        <LinearProgressBar label="Front End Devlopment" value={95} />
-        <LinearProgressBar label="CSS" value={95} />
-        <LinearProgressBar label="Javascript" value={95} />
-        <LinearProgressBar label="ReactJs" value={95} />
-        <LinearProgressBar label="Typescript" value={90} />
-        <LinearProgressBar label="Full Stack Devlopment" value={85} />
-        <LinearProgressBar label="Sass" value={85} />
-        <LinearProgressBar label="Bootstrap" value={85} />
-        <LinearProgressBar label="Material UI" value={85} />
-        <LinearProgressBar label="Python" value={85} />
-        <LinearProgressBar label="GraphQl and Rest" value={75} />
-        <LinearProgressBar label="Firebase" value={70} />
-        <LinearProgressBar
-          label="ML Libraries(Numpy, Pandas, Tensorflow)"
-          value={50}
+        <LinearProgress label="HTML" value={100} color={"green"} />
+        <LinearProgress
+          label="Front End Devlopment"
+          value={95}
+          color={"green"}
         />
+        <LinearProgress label="CSS" value={95} color={"green"} />
+        <LinearProgress label="Javascript" value={95} color={"green"} />
+        <LinearProgress label="ReactJs" value={95} color={"green"} />
+        <LinearProgress label="Typescript" value={90} color={"green"} />
+        <LinearProgress
+          label="Full Stack Devlopment"
+          value={85}
+          color={"green"}
+        />
+        <LinearProgress label="Sass" value={85} color={"green"} />
+        <LinearProgress label="Bootstrap" value={85} color={"green"} />
+        <LinearProgress label="Material UI" value={85} color={"green"} />
+        <LinearProgress label="Python" value={85} color={"green"} />
+        <LinearProgress label="GraphQl and Rest" value={75} color={"green"} />
+        <LinearProgress label="Firebase" value={70} color={"green"} />
+        <LinearProgress label="ML Libraries" value={50} color={"green"} />
       </div>
     </section>
   );

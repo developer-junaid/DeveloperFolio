@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bit/developer-junaid.collection.linear-progress": "0.0.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -14,7 +15,6 @@
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1"
   },
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -270,7 +270,7 @@ body {
 
 /* Images Proportion (877 * 679)*/
 #coronaTracker {
-  background-image: url("./images/projects/covid.png");
+  background-image: url("./images/projects/corona.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -281,32 +281,25 @@ body {
   background-repeat: no-repeat;
 }
 
-#quizApp {
-  background-image: url("./images/projects/quiz.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#expenseTracker {
-  background-image: url("./images/projects/expense.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#matiari {
-  background-image: url("./images/projects/matiari.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#spacexWebsite {
-  background-image: url("./images/projects/spacex.png");
+#todoList{
+  background-image: url("./images/projects/todo.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #diariesApp {
   background-image: url("./images/projects/diaries.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#devFolio {
+  background-image: url("./images/projects/devFolio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#uberEats {
+  background-image: url("./images/projects/uberEats.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

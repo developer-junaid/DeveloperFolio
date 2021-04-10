@@ -281,8 +281,14 @@ body {
   background-repeat: no-repeat;
 }
 
-#todoList{
+#todoList {
   background-image: url("./images/projects/todo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gatsbyBlog {
+  background-image: url("./images/projects/gatsbyBlog.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

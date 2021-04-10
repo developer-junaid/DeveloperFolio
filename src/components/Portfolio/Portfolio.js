@@ -21,7 +21,7 @@ const Portfolio = () => {
     >
       <h1 className="heading">Projects I have Built</h1>
       <div className="projects-container">
-        {/* Project 7 - Diaries Manager App */}
+        {/* Project - Diaries Manager App */}
         <motion.div
           variants={boxVariants}
           whileHover="hover"
@@ -65,7 +65,7 @@ const Portfolio = () => {
         </motion.div>
         {/* // */}
 
-        {/* Project 2 - Shoe Store */}
+        {/* Project - Shoe Store */}
         <motion.div
           variants={boxVariants}
           whileHover="hover"
@@ -109,7 +109,7 @@ const Portfolio = () => {
           </div>
         </motion.div>
         {/* // */}
-        {/* Project 1 - Todo List */}
+        {/* Project - Todo List */}
         <motion.div
           className="projects"
           variants={boxVariants}
@@ -154,7 +154,52 @@ const Portfolio = () => {
           </div>
         </motion.div>
         {/* // */}
-        {/* Project 1 - Uber Eats Landing */}
+        {/* Project - Blog Site */}
+        <motion.div
+          className="projects"
+          variants={boxVariants}
+          whileHover="hover"
+        >
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://techberg-blog.netlify.app/"
+          >
+            <div className="project-images" id="gatsbyBlog"></div>
+          </a>
+
+          <div className="project-links">
+            <div className="text">
+              <h3>Blog Site (GatsbyJs)</h3>
+            </div>
+            <div className="icons">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://github.com/developer-junaid/Blog-Site"
+              >
+                <i
+                  className="fab fa-github"
+                  title="github repo"
+                  id="github"
+                ></i>
+              </a>
+              <a
+                rel="noopener noreferrer"
+                href="https://techberg-blog.netlify.app/"
+                target="_blank"
+              >
+                <i
+                  className="fas fa-external-link-alt"
+                  title="live preview"
+                  id="live"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </motion.div>
+        {/* // */}
+        {/* Project - Uber Eats Landing */}
         <motion.div
           className="projects"
           variants={boxVariants}
@@ -200,7 +245,7 @@ const Portfolio = () => {
         </motion.div>
         {/* // */}
 
-        {/* Project 1 - Corona Tracker */}
+        {/* Project - Corona Tracker */}
         <motion.div
           className="projects"
           variants={boxVariants}
@@ -245,7 +290,7 @@ const Portfolio = () => {
           </div>
         </motion.div>
         {/* // */}
-        {/* Project 1 - Developerfolio */}
+        {/* Project - Developerfolio */}
         <motion.div
           className="projects"
           variants={boxVariants}

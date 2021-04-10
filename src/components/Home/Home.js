@@ -98,7 +98,7 @@ const Home = () => {
                 animate="animate"
                 initial="initial"
               >
-                Web UI/UX Developer | React Developer
+                Full Stack Web Developer
               </motion.h2>
             )}
           </AnimatePresence>
@@ -112,7 +112,7 @@ const Home = () => {
                 animate="animate"
                 initial="initial"
               >
-                Open Source Contributor | AI Enthusiast
+                GatsbyJs / ReactJs Developer
               </motion.h2>
             )}
           </AnimatePresence>

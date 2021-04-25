@@ -4,7 +4,6 @@ import Nav from "../components/Nav/Nav";
 import Home from "../components/Home/Home";
 import Skills from "../components/Skills/Skills";
 import Portfolio from "../components/Portfolio/Portfolio";
-import Achievements from "../components/Achievements/Achievements";
 import Contact from "../components/Contact/Contact";
 import Services from "../components/Services/Services";
 import Footer from "../components/Footer/Footer";
@@ -23,7 +22,6 @@ function Main() {
       <Services />
       <Skills />
       <Portfolio />
-      <Achievements />
       <Contact />
       <Footer />
     </div>

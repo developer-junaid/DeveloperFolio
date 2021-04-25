@@ -6,13 +6,14 @@ import { animateScroll as scroll, Link } from "react-scroll";
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
   const [navClicked, setNavClicked] = useState(false);
+  let offset = 0;
 
   const handleClick = () => {
     setNavClicked(!navClicked);
   };
 
   const changeNav = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 950) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -23,6 +24,7 @@ const Nav = () => {
 
   return (
     <motion.div
+      id="navbar"
       className={navbar ? "nav-container active" : "nav-container"}
       initial={{
         opacity: 0,
@@ -42,16 +44,17 @@ const Nav = () => {
         <i className={navClicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       {/* // */}
-      <ul className={navClicked ? "nav-links active" : "nav-links"}>
+      <ul className="nav-links">
         <li className="link">
           <Link
-            className={navbar ? "anchor is-active" : "anchor"}
+            className={navbar ? "anchor scrolled" : "anchor"}
             activeClass="active"
             to="home"
             spy={true}
+            hashSpy={true}
             smooth={true}
             delay={100}
-            offset={0}
+            offset={offset}
             duration={500}
           >
             Home
@@ -60,13 +63,14 @@ const Nav = () => {
 
         <li className="link">
           <Link
-            className="anchor"
+            className={navbar ? "anchor scrolled" : "anchor"}
             activeClass="active"
             to="services"
+            hashSpy={true}
             spy={true}
             smooth={true}
             delay={100}
-            offset={0}
+            offset={offset}
             duration={500}
           >
             Services
@@ -75,13 +79,14 @@ const Nav = () => {
 
         <li className="link">
           <Link
-            className="anchor"
+            className={navbar ? "anchor scrolled" : "anchor"}
             activeClass="active"
             to="skills"
             spy={true}
+            hashSpy={true}
             smooth={true}
             delay={100}
-            offset={0}
+            offset={offset}
             duration={500}
           >
             Skills
@@ -90,13 +95,14 @@ const Nav = () => {
 
         <li className="link">
           <Link
-            className="anchor"
+            className={navbar ? "anchor scrolled" : "anchor"}
             activeClass="active"
             to="portfolio"
             delay={100}
             spy={true}
             smooth={true}
-            offset={0}
+            offset={offset}
+            hashSpy={true}
             duration={500}
           >
             Portfolio
@@ -105,28 +111,14 @@ const Nav = () => {
 
         <li className="link">
           <Link
-            className="anchor"
-            activeClass="active"
-            to="achievements"
-            delay={100}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Achievements
-          </Link>
-        </li>
-
-        <li className="link">
-          <Link
-            className="anchor"
+            className={navbar ? "anchor scrolled" : "anchor"}
             activeClass="active"
             to="contact"
             delay={100}
+            hashSpy={true}
             spy={true}
             smooth={true}
-            offset={0}
+            offset={offset}
             duration={500}
           >
             Contact

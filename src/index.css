@@ -166,6 +166,7 @@ body {
   font-size: 1.3rem;
   padding: 2rem;
 }
+
 .services-container {
   margin-top: 8rem;
 }
@@ -193,12 +194,14 @@ body {
   box-shadow: 3px 2px 10px gray;
   height: 9rem;
   border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
   padding: 3rem;
   text-align: center;
 }
 
 .services:hover {
-  border: 1px solid gray;
+  border-color: gray;
 }
 
 .services img {
@@ -268,6 +271,7 @@ body {
   box-shadow: 3px 2px 10px gray;
   cursor: pointer;
   border-radius: 10px;
+  transition: all 0.2s ease;
 }
 
 .project-images {
@@ -398,7 +402,7 @@ body {
   margin: 1rem;
   box-shadow: 6px 6px 10px gray;
   width: 170px;
-  border: 1px solid black;
+  border-color: black;
   border-radius: 50%;
   background-image: url("./images/junaid.png");
   background-size: cover;
@@ -424,14 +428,9 @@ body {
   border-radius: 20px;
   flex-direction: column;
   width: 16rem;
-  /* background: #e7dddd5c; */
   height: 9rem;
   margin: 1rem;
   padding: 1.3rem 0;
-}
-
-.cards:hover {
-  border: 1px solid gray;
 }
 
 .contact-icons {
@@ -478,7 +477,7 @@ body {
   font-size: 1.3rem;
   position: relative;
   text-align: center;
-
+  transition: all 0.3s ease;
   padding: 0.1rem;
 
   user-select: none;
@@ -489,9 +488,7 @@ body {
 }
 
 .contact-links i:hover {
-  box-shadow: 2px 2px 4px gray;
-
-  border-radius: 20%;
+  transform: scale(1.09);
 }
 
 .contact-links #github {
@@ -548,12 +545,10 @@ body {
   display: flex;
   color: black;
   font-size: 0.8rem;
-  /* background: rgb(58, 55, 55); */
   padding: 2rem;
   align-items: center;
   justify-content: space-evenly;
   font-family: "Varela Round", sans-serif;
-
   width: 100%;
   height: 8vh;
 }
@@ -566,10 +561,12 @@ body {
   font-size: 1.3rem;
   color: #6507a8;
   text-shadow: 1px 1px 1px black;
+  transition: all 0.3s ease;
 }
 
 .footer-container a:hover {
-  color: #5bbd22c5;
+  color: #060c02c5;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* General */

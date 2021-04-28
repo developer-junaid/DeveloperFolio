@@ -3,12 +3,7 @@ import "./../../index.css";
 
 const Contact = () => {
   return (
-    <section
-      data-aos="zoom-in"
-      className="contact-container"
-      name="contact"
-      id="contact"
-    >
+    <section className="contact-container" name="contact" id="contact">
       <div className="profile-image"></div>
       <h1 className="heading">Contact</h1>
 

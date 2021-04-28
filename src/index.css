@@ -6,8 +6,12 @@
 
 body {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
+  background: radial-gradient(at top left, rgb(0, 0, 0) 0%, #0a020ac0 100%);
+  background-repeat: no-repeat;
   height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -16,31 +20,37 @@ body {
 }
 
 /* Nav */
-.nav-container {
+
+.nav-wrapper {
+  width: 100%;
+  height: 9vh;
+  /* background: rgb(255, 255, 255); */
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: 1;
+}
+.nav-wrapper.active {
+  background: rgb(255, 255, 255);
+}
+
+.nav-container {
   z-index: 1;
   display: flex;
-  background: #fff;
   flex-direction: row;
   padding: 1.2rem;
   align-items: center;
-  box-shadow: 2px 2px 4px gray;
   justify-content: space-between;
   width: 100%;
   height: 9vh;
-}
-
-.nav-container.active {
-  background: fff;
-  height: 9vh;
-  border-radius: 2px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .logo {
   font-family: "Acme", sans-serif;
   font-size: 1.8rem;
-  color: #55198b;
+  color: #6c1eaf;
   cursor: pointer;
 }
 
@@ -51,25 +61,35 @@ body {
 
 .nav-links .anchor {
   display: inline-block;
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
   font-family: "Varela Round", sans-serif;
-
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 9.1vh;
+  font-size: 1.1rem;
+  letter-spacing: 0.7px;
+  font-weight: 550;
+  line-height: 2rem;
+  border-bottom: 3px solid transparent;
+  border-radius: 2px;
+  transition: all 0.3s ease;
   margin: 0.8rem;
 }
 
 .nav-links .anchor:hover {
-  color: #55198b;
+  border-color: #55198b;
+}
+
+.nav-links .scrolled {
+  color: black;
+}
+
+.nav-links.active .anchor {
+  color: black;
 }
 
 .anchor.active {
-  color: #55198b;
-  font-weight: 800;
-  border-bottom: 2px solid #55198b;
+  font-weight: 570;
+  border-color: #55198b;
 }
 
 .menu-icon {
@@ -82,7 +102,6 @@ body {
   display: flex;
   color: white;
   flex-direction: row;
-  background-color: rgb(29, 27, 27);
   height: 100%;
   padding: 1rem;
   align-items: center;
@@ -101,7 +120,7 @@ body {
 }
 
 .main-content {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .skill-content {
@@ -110,7 +129,7 @@ body {
   font-family: "Varela Round", sans-serif;
 
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .skill-animation {
@@ -156,9 +175,10 @@ body {
   font-size: 1.3rem;
   padding: 2rem;
 }
-.services-container {
+
+/* .services-container {
   margin-top: 8rem;
-}
+} */
 
 .services-wrapper {
   align-items: center;
@@ -183,12 +203,14 @@ body {
   box-shadow: 3px 2px 10px gray;
   height: 9rem;
   border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
   padding: 3rem;
   text-align: center;
 }
 
 .services:hover {
-  border: 1px solid gray;
+  border-color: gray;
 }
 
 .services img {
@@ -258,6 +280,7 @@ body {
   box-shadow: 3px 2px 10px gray;
   cursor: pointer;
   border-radius: 10px;
+  transition: all 0.2s ease;
 }
 
 .project-images {
@@ -370,57 +393,6 @@ body {
   transition: all 0.2s ease-in 0s;
 }
 
-/* Achievements */
-.achievements-container {
-  font-family: "Exo 2", sans-serif;
-  display: flex;
-  color: rgb(0, 0, 0);
-  font-size: 1.3rem;
-  flex-direction: column;
-  padding: 2rem;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  min-height: 100vh;
-}
-
-/* Images Proportion (877 * 679) */
-#reactBasic {
-  background-image: url("./images/certificates/ReactBasic\(HackerRank\).png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#html5 {
-  background-image: url("./images/certificates/html5.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#git {
-  background-image: url("./images/certificates/Git.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#ciscoPython {
-  background-image: url("./images/certificates/PCAP\ \(Certified\ Associate\ in\ Python\ Programming\).png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#specPython {
-  background-image: url("./images/certificates/specialization.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#smitPython {
-  background-image: url("./images/certificates/SMITPython.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 /* Contact */
 .contact-container {
   font-family: "Exo 2", sans-serif;
@@ -439,7 +411,7 @@ body {
   margin: 1rem;
   box-shadow: 6px 6px 10px gray;
   width: 170px;
-  border: 1px solid black;
+  border-color: black;
   border-radius: 50%;
   background-image: url("./images/junaid.png");
   background-size: cover;
@@ -465,14 +437,9 @@ body {
   border-radius: 20px;
   flex-direction: column;
   width: 16rem;
-  /* background: #e7dddd5c; */
   height: 9rem;
   margin: 1rem;
   padding: 1.3rem 0;
-}
-
-.cards:hover {
-  border: 1px solid gray;
 }
 
 .contact-icons {
@@ -519,7 +486,7 @@ body {
   font-size: 1.3rem;
   position: relative;
   text-align: center;
-
+  transition: all 0.3s ease;
   padding: 0.1rem;
 
   user-select: none;
@@ -530,9 +497,7 @@ body {
 }
 
 .contact-links i:hover {
-  box-shadow: 2px 2px 4px gray;
-
-  border-radius: 20%;
+  transform: scale(1.09);
 }
 
 .contact-links #github {
@@ -586,15 +551,13 @@ body {
 
 /* Footer */
 .footer-container {
-  font-family: "Exo 2", sans-serif;
   display: flex;
   color: black;
-  font-size: 0.7rem;
-  /* background: rgb(58, 55, 55); */
+  font-size: 0.8rem;
   padding: 2rem;
-  border-top: 2px solid black;
   align-items: center;
   justify-content: space-evenly;
+  font-family: "Varela Round", sans-serif;
   width: 100%;
   height: 8vh;
 }
@@ -602,13 +565,17 @@ body {
 .footer-container a {
   text-decoration: none;
   font-family: "Varela Round", sans-serif;
-
-  color: #9300ff;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+  color: #6507a8;
   text-shadow: 1px 1px 1px black;
+  transition: all 0.3s ease;
 }
 
 .footer-container a:hover {
-  color: #5bbd22c5;
+  color: #060c02c5;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* General */
@@ -681,12 +648,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 500px;
+    min-height: 350px;
     position: absolute;
     top: 9vh;
     text-align: center;
     align-items: center;
-    left: -100%;
+    left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
   }
@@ -705,24 +672,6 @@ body {
     margin: 0 1rem;
     font-size: 1.8rem;
     cursor: pointer;
-  }
-
-  .nav-links .anchor {
-    display: block;
-    line-height: 9.1vh;
-    width: 100vw;
-    margin: 0.4rem;
-  }
-
-  .anchor.active {
-    color: white;
-    font-weight: 800;
-    border: none;
-    background: rgba(0, 0, 0, 0.534);
-  }
-
-  .nav-links.active .anchor:hover {
-    color: black;
   }
 }
 

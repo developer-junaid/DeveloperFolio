@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const boxVariants = {
   hover: {
-    scale: 1.06,
+    scale: 1.02,
     transition: {
       type: "spring",
     },

@@ -4,7 +4,7 @@
 
 ### Demo Video
 
-:link: https://youtu.be/Fpl3JJ-g7Bc
+:link: https://youtu.be/ZamUKgjzB3Q
 
 ### Link :link: https://developer-junaid.web.app/
 

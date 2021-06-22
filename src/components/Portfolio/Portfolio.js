@@ -21,6 +21,49 @@ const Portfolio = () => {
     >
       <h1 className="heading">Projects I have Built</h1>
       <div className="projects-container">
+        {/* Project - Memories Manager App */}
+        <motion.div
+          variants={boxVariants}
+          whileHover="hover"
+          className="projects"
+        >
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://memories-manager.netlify.app/"
+          >
+            <div className="project-images" id="memoriesApp"></div>
+          </a>
+          <div className="project-links">
+            <div className="text">
+              <h3>Memories App (MERN)</h3>
+            </div>
+            <div className="icons">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://github.com/developer-junaid/MERN-Memories-App"
+              >
+                <i className="fab fa-github" title="github repo" id="github">
+                  {" "}
+                </i>
+              </a>
+              <a
+                rel="noopener noreferrer"
+                href="https://memories-manager.netlify.app/"
+                target="_blank"
+              >
+                {" "}
+                <i
+                  className="fas fa-external-link-alt"
+                  title="live preview"
+                  id="live"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </motion.div>
+        {/* // */}
         {/* Project - Diaries Manager App */}
         <motion.div
           variants={boxVariants}
@@ -109,51 +152,7 @@ const Portfolio = () => {
           </div>
         </motion.div>
         {/* // */}
-        {/* Project - Todo List */}
-        <motion.div
-          className="projects"
-          variants={boxVariants}
-          whileHover="hover"
-        >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://todo-taskbox.web.app/"
-          >
-            <div className="project-images" id="todoList"></div>
-          </a>
 
-          <div className="project-links">
-            <div className="text">
-              <h3>Todo List App</h3>
-            </div>
-            <div className="icons">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://github.com/developer-junaid/Todo-List"
-              >
-                <i
-                  className="fab fa-github"
-                  title="github repo"
-                  id="github"
-                ></i>
-              </a>
-              <a
-                rel="noopener noreferrer"
-                href="https://todo-taskbox.web.app/"
-                target="_blank"
-              >
-                <i
-                  className="fas fa-external-link-alt"
-                  title="live preview"
-                  id="live"
-                ></i>
-              </a>
-            </div>
-          </div>
-        </motion.div>
-        {/* // */}
         {/* Project - Blog Site */}
         <motion.div
           className="projects"
@@ -199,97 +198,7 @@ const Portfolio = () => {
           </div>
         </motion.div>
         {/* // */}
-        {/* Project - Uber Eats Landing */}
-        <motion.div
-          className="projects"
-          variants={boxVariants}
-          whileHover="hover"
-        >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://uber-eats-landing-page.netlify.app/"
-          >
-            <div className="project-images" id="uberEats"></div>
-          </a>
 
-          <div className="project-links">
-            <div className="text">
-              <h3>Uber Eats (Landing Page)</h3>
-            </div>
-            <div className="icons">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://github.com/developer-junaid/Uber-Eats-Clone"
-              >
-                <i
-                  className="fab fa-github"
-                  title="github repo"
-                  id="github"
-                ></i>
-              </a>
-              <a
-                rel="noopener noreferrer"
-                href="https://uber-eats-landing-page.netlify.app/"
-                target="_blank"
-              >
-                <i
-                  className="fas fa-external-link-alt"
-                  title="live preview"
-                  id="live"
-                ></i>
-              </a>
-            </div>
-          </div>
-        </motion.div>
-        {/* // */}
-
-        {/* Project - Corona Tracker */}
-        <motion.div
-          className="projects"
-          variants={boxVariants}
-          whileHover="hover"
-        >
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://online-corona-tracker.web.app/"
-          >
-            <div className="project-images" id="coronaTracker"></div>
-          </a>
-
-          <div className="project-links">
-            <div className="text">
-              <h3>Corona Virus Tracker</h3>
-            </div>
-            <div className="icons">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://github.com/developer-junaid/Corona-Virus-Tracker"
-              >
-                <i
-                  className="fab fa-github"
-                  title="github repo"
-                  id="github"
-                ></i>
-              </a>
-              <a
-                rel="noopener noreferrer"
-                href="https://online-corona-tracker.web.app/"
-                target="_blank"
-              >
-                <i
-                  className="fas fa-external-link-alt"
-                  title="live preview"
-                  id="live"
-                ></i>
-              </a>
-            </div>
-          </div>
-        </motion.div>
-        {/* // */}
         {/* Project - Developerfolio */}
         <motion.div
           className="projects"

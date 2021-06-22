@@ -331,6 +331,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#memoriesApp {
+  background-image: url("./images/projects/memories.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 #devFolio {
   background-image: url("./images/projects/devFolio.png");

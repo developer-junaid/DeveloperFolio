@@ -1,5 +1,6 @@
 .techs {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   width: 70%;
@@ -11,21 +12,19 @@
   margin: 2rem;
   border: 1px solid gray;
   font-size: 1.2rem;
-   font-weight: 600
+  font-weight: 600;
 }
 
 @media screen and (max-width: 900px) {
-  .techs{
+  .techs {
     width: 90%;
     padding: 2rem;
     font-size: 1rem;
-
-
   }
 }
 
 @media screen and (max-width: 550px) {
-  .techs{
+  .techs {
     width: 100%;
     padding: 1rem;
     margin: 0.5rem;

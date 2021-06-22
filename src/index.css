@@ -186,7 +186,7 @@ body {
   display: flex;
   width: 100%;
   margin-top: 4rem;
-  height: 30vh;
+  height: 40vh;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -195,13 +195,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 400px;
+  max-width: 500px;
   text-align: center;
   /* background: #e7dddd5c; */
   margin: 1rem;
   /* box-shadow: 0 10px 10px -14px rgba(0,0,0,.2); */
   box-shadow: 3px 2px 10px gray;
-  height: 9rem;
+  max-height: 500px;
   border-radius: 20px;
   border: 1px solid transparent;
   transition: all 0.3s ease;
@@ -214,14 +214,24 @@ body {
 }
 
 .services img {
-  height: 3.7rem;
+  height: 2.5rem;
+  width: auto;
+}
+
+.services img.left {
+  margin-left: 0.6rem;
 }
 
 .services li {
   list-style-type: none;
   font-family: "Varela Round", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.services li p {
+  display: inline-block;
+  margin-top: 0.3rem;
 }
 
 /* Skills */

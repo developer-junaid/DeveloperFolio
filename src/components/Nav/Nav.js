@@ -50,22 +50,6 @@ const Nav = () => {
             <Link
               className={navbar ? "anchor scrolled" : "anchor"}
               activeClass="active"
-              to="home"
-              spy={true}
-              hashSpy={true}
-              smooth={true}
-              delay={100}
-              offset={offset}
-              duration={500}
-            >
-              Home
-            </Link>
-          </li>
-
-          <li className="link">
-            <Link
-              className={navbar ? "anchor scrolled" : "anchor"}
-              activeClass="active"
               to="services"
               hashSpy={true}
               spy={true}
@@ -75,22 +59,6 @@ const Nav = () => {
               duration={500}
             >
               Services
-            </Link>
-          </li>
-
-          <li className="link">
-            <Link
-              className={navbar ? "anchor scrolled" : "anchor"}
-              activeClass="active"
-              to="skills"
-              spy={true}
-              hashSpy={true}
-              smooth={true}
-              delay={100}
-              offset={offset}
-              duration={500}
-            >
-              Skills
             </Link>
           </li>
 

@@ -20,7 +20,6 @@ function Main() {
       <Nav />
       <Home />
       <Services />
-      <Skills />
       <Portfolio />
       <Contact />
       <Footer />

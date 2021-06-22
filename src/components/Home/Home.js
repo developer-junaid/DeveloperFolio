@@ -48,16 +48,23 @@ const Home = () => {
   // State
   const [showHeadingOne, setShowHeadingOne] = useState(true);
   const [showHeadingTwo, setShowHeadingTwo] = useState(false);
+  const [showHeadingThree, setShowHeadingThree] = useState(false);
 
   // Timeout
   useEffect(() => {
     setTimeout(() => {
       if (showHeadingOne) {
         setShowHeadingOne(false);
+        setShowHeadingThree(false);
         setShowHeadingTwo(true);
+      } else if (showHeadingTwo) {
+        setShowHeadingOne(false);
+        setShowHeadingTwo(false);
+        setShowHeadingThree(true);
       } else {
         setShowHeadingOne(true);
         setShowHeadingTwo(false);
+        setShowHeadingThree(false);
       }
     }, 3000);
   }, [showHeadingOne, showHeadingTwo]);
@@ -112,7 +119,21 @@ const Home = () => {
                 animate="animate"
                 initial="initial"
               >
-                GatsbyJs / ReactJs Developer
+                MERN Stack / JAM Stack Developer
+              </motion.h2>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence>
+            {showHeadingThree && (
+              <motion.h2
+                className="skill-content"
+                variants={childrenVariants}
+                exit="exit"
+                animate="animate"
+                initial="initial"
+              >
+                ReactJS / GatsbyJs Developer
               </motion.h2>
             )}
           </AnimatePresence>
@@ -135,11 +156,11 @@ const Home = () => {
             Contact Me
           </button>
           <a
-            href="https://drive.google.com/file/d/1OcuCy-u_jIeTwEokAnPcnu77F8mDP66V/view?usp=sharing"
+            href="https://github.com/developer-junaid"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="button">Resume</button>
+            <button className="button">GitHub</button>
           </a>
         </div>
       </motion.div>

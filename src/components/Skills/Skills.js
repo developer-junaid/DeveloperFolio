@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./skills.module.css";
-import LinearProgress from "@bit/developer-junaid.collection.linear-progress";
 
 const Skills = () => {
   return (
@@ -12,7 +11,7 @@ const Skills = () => {
     >
       <h1 className="heading">What I Am Good At &nbsp;&nbsp;?</h1>
 
-      <div className={classes.techs}>
+      {/* <div className={classes.techs}>
         <LinearProgress label="HTML" value={100} color={"green"} />
         <LinearProgress label="CSS" value={95} color={"green"} />
         <LinearProgress label="Sass" value={90} color={"green"} />
@@ -40,7 +39,7 @@ const Skills = () => {
         <LinearProgress label="Python" value={85} color={"green"} />
 
         <LinearProgress label="ML Libraries" value={50} color={"green"} />
-      </div>
+  </div> */}
     </section>
   );
 };

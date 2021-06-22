@@ -1,7 +1,18 @@
 import React from "react";
+
+// Styles
 import "./../../index.css";
-import uiImage from "./../../images/ui.svg";
-import webImage from "./../../images/web.svg";
+
+// Images
+import gatsbyImg from "./../../images/jamstack/gatsby.svg";
+import graphqlImg from "./../../images/jamstack/graphql.svg";
+import faunaImg from "./../../images/jamstack/fauna.png";
+import contentfulImg from "./../../images/jamstack/contentful.svg";
+
+import mongoImg from "./../../images/mern/mongo.png";
+import expressImg from "./../../images/mern/expressjs.svg";
+import reactImg from "./../../images/mern/react.svg";
+import nodeImg from "./../../images/mern/node.svg";
 
 const Services = () => {
   return (
@@ -15,14 +26,26 @@ const Services = () => {
       <div className="services-wrapper">
         <div className="services">
           <li>
-            <img src={uiImage} alt="" />
-            <p>Full Stack Web Development</p>
+            <img src={mongoImg} alt="" />
+            <img
+              style={{ height: "2.3rem", width: "auto" }}
+              src={expressImg}
+              alt=""
+              className="left"
+            />
+            <img src={reactImg} alt="" className="left" />
+            <img src={nodeImg} alt="" className="left" />
+
+            <p>MERN Stack Development</p>
           </li>
         </div>
         <div className="services">
           <li>
-            <img src={webImage} alt="" />
-            <p>ReactJs/GatsbyJs Development</p>
+            <img src={gatsbyImg} alt="" />
+            <img src={graphqlImg} alt="" className="left" />
+            <img src={contentfulImg} alt="" className="left" />
+            <img src={faunaImg} alt="" className="left" />
+            <p>JAM Stack Development</p>
           </li>
         </div>
       </div>

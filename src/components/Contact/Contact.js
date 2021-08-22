@@ -80,19 +80,6 @@ const Contact = () => {
             </a>
           </div>
         </div>
-
-        {/* Card 3 - Phone */}
-        <div className="cards">
-          <div className="contact-icons">
-            <i className="fas fa-phone"></i>
-          </div>
-          <div className="contact-text">
-            <span>Phone</span>
-          </div>
-          <div className="contact-links">
-            <span>(+92) 313 3084869 </span>
-          </div>
-        </div>
       </div>
     </section>
   );

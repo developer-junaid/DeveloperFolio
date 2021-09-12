@@ -6,7 +6,7 @@
 
 :link: https://youtu.be/ZamUKgjzB3Q
 
-### Link :link: https://developer-junaid.web.app/
+### Link :link: https://developerjunaid.com/
 
 ## Images
 

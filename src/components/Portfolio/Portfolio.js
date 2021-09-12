@@ -30,7 +30,7 @@ const Portfolio = () => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://memories-manager.netlify.app/"
+            href="https://developerjunaid.com/"
           >
             <div className="project-images" id="memoriesApp"></div>
           </a>
@@ -50,7 +50,7 @@ const Portfolio = () => {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="https://memories-manager.netlify.app/"
+                href="https://developerjunaid.com/"
                 target="_blank"
               >
                 {" "}

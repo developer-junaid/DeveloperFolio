@@ -23,31 +23,28 @@ const Services = () => {
       id="services"
     >
       <h1 className="heading">Services I Provide</h1>
-      <div className="services-wrapper">
-        <div className="services">
-          <li>
-            <img src={mongoImg} alt="" />
-            <img
-              style={{ height: "2.3rem", width: "auto" }}
-              src={expressImg}
-              alt=""
-              className="left"
-            />
-            <img src={reactImg} alt="" className="left" />
-            <img src={nodeImg} alt="" className="left" />
+      <div className="services">
+        <div className="service-images">
+          <img src={mongoImg} alt="" />
+          <img
+            style={{ height: "2.3rem", width: "auto" }}
+            src={expressImg}
+            alt=""
+          />
+          <img src={reactImg} alt="" />
+          <img src={nodeImg} alt="" />
+        </div>
 
-            <p>MERN Stack Development</p>
-          </li>
+        <p>MERN Stack Development</p>
+      </div>
+      <div className="services">
+        <div className="service-images">
+          <img src={gatsbyImg} alt="" />
+          <img src={graphqlImg} alt="" />
+          <img src={contentfulImg} alt="" />
+          <img src={faunaImg} alt="" />
         </div>
-        <div className="services">
-          <li>
-            <img src={gatsbyImg} alt="" />
-            <img src={graphqlImg} alt="" className="left" />
-            <img src={contentfulImg} alt="" className="left" />
-            <img src={faunaImg} alt="" className="left" />
-            <p>JAM Stack Development</p>
-          </li>
-        </div>
+        <p>JAM Stack Development</p>
       </div>
     </section>
   );

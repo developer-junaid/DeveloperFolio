@@ -41,7 +41,10 @@ const Nav = () => {
           &lt; Dev-Junaid /&gt;
         </span>
         {/* Mobile Menu Icon */}
-        <div className="menu-icon" onClick={handleClick}>
+        <div
+          className={navbar ? "menu-icon" : "menu-icon white"}
+          onClick={handleClick}
+        >
           <i className={navClicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
         {/* // */}

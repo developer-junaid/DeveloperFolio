@@ -401,7 +401,7 @@ body {
   flex-direction: column;
   padding: 2rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
 }
@@ -424,7 +424,6 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
 }
 
 .cards {

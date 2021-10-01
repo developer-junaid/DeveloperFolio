@@ -24,7 +24,7 @@
 }
 
 .services-card h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 0.2rem;
   font-weight: 700;
 }
@@ -38,12 +38,12 @@
 
 .services-card .tags span {
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #31353b;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
   background-color: #d6dce2;
   font-weight: 800;
   letter-spacing: 0.7px;

@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
-import "./../../index.css";
-import man from "./../../images/man.svg";
+import man from "images/man.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 
 const contentVariants = {
   initial: {
-    translateY: "100vh",
+    translateX: "-100vw",
     opacity: 0,
   },
 
   animate: {
-    translateY: "0vh",
+    translateX: "0vw",
     opacity: 1,
     transition: {
       duration: 2,

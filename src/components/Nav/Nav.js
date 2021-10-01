@@ -1,32 +1,18 @@
-import React, { useState } from "react";
-import "./../../index.css";
+import React from "react";
 import { motion } from "framer-motion";
-import { animateScroll as scroll, Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
+import "./nav.css";
 
-const Nav = () => {
-  const [navbar, setNavbar] = useState(false);
-  const [navClicked, setNavClicked] = useState(false);
-  let offset = -70;
-
+const Nav = ({ menuOpen, setMenuOpen }) => {
   const handleClick = () => {
-    setNavClicked(!navClicked);
+    setMenuOpen(!menuOpen);
   };
-
-  const changeNav = () => {
-    if (window.scrollY >= 50) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeNav);
 
   return (
-    <div className={navbar ? "nav-wrapper active" : "nav-wrapper"}>
+    <div className={"nav-wrapper " + (menuOpen && "menuActive")}>
       <motion.div
         id="navbar"
-        className={navbar ? "nav-container active" : "nav-container"}
+        className={"nav-container"}
         initial={{
           opacity: 0,
         }}
@@ -37,21 +23,28 @@ const Nav = () => {
           duration: 1.5,
         }}
       >
-        <span className="logo" onClick={() => scroll.scrollToTop()}>
+        <span
+          className={"logo " + (menuOpen && "menuActive")}
+          onClick={() => scroll.scrollToTop()}
+        >
           &lt; Dev-Junaid /&gt;
         </span>
-        {/* Mobile Menu Icon */}
+
+        {/* Mobile Menu */}
         <div
-          className={navbar ? "menu-icon" : "menu-icon white"}
+          className={"menu-icon " + (menuOpen && "menuActive")}
           onClick={handleClick}
         >
-          <i className={navClicked ? "fas fa-times" : "fas fa-bars"}></i>
+          {/* <i className={menuOpen ? "fas fa-times" : "fas fa-bars"}></i> */}
+          <span className={"line1 " + (menuOpen && "menuActive")}></span>
+          <span className={"line2 " + (menuOpen && "menuActive")}></span>
+          <span className={"line3 " + (menuOpen && "menuActive")}></span>
         </div>
-        {/* // */}
-        <ul className={navClicked ? "nav-links active" : "nav-links"}>
+
+        {/* <ul className={menuOpen ? "nav-links active" : "nav-links"}>
           <li className="link">
             <Link
-              className={navbar ? "anchor scrolled" : "anchor"}
+              className={"anchor"}
               activeClass="active"
               to="services"
               hashSpy={true}
@@ -64,10 +57,24 @@ const Nav = () => {
               Services
             </Link>
           </li>
-
           <li className="link">
             <Link
-              className={navbar ? "anchor scrolled" : "anchor"}
+              className={"anchor"}
+              activeClass="active"
+              to="portfolio"
+              delay={100}
+              spy={true}
+              smooth={true}
+              offset={offset}
+              hashSpy={true}
+              duration={500}
+            >
+              Portfolio
+            </Link>
+          </li> */}
+        {/* <li className="link">
+            <Link
+              className={navbarActive ? "anchor scrolled" : "anchor"}
               activeClass="active"
               to="portfolio"
               delay={100}
@@ -83,7 +90,7 @@ const Nav = () => {
 
           <li className="link">
             <Link
-              className={navbar ? "anchor scrolled" : "anchor"}
+              className={navbarActive ? "anchor scrolled" : "anchor"}
               activeClass="active"
               to="contact"
               delay={100}
@@ -95,8 +102,8 @@ const Nav = () => {
             >
               Contact
             </Link>
-          </li>
-        </ul>
+          </li> */}
+        {/* </ul> */}
       </motion.div>
     </div>
   );

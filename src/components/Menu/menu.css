@@ -1,0 +1,43 @@
+.menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2;
+  background-color: #55198b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 2.3rem;
+  font-size: 300;
+  color: white;
+  width: 60%;
+}
+
+.menu li {
+  margin-bottom: 25px;
+}
+
+.menu li:hover {
+  font-weight: 600;
+}
+
+.menu .anchor {
+  text-decoration: none;
+  font-size: inherit;
+  color: white;
+  cursor: pointer;
+}

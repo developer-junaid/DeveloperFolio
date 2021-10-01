@@ -12,6 +12,7 @@ body {
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
+  font-family: "Nunito", sans-serif;
 }
 
 .main-container {
@@ -51,7 +52,7 @@ body {
 }
 
 .logo {
-  font-family: "Acme", sans-serif;
+  font-family: "Acme", sans-serif !important;
   font-size: 1.8rem;
   color: #6c1eaf;
   cursor: pointer;
@@ -67,7 +68,6 @@ body {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  font-family: "Varela Round", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.7px;
   font-weight: 550;
@@ -101,7 +101,6 @@ body {
 
 /* Home */
 .home-container {
-  font-family: "Varela Round", sans-serif;
   display: flex;
   color: white;
   flex-direction: row;
@@ -129,8 +128,6 @@ body {
 .skill-content {
   margin: 0.6rem 0;
   color: #9c72be;
-  font-family: "Varela Round", sans-serif;
-
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -164,64 +161,9 @@ body {
   height: 75%;
 }
 
-/* Services */
-
-.services-container {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  flex-direction: column;
-  font-family: "Exo 2", sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 1.3rem;
-  padding: 2rem;
-}
-
-.services {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  width: 100%;
-  margin: 1rem;
-  box-shadow: 3px 2px 10px gray;
-  max-height: 500px;
-  border-radius: 20px;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.services p {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-.service-images {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.service-images img {
-  width: 60px;
-  height: 60px;
-}
-
-.services:hover {
-  border-color: gray;
-}
-
 /* Skills */
 
 .skills-container {
-  font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
@@ -239,7 +181,6 @@ body {
 
 /* Portfolio */
 .portfolio-container {
-  font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
@@ -345,7 +286,6 @@ body {
   width: 100%;
   height: 50%;
   color: black;
-  font-family: "Varela Round", sans-serif;
   font-size: 0.8rem;
   display: flex;
   align-items: center;
@@ -394,7 +334,6 @@ body {
 
 /* Contact */
 .contact-container {
-  font-family: "Exo 2", sans-serif;
   display: flex;
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
@@ -453,8 +392,7 @@ body {
   display: flex;
   margin-top: 0.7rem;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+
   height: 33.33%;
   font-size: 1rem;
   align-items: center;
@@ -465,8 +403,6 @@ body {
   margin-top: 0.7rem;
   display: flex;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
   width: 90%;
   height: 33.33%;
   align-items: center;
@@ -555,14 +491,12 @@ body {
   padding: 2rem;
   align-items: center;
   justify-content: space-evenly;
-  font-family: "Varela Round", sans-serif;
   width: 100%;
   height: 8vh;
 }
 
 .footer-container a {
   text-decoration: none;
-  font-family: "Varela Round", sans-serif;
   font-weight: 200;
   letter-spacing: 0.5px;
   font-size: 1.3rem;
@@ -617,8 +551,9 @@ body {
 
 .heading {
   margin: 2rem 0;
-  font-family: "Varela Round", sans-serif;
   color: black;
+  font-weight: 500;
+  font-size: 2.4rem;
 }
 
 /* Media Queries */
@@ -632,22 +567,11 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   .svg-container {
-    max-height: 500px;
-    width: 90%;
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .svg {
-    width: 90%;
-    height: auto;
-    max-width: 500px;
+    display: none;
   }
 }
 
@@ -758,9 +682,6 @@ body {
 /* 395*/
 
 @media screen and (max-width: 395px) {
-  .heading {
-    font-size: 1.2rem;
-  }
   .button {
     font-size: 0.8rem;
   }

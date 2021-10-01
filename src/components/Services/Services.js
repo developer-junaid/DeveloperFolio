@@ -1,7 +1,7 @@
 import React from "react";
 
 // Styles
-import "./../../index.css";
+import "./services.css";
 
 // Images
 import gatsbyImg from "./../../images/jamstack/gatsby.svg";
@@ -14,37 +14,46 @@ import expressImg from "./../../images/mern/expressjs.svg";
 import reactImg from "./../../images/mern/react.svg";
 import nodeImg from "./../../images/mern/node.svg";
 
+// Card
+import { ServicesCard } from "../../SubComponents/ServicesCard/ServicesCard";
+
 const Services = () => {
   return (
     <section
-      data-aos="zoom-in"
+      // data-aos="zoom-in"
       className="services-container"
       name="services"
       id="services"
     >
-      <h1 className="heading">Services I Provide</h1>
-      <div className="services">
-        <div className="service-images">
-          <img src={mongoImg} alt="" />
-          <img
-            style={{ height: "2.3rem", width: "auto" }}
-            src={expressImg}
-            alt=""
-          />
-          <img src={reactImg} alt="" />
-          <img src={nodeImg} alt="" />
-        </div>
-
-        <p>MERN Stack Development</p>
-      </div>
-      <div className="services">
-        <div className="service-images">
-          <img src={gatsbyImg} alt="" />
-          <img src={graphqlImg} alt="" />
-          <img src={contentfulImg} alt="" />
-          <img src={faunaImg} alt="" />
-        </div>
-        <p>JAM Stack Development</p>
+      <h1 className="heading">Services</h1>
+      <div className="services-cards">
+        <ServicesCard
+          image={reactImg}
+          title="Frontend Development"
+          tags={["ReactJs", "NextJs", "GatsbyJs", "Tailwindcss", "Bootstrap"]}
+        />
+        <ServicesCard
+          image={nodeImg}
+          title="Backend Development"
+          tags={[
+            "NodeJs",
+            "ExpressJs",
+            "MongoDB",
+            "REST",
+            "FaunaDB",
+            "GraphQl",
+          ]}
+        />
+        <ServicesCard
+          image={gatsbyImg}
+          title="MERN Stack Development"
+          tags={["NodeJs", "ExpressJs", "GatsbyJs", "Tailwindcss", "Bootstrap"]}
+        />
+        <ServicesCard
+          image={expressImg}
+          title="Excel to Web Conversion"
+          tags={["ReactJs", "NextJs", "GatsbyJs", "Tailwindcss", "Bootstrap"]}
+        />
       </div>
     </section>
   );

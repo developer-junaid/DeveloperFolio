@@ -49,6 +49,21 @@
   letter-spacing: 0.7px;
 }
 
+@media screen and (min-width: 600px) {
+  .services-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-card .tags span {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .services-card img {
+    width: 65px;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .services-card {
     flex: 1;

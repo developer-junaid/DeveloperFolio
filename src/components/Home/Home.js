@@ -17,7 +17,6 @@ const contentVariants = {
     transition: {
       duration: 2,
       when: "beforeChildren",
-      // staggerChildren: 0.4,
     },
   },
 };
@@ -81,8 +80,8 @@ const Home = () => {
         <h4 className="welcome-content">WELCOME TO MY WORLD</h4>
         <br />
         <h1 className="main-heading">Hi, I’m Junaid</h1>
-        {/* Animate Skill Content */}
 
+        {/* Animate Skill Content */}
         <div className="skill-animation">
           <AnimatePresence>
             {showHeadingOne && (
@@ -128,35 +127,18 @@ const Home = () => {
         </div>
         {/* // */}
 
-        <div className="button-wrapper">
-          {/* <button
-            className="button home-btn"
-            onClick={(e) => (window.location.href = "/#portfolio")}
-          >
-            Portfolio
-          </button> */}
-
-          <Link
-            className="button home-btn"
-            to={"portfolio"}
-            hashSpy={true}
-            spy={true}
-            smooth={true}
-            delay={100}
-            offset={-100}
-            duration={500}
-          >
-            See My Portfolio
-          </Link>
-          {/* <a
-            href="https://github.com/developer-junaid"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            
-          </a> */}
-          {/* <Button text="Github" /> */}
-        </div>
+        <Link
+          className="button home-btn"
+          to={"portfolio"}
+          hashSpy={true}
+          spy={true}
+          smooth={true}
+          delay={100}
+          offset={-100}
+          duration={500}
+        >
+          See My Portfolio
+        </Link>
       </motion.div>
 
       <motion.div

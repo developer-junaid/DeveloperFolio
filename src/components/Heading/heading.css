@@ -22,3 +22,9 @@
   width: 30px;
   border-radius: 20px;
 }
+
+@media screen and (min-width: 600px) {
+  .heading {
+    font-size: 3rem;
+  }
+}

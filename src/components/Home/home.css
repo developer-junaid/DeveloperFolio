@@ -47,13 +47,6 @@
   margin: 1rem 0;
 }
 
-.button-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .svg-container {
   margin-top: 1.5rem;
   width: 50vw;

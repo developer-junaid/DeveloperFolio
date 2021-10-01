@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import man from "images/man.svg";
 import { motion, AnimatePresence } from "framer-motion";
-import { animateScroll as scroll } from "react-scroll";
+// Router
+import { Link } from "react-scroll";
+import "./home.css";
 
 const contentVariants = {
   initial: {
@@ -78,20 +80,7 @@ const Home = () => {
       >
         <h4 className="welcome-content">WELCOME TO MY WORLD</h4>
         <br />
-        <h1 className="main-content">
-          Hi, I’m Junaid
-          <motion.span
-            drag={true}
-            dragConstraints={{ left: 0, top: 0, bottom: 0, right: 0 }}
-            className="hand"
-            animate={{ rotate: [0, 20, 0, 20, 0, 0, 0, 0, 0, 0] }}
-            transition={{ yoyo: Infinity, duration: 1.7 }}
-          >
-            <span role="img" aria-label="Hand waving">
-              👋
-            </span>
-          </motion.span>{" "}
-        </h1>
+        <h1 className="main-heading">Hi, I’m Junaid</h1>
         {/* Animate Skill Content */}
 
         <div className="skill-animation">
@@ -139,28 +128,34 @@ const Home = () => {
         </div>
         {/* // */}
 
-        <h1>
-          {" "}
-          from Pakistan{" "}
-          <span role="img" aria-label="Pakistan Flag">
-            🇵🇰
-          </span>
-        </h1>
-
         <div className="button-wrapper">
-          <button
-            className="button contact-btn"
-            onClick={() => scroll.scrollToBottom()}
+          {/* <button
+            className="button home-btn"
+            onClick={(e) => (window.location.href = "/#portfolio")}
           >
-            Contact Me
-          </button>
-          <a
+            Portfolio
+          </button> */}
+
+          <Link
+            className="button home-btn"
+            to={"portfolio"}
+            hashSpy={true}
+            spy={true}
+            smooth={true}
+            delay={100}
+            offset={-100}
+            duration={500}
+          >
+            See My Portfolio
+          </Link>
+          {/* <a
             href="https://github.com/developer-junaid"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="button">GitHub</button>
-          </a>
+            
+          </a> */}
+          {/* <Button text="Github" /> */}
         </div>
       </motion.div>
 

@@ -5,7 +5,7 @@
   top: 0;
   right: -300px;
   z-index: 2;
-  background-color: #55198b;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;

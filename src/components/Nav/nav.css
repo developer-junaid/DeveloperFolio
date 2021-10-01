@@ -1,5 +1,4 @@
 /* Nav */
-
 .nav-wrapper {
   width: 100%;
   height: 11vh;
@@ -35,7 +34,7 @@
 .logo {
   font-family: "Acme", sans-serif !important;
   font-size: 2rem;
-  color: #7001d1;
+  color: var(--primary-color);
   cursor: pointer;
   text-shadow: 0px 1px 1px black;
 }
@@ -60,23 +59,6 @@
   margin: 0.8rem;
 }
 
-.nav-links .anchor:hover {
-  border-color: #55198b;
-}
-
-.nav-links .scrolled {
-  color: black;
-}
-
-.nav-links.active .anchor {
-  color: black;
-}
-
-.anchor.active {
-  font-weight: 570;
-  border-color: #55198b;
-}
-
 /* ? Animation */
 .menu-icon {
   display: flex;
@@ -96,7 +78,7 @@
 }
 
 .nav-wrapper.menuActive {
-  background-color: #55198b;
+  background-color: var(--primary-color);
 }
 
 .logo.menuActive {

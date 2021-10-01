@@ -21,7 +21,7 @@ const Portfolio = () => {
         href="https://github.com/developer-junaid/"
         className="button-link"
       >
-        <button className="button">More Projects</button>
+        <button className="button">See More</button>
       </a>
     </section>
   );

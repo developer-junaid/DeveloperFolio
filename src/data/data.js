@@ -2,7 +2,7 @@ export const services = [
   {
     title: "Frontend Development",
     iconSrc:
-      "https://img-premium.flaticon.com/png/512/2019/2019320.png?token=exp=1633063056~hmac=8f8cba46590551b8eae546d4b74aeb2b",
+      "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
     tags: [
       "HTML",
       "CSS",

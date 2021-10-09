@@ -4,9 +4,9 @@
 
 ### Demo Video
 
-:link: https://youtu.be/Fpl3JJ-g7Bc
+:link: https://youtu.be/ZamUKgjzB3Q
 
-### Link :link: https://developer-junaid.web.app/
+### Link :link: https://developerjunaid.com/
 
 ## Images
 
@@ -18,7 +18,7 @@
 
 ## Run Locally
 
-- Run this command `git clone https://github.com/developer-junaid/Developerfolio.git`
+- Run this command `git clone https://github.com/developer-junaid/DeveloperFolio.git`
 - You are now in the dev environment and you can play around
 
 ## Tech Stack

@@ -1,0 +1,139 @@
+/* Nav */
+.nav-wrapper {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 1s ease;
+  background: rgb(255, 255, 255);
+  z-index: 3;
+}
+
+.nav-container {
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem 1.1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.white {
+  color: white;
+}
+
+.logo {
+  font-family: "Acme", sans-serif !important;
+  font-size: 1.9rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  text-shadow: 0px 1px 1px black;
+}
+
+.link {
+  list-style-type: none;
+  float: left;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 150px;
+  position: absolute;
+  top: 9vh;
+  text-align: center;
+  align-items: center;
+  left: -110%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.nav-links .anchor {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 0.7px;
+  font-weight: 550;
+  line-height: 2rem;
+  border-bottom: 3px solid transparent;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  margin: 0.8rem;
+}
+
+/* ? Animation */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 18.5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform-origin: left;
+  transition: all 2s ease;
+}
+
+.nav-wrapper.menuActive {
+  background-color: var(--primary-color);
+}
+
+.logo.menuActive {
+  color: white;
+}
+
+.menu-icon span.menuActive {
+  background-color: white;
+}
+
+/* Lines */
+.line1.menuActive {
+  transform: rotate(45deg);
+}
+
+.line2.menuActive {
+  opacity: 0;
+}
+
+.line3.menuActive {
+  transform: rotate(-45deg);
+}
+
+/** Media Query */
+@media screen and (min-width: 600px) {
+  .logo {
+    font-size: 2.1rem;
+  }
+
+  .menu-icon {
+    width: 27px;
+    height: 20.5px;
+  }
+
+  .menu-icon span {
+    height: 3px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .logo {
+    font-size: 2.3rem;
+  }
+}

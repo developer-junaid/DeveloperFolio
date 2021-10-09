@@ -1,30 +1,28 @@
 import React from "react";
-import "./../../index.css";
-import uiImage from "./../../images/ui.svg";
-import webImage from "./../../images/web.svg";
+
+// Styles
+import "./services.css";
+
+// Data
+import { services } from "data/data";
+
+// Card
+import { ServicesCard } from "components/Services/ServicesCard/ServicesCard";
+import { Heading } from "components/Heading/Heading";
 
 const Services = () => {
   return (
     <section
-      data-aos="zoom-in"
+      data-aos="fade-right"
       className="services-container"
       name="services"
       id="services"
     >
-      <h1 className="heading">Services I Provide</h1>
-      <div className="services-wrapper">
-        <div className="services">
-          <li>
-            <img src={uiImage} alt="" />
-            <p>Full Stack Web Development</p>
-          </li>
-        </div>
-        <div className="services">
-          <li>
-            <img src={webImage} alt="" />
-            <p>ReactJs/GatsbyJs Development</p>
-          </li>
-        </div>
+      <Heading text="Services" />
+      <div className="services-cards">
+        {services?.map(({ title, iconSrc, tags }) => (
+          <ServicesCard image={iconSrc} title={title} tags={tags} />
+        ))}
       </div>
     </section>
   );

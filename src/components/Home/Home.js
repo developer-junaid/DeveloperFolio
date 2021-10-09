@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
-import "./../../index.css";
-import man from "./../../images/man.svg";
+import man from "images/man.svg";
 import { motion, AnimatePresence } from "framer-motion";
-import { animateScroll as scroll } from "react-scroll";
+// Router
+import { Link } from "react-scroll";
+import "./home.css";
 
 const contentVariants = {
   initial: {
-    translateY: "100vh",
+    translateX: "-100vw",
     opacity: 0,
   },
 
   animate: {
-    translateY: "0vh",
+    translateX: "0vw",
     opacity: 1,
     transition: {
       duration: 2,
       when: "beforeChildren",
-      // staggerChildren: 0.4,
     },
   },
 };
@@ -48,16 +48,23 @@ const Home = () => {
   // State
   const [showHeadingOne, setShowHeadingOne] = useState(true);
   const [showHeadingTwo, setShowHeadingTwo] = useState(false);
+  const [showHeadingThree, setShowHeadingThree] = useState(false);
 
   // Timeout
   useEffect(() => {
     setTimeout(() => {
       if (showHeadingOne) {
         setShowHeadingOne(false);
+        setShowHeadingThree(false);
         setShowHeadingTwo(true);
+      } else if (showHeadingTwo) {
+        setShowHeadingOne(false);
+        setShowHeadingTwo(false);
+        setShowHeadingThree(true);
       } else {
         setShowHeadingOne(true);
         setShowHeadingTwo(false);
+        setShowHeadingThree(false);
       }
     }, 3000);
   }, [showHeadingOne, showHeadingTwo]);
@@ -72,22 +79,9 @@ const Home = () => {
       >
         <h4 className="welcome-content">WELCOME TO MY WORLD</h4>
         <br />
-        <h1 className="main-content">
-          Hi, I’m Junaid
-          <motion.span
-            drag={true}
-            dragConstraints={{ left: 0, top: 0, bottom: 0, right: 0 }}
-            className="hand"
-            animate={{ rotate: [0, 20, 0, 20, 0, 0, 0, 0, 0, 0] }}
-            transition={{ yoyo: Infinity, duration: 1.7 }}
-          >
-            <span role="img" aria-label="Hand waving">
-              👋
-            </span>
-          </motion.span>{" "}
-        </h1>
-        {/* Animate Skill Content */}
+        <h1 className="main-heading">Hi, I’m Junaid</h1>
 
+        {/* Animate Skill Content */}
         <div className="skill-animation">
           <AnimatePresence>
             {showHeadingOne && (
@@ -112,36 +106,39 @@ const Home = () => {
                 animate="animate"
                 initial="initial"
               >
-                GatsbyJs / ReactJs Developer
+                MERN Stack / JAM Stack Developer
+              </motion.h2>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence>
+            {showHeadingThree && (
+              <motion.h2
+                className="skill-content"
+                variants={childrenVariants}
+                exit="exit"
+                animate="animate"
+                initial="initial"
+              >
+                ReactJS / GatsbyJs Developer
               </motion.h2>
             )}
           </AnimatePresence>
         </div>
         {/* // */}
 
-        <h1>
-          {" "}
-          from Pakistan{" "}
-          <span role="img" aria-label="Pakistan Flag">
-            🇵🇰
-          </span>
-        </h1>
-
-        <div className="button-wrapper">
-          <button
-            className="button contact-btn"
-            onClick={() => scroll.scrollToBottom()}
-          >
-            Contact Me
-          </button>
-          <a
-            href="https://drive.google.com/file/d/1OcuCy-u_jIeTwEokAnPcnu77F8mDP66V/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button">Resume</button>
-          </a>
-        </div>
+        <Link
+          className="button home-btn"
+          to={"portfolio"}
+          hashSpy={true}
+          spy={true}
+          smooth={true}
+          delay={100}
+          offset={-100}
+          duration={500}
+        >
+          See My Portfolio
+        </Link>
       </motion.div>
 
       <motion.div

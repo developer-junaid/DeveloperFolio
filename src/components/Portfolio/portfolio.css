@@ -1,0 +1,104 @@
+/* Portfolio */
+.portfolio-container {
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.portfolio-container h1 {
+  margin: 3rem 0;
+}
+
+.projects-container {
+  min-height: 60vh;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projects {
+  height: 23rem;
+  width: 21rem;
+  margin: 1rem;
+  box-shadow: 3px 2px 10px gray;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.project-images {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 1px solid #55198b;
+  height: 70%;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-links .text {
+  width: 100%;
+  height: 50%;
+  color: black;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-links .icons {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons #github {
+  background-color: rgb(51, 51, 51);
+}
+
+.icons #github:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.icons #live {
+  background-color: rgb(16, 88, 16);
+}
+
+.icons #live:hover {
+  background-color: rgb(16, 65, 88);
+}
+
+.icons i {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  width: 2.6rem;
+  border-radius: 2.6rem;
+  margin: 0px 5px 10px;
+  transition: all 0.2s ease-in 0s;
+}

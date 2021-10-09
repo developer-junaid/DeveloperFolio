@@ -1,7 +1,14 @@
 import React from "react";
+
+// Animation
 import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
+
+// Styles
 import "./nav.css";
+
+// Components
+import MenuIcon from "components/Menu/MenuIcon/MenuIcon";
 
 const Nav = ({ menuOpen, setMenuOpen }) => {
   const handleClick = () => {
@@ -27,83 +34,10 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
           className={"logo " + (menuOpen && "menuActive")}
           onClick={() => scroll.scrollToTop()}
         >
-          &lt; Dev-Junaid /&gt;
+          &lt; Junaid /&gt;
         </span>
 
-        {/* Mobile Menu */}
-        <div
-          className={"menu-icon " + (menuOpen && "menuActive")}
-          onClick={handleClick}
-        >
-          {/* <i className={menuOpen ? "fas fa-times" : "fas fa-bars"}></i> */}
-          <span className={"line1 " + (menuOpen && "menuActive")}></span>
-          <span className={"line2 " + (menuOpen && "menuActive")}></span>
-          <span className={"line3 " + (menuOpen && "menuActive")}></span>
-        </div>
-
-        {/* <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-          <li className="link">
-            <Link
-              className={"anchor"}
-              activeClass="active"
-              to="services"
-              hashSpy={true}
-              spy={true}
-              smooth={true}
-              delay={100}
-              offset={offset}
-              duration={500}
-            >
-              Services
-            </Link>
-          </li>
-          <li className="link">
-            <Link
-              className={"anchor"}
-              activeClass="active"
-              to="portfolio"
-              delay={100}
-              spy={true}
-              smooth={true}
-              offset={offset}
-              hashSpy={true}
-              duration={500}
-            >
-              Portfolio
-            </Link>
-          </li> */}
-        {/* <li className="link">
-            <Link
-              className={navbarActive ? "anchor scrolled" : "anchor"}
-              activeClass="active"
-              to="portfolio"
-              delay={100}
-              spy={true}
-              smooth={true}
-              offset={offset}
-              hashSpy={true}
-              duration={500}
-            >
-              Portfolio
-            </Link>
-          </li>
-
-          <li className="link">
-            <Link
-              className={navbarActive ? "anchor scrolled" : "anchor"}
-              activeClass="active"
-              to="contact"
-              delay={100}
-              hashSpy={true}
-              spy={true}
-              smooth={true}
-              offset={offset}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </li> */}
-        {/* </ul> */}
+        <MenuIcon handleClick={handleClick} menuOpen={menuOpen} />
       </motion.div>
     </div>
   );

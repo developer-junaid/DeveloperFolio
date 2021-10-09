@@ -1,7 +1,7 @@
 /* Nav */
 .nav-wrapper {
   width: 100%;
-  height: 11vh;
+  height: 9vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,11 +18,11 @@
   z-index: 3;
   display: flex;
   flex-direction: row;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.1rem;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 9vh;
+  height: 100%;
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -33,7 +33,7 @@
 
 .logo {
   font-family: "Acme", sans-serif !important;
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: var(--primary-color);
   cursor: pointer;
   text-shadow: 0px 1px 1px black;
@@ -42,6 +42,20 @@
 .link {
   list-style-type: none;
   float: left;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 150px;
+  position: absolute;
+  top: 9vh;
+  text-align: center;
+  align-items: center;
+  left: -110%;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .nav-links .anchor {
@@ -64,8 +78,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 35px;
-  height: 28.5px;
+  width: 22px;
+  height: 18.5px;
   cursor: pointer;
 }
 
@@ -102,28 +116,24 @@
   transform: rotate(-45deg);
 }
 
-/*900 Mobile Nav Version */
-
-@media screen and (max-width: 900px) {
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 150px;
-    position: absolute;
-    top: 9vh;
-    text-align: center;
-    align-items: center;
-    left: -110%;
-    opacity: 1;
-    transition: all 0.5s ease;
+/** Media Query */
+@media screen and (min-width: 600px) {
+  .logo {
+    font-size: 2.1rem;
   }
 
-  .nav-links.active {
-    background: rgba(255, 255, 255, 0.911);
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
+  .menu-icon {
+    width: 27px;
+    height: 20.5px;
+  }
+
+  .menu-icon span {
+    height: 3px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .logo {
+    font-size: 2.3rem;
   }
 }

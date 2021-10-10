@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import man from "images/man.svg";
+import man from "images/dev.png";
 import { motion, AnimatePresence } from "framer-motion";
 // Router
 import { Link } from "react-scroll";

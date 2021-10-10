@@ -58,12 +58,16 @@ const Portfolio = () => {
             />
           ))}
       </ul>
-      <div className="container">
+      <div className="row">
         {data &&
           data.map((item) => (
-            <div className="item">
+            <div className="column">
               <img src={item.img} alt={item.title} />
-              <h3>{item.title}</h3>
+              {/* <h3>{item.title}</h3> */}
+              {/* <div className="overlay">
+                <h4>VIP Auto Tires and Service</h4>
+                <p>eCommerce / Magento</p>
+              </div> */}
             </div>
           ))}
       </div>

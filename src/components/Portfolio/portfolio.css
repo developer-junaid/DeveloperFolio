@@ -13,67 +13,71 @@
   display: flex;
 }
 
-.container {
-  width: 70%;
+.row {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  padding: 0 4px;
+  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.container .item {
-  width: 220px;
-  height: 150px;
-  border-radius: 20px;
-  border: 1px solid lightgray;
-  margin: 10px 20px;
+.column {
   display: flex;
+  flex: 25%;
+  max-width: 25%;
+  width: 100%;
+  margin-right: 1.2rem;
+  margin-top: 1.2rem;
+  align-self: normal !important;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px gray;
+  color: white;
+  background-color: rgba(3, 3, 200, 0.945);
+  cursor: pointer;
+  transition: all 0.6s ease;
+  position: relative;
   align-items: center;
   justify-content: center;
-  color: white;
-  position: relative;
-  transition: all 0.6s ease;
-  cursor: pointer;
-  background-color: rgba(3, 3, 200, 0.945);
 }
 
-.container h3 {
-  position: absolute;
-  font-size: 20px;
-}
-
-.item img {
+.column img {
+  border-radius: 5px;
+  vertical-align: middle;
   width: 100%;
-  border-radius: 20px;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 }
 
-.item:hover {
+.column:hover {
   background-color: var(--primary-color);
 }
 
-.item:hover img {
+.column:hover img {
   opacity: 0.5;
   z-index: 0;
 }
 
-@media screen and (max-width: 760px) {
-  .container {
-    width: 100;
-  }
+.column h3 {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+}
 
-  .item {
-    width: 130px;
-    height: 100px;
+/* MEDIA */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 47%;
+    max-width: 47%;
   }
+}
 
-  .portfolio ul {
-    font-size: 20px;
-    flex-wrap: wrap;
-    margin: 10px 0;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 1rem;
   }
 }

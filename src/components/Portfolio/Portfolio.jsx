@@ -7,8 +7,8 @@ import "./portfolio.css";
 import {
   portfolioList,
   featuredPortfolio,
-  mobilePortfolio,
-  webPortfolio,
+  webAppPortfolio,
+  websitePortfolio,
 } from "data/data";
 
 // components
@@ -31,12 +31,12 @@ const Portfolio = () => {
         setData(featuredPortfolio);
         break;
 
-      case "web":
-        setData(webPortfolio);
+      case "webApp":
+        setData(webAppPortfolio);
         break;
 
-      case "mobile":
-        setData(mobilePortfolio);
+      case "website":
+        setData(websitePortfolio);
         break;
 
       default:
@@ -61,6 +61,9 @@ const Portfolio = () => {
               active={selected === list.id}
               setSelected={setSelected}
               id={list.id}
+              repoUrl={list.repositoryUrl}
+              liveUrl={list.liveUrl}
+              tagline={list.tagline}
             />
           ))}
       </ul>
@@ -72,22 +75,31 @@ const Portfolio = () => {
               <div className="overlay">
                 <div className="left">
                   <h3>{item.title}</h3>
-                  <p>Ecommerce / Management</p>
+                  {item.tagline && <p>{item.tagline}</p>}
                 </div>
                 <div className="right">
-                  <FontAwesomeIcon
-                    icon={faGithubSquare}
-                    size="2x"
-                    className="icon"
-                    style={{ marginRight: "0.6em" }}
-                    title="Github Repo"
-                  />
-                  <FontAwesomeIcon
-                    icon={faExternalLinkSquareAlt}
-                    size="2x"
-                    className="icon"
-                    title="Live view"
-                  />
+                  <a href={item.repositoryUrl}>
+                    <FontAwesomeIcon
+                      icon={faGithubSquare}
+                      size="2x"
+                      className="icon"
+                      style={{ marginRight: "0.6em" }}
+                      title="Github Repo"
+                    />
+                  </a>
+
+                  <a
+                    href={item.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faExternalLinkSquareAlt}
+                      size="2x"
+                      className="icon"
+                      title="Live view"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

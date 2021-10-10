@@ -105,7 +105,6 @@
   .column {
     flex: 46%;
     max-width: 46%;
-    cursor: pointer;
     transition: all 2s ease;
     overflow: hidden;
   }

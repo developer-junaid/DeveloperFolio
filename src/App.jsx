@@ -6,7 +6,6 @@ import Home from "components/Home/Home";
 import Portfolio from "components/Portfolio/Portfolio";
 import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
-import Footer from "components/Footer/Footer";
 
 // Animation
 import Aos from "aos";
@@ -28,7 +27,6 @@ function App() {
       <Services />
       <Portfolio />
       <Contact />
-      <Footer />
     </div>
   );
 }

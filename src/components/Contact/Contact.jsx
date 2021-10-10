@@ -8,6 +8,7 @@ import shakeImage from "../../images/shake.svg";
 
 // Comp
 import { Heading } from "../Heading/Heading";
+import Button from "components/Button/Button";
 
 const Contact = () => {
   const [notification, setNotification] = useState(false);
@@ -52,9 +53,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Message"
             ></textarea>
-            <button type="submit" className="button">
-              Send
-            </button>
+            <Button text="Send" type="submit" />
             {notification && (
               <span style={{ color: "green", marginTop: "1rem" }}>
                 Thanks, I will reply ASAP :)

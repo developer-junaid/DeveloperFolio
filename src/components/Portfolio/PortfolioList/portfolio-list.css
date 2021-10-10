@@ -1,0 +1,12 @@
+.portfolio-list {
+  font-style: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.portfolio-list.active {
+  background: var(--primary-color);
+  color: white;
+}

@@ -1,21 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 
-// Animation
-import { motion } from "framer-motion";
+// Styles
+import "./portfolio-card.css";
 
-const boxVariants = {
-  hover: {
-    scale: 1.02,
-    transition: {
-      type: "spring",
-    },
-  },
-};
+// Data
+import { portfolioList } from "data/data";
+
+// components
+import PortfolioList from "../PortfolioList/PortfolioList";
 
 export const PortfolioCard = ({ title, githubUrl, liveUrl, imageSrc }) => {
+  const [selected, setSelected] = useState("featured");
+
   return (
-    <motion.div variants={boxVariants} whileHover="hover" className="projects">
-      <a rel="noopener noreferrer" target="_blank" href="#aa">
+    <div className="portfolio">
+      <ul>
+        {portfolioList &&
+          portfolioList.map((list) => (
+            <PortfolioList
+              title={list.title}
+              key={list.id}
+              active={selected === list.id}
+              setSelected={setSelected}
+              id={list.id}
+            />
+          ))}
+      </ul>
+      <div className="container">
+        <div className="item">
+          <img
+            src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+            alt=""
+          />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img
+            src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+            alt=""
+          />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img
+            src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+            alt=""
+          />
+          <h3>Banking App</h3>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+{
+  /* <a rel="noopener noreferrer" target="_blank" href="#aa">
         <div className="project-images"></div>
       </a>
       <div className="project-links">
@@ -34,7 +73,5 @@ export const PortfolioCard = ({ title, githubUrl, liveUrl, imageSrc }) => {
             ></i>
           </a>
         </div>
-      </div>
-    </motion.div>
-  );
-};
+      </div> */
+}

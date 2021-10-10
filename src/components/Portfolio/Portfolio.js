@@ -6,7 +6,7 @@ import { Heading } from "components/Heading/Heading";
 const Portfolio = () => {
   return (
     <section
-      data-aos="fade-up"
+      data-aos="fade-left"
       className="portfolio-container"
       name="portfolio"
       id="portfolio"

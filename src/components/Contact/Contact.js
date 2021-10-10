@@ -3,7 +3,6 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="contact-container" name="contact" id="contact">
-      <div className="profile-image"></div>
       <h1 className="heading">Contact</h1>
 
       <div className="cards-container">

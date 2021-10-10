@@ -80,7 +80,6 @@ const Home = () => {
         <h4 className="welcome-content">WELCOME TO MY WORLD</h4>
         <br />
         <h1 className="main-heading">Hi, I’m Junaid</h1>
-
         {/* Animate Skill Content */}
         <div className="skill-animation">
           <AnimatePresence>
@@ -126,7 +125,6 @@ const Home = () => {
           </AnimatePresence>
         </div>
         {/* // */}
-
         <Link
           className="button home-btn"
           to={"portfolio"}
@@ -137,7 +135,7 @@ const Home = () => {
           offset={-100}
           duration={500}
         >
-          See My Portfolio
+          See My Work
         </Link>
       </motion.div>
 

@@ -7,8 +7,8 @@ export const ServicesCard = ({ image, tags, title }) => {
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <div className="tags">
-        {tags?.map((tag) => (
-          <span>{tag}</span>
+        {tags?.map((tag, index) => (
+          <span key={index}>{tag}</span>
         ))}
       </div>
     </div>

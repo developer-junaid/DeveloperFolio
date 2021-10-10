@@ -1,104 +1,132 @@
-/* Portfolio */
-.portfolio-container {
+.portfolio {
+  background: white;
   display: flex;
-  color: rgb(0, 0, 0);
-  font-size: 1.3rem;
   flex-direction: column;
-  padding: 2rem;
   align-items: center;
-  justify-content: space-evenly;
   width: 100%;
-  min-height: 100vh;
 }
 
-.portfolio-container h1 {
-  margin: 3rem 0;
+.portfolio ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-.projects-container {
-  min-height: 60vh;
-  width: 100%;
+.row {
+  display: flex;
   flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
+  padding: 0 4px;
+  padding: 0 2rem;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.projects {
-  height: 23rem;
-  width: 21rem;
-  margin: 1rem;
-  box-shadow: 3px 2px 10px gray;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: all 0.2s ease;
-}
-
-.project-images {
-  border-radius: 10px;
-  cursor: pointer;
+.column {
+  display: flex;
+  flex: 25%;
+  max-width: 25%;
   width: 100%;
-  border-bottom: 1px solid #55198b;
-  height: 70%;
+  margin-right: 1.2rem;
+  margin-top: 1.2rem;
+  align-self: normal !important;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px gray;
+  color: white;
+  transition: all 0.6s ease;
+  position: relative;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.project-links {
+.column img {
+  border-radius: 5px;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.623);
+  padding: 1rem 1.5rem;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.overlay .left {
+  flex: 2;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 30%;
   justify-content: center;
-  align-items: center;
 }
 
-.project-links .text {
-  width: 100%;
-  height: 50%;
-  color: black;
-  font-size: 0.8rem;
+.overlay h3 {
+  font-weight: 700;
+}
+
+.overlay p {
+  font-size: medium;
+  color: rgb(245, 241, 241);
+}
+
+.overlay .right {
+  flex: 1;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
 }
 
-.project-links .icons {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icons #github {
-  background-color: rgb(51, 51, 51);
-}
-
-.icons #github:hover {
-  background-color: rgb(15, 15, 15);
-}
-
-.icons #live {
-  background-color: rgb(16, 88, 16);
-}
-
-.icons #live:hover {
-  background-color: rgb(16, 65, 88);
-}
-
-.icons i {
-  color: white;
+.right .icon {
   cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  position: relative;
-  text-align: center;
-  user-select: none;
-  width: 2.6rem;
-  border-radius: 2.6rem;
-  margin: 0px 5px 10px;
-  transition: all 0.2s ease-in 0s;
+  color: rgba(255, 255, 255, 0.89);
+}
+
+.right .icon:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .column {
+    flex: 46%;
+    max-width: 46%;
+    transition: all 2s ease;
+    overflow: hidden;
+  }
+
+  .column img {
+    z-index: 0;
+    opacity: 1.95;
+  }
+
+  .column:hover img {
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    padding: 1rem 1.5rem;
+    transition: all 0.5s ease;
+    bottom: -300px;
+  }
+
+  .column:hover .overlay {
+    bottom: 0px;
+  }
 }

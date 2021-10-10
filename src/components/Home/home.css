@@ -24,18 +24,18 @@
 
 .welcome-content {
   color: gray;
-  font-size: 0.9rem;
+  font-size: 0.65rem;
 }
 
 .main-heading {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .skill-content {
   margin: 0.6rem 0;
   color: rgb(129, 129, 248);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-shadow: 0px 1px 1px black;
   font-weight: 600;
   padding: 1rem;
@@ -58,17 +58,31 @@
 }
 
 .svg {
-  height: 75%;
+  height: 90%;
 }
 
 .home-btn {
-  width: 300px;
-  margin-top: 2rem !important;
+  margin-top: 1.5rem !important;
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .home-btn:hover {
   background-color: white;
   color: var(--primary-color);
+  transition: all 0.3s ease 0s;
+  transform: translateY(-3px);
 }
 
 @media screen and (min-width: 950px) {
@@ -79,5 +93,24 @@
 
   .svg-container {
     display: flex;
+  }
+
+  .welcome-content {
+    font-size: 0.9rem;
+  }
+
+  .main-heading {
+    font-size: 4rem;
+  }
+
+  .skill-content {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+  }
+
+  .home-btn {
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
   }
 }

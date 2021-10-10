@@ -29,15 +29,17 @@
 
 .menu li {
   margin-bottom: 25px;
+  transition: all 0.1s ease;
 }
 
 .menu li:hover {
-  font-weight: 600;
+  color: white;
+  transform: scale(1.03);
 }
 
 .menu .anchor {
   text-decoration: none;
   font-size: inherit;
-  color: white;
+  color: rgba(255, 255, 255, 0.986);
   cursor: pointer;
 }

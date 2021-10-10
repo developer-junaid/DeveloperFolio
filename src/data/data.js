@@ -55,3 +55,91 @@ export const services = [
     tags: ["Excel", "HTML", "CSS", "Javascript", "Typescript", "ReactJs"],
   },
 ];
+
+export const portfolioList = [
+  {
+    id: "featured",
+    title: "Featured",
+  },
+  {
+    id: "webApp",
+    title: "Web App",
+  },
+  {
+    id: "website",
+    title: "Website",
+  },
+];
+
+export const featuredPortfolio = [
+  {
+    id: 1,
+    title: "Diaries Manager",
+    img: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/202080094/original/5f338db02a4293531252ebee42b0410895c80dfa/develop-react-js-redux-scss-firebase-web-app-or-website.png",
+    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
+    liveUrl: "https://diaries-manager.web.app/",
+    tagline: "Productivity / Management",
+  },
+  {
+    id: 2,
+    title: "TechBerg Blog",
+    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
+    repositoryUrl: "https://github.com/developer-junaid/Blog-Site/",
+    liveUrl: "https://techberg-blog.netlify.app/",
+    tagline: "Blog / Marketing",
+  },
+  {
+    id: 3,
+    title: "Shoe Store",
+    img: "https://images.unsplash.com/photo-1539874202413-c1f47b33169f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    repositoryUrl: "https://github.com/developer-junaid/Nike-Shoe-Store",
+    liveUrl: "https://nike-shoe-store.netlify.app/",
+    tagline: "Ecommerce / Store",
+  },
+  {
+    id: 4,
+    title: "Memories Social Media App",
+    img: "https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
+    liveUrl: "https://diaries-manager.web.app/",
+    tagline: "Social Media / Management",
+  },
+];
+
+export const webAppPortfolio = [
+  {
+    id: 1,
+    title: "Diaries Manager",
+    img: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/202080094/original/5f338db02a4293531252ebee42b0410895c80dfa/develop-react-js-redux-scss-firebase-web-app-or-website.png",
+    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
+    liveUrl: "https://diaries-manager.web.app/",
+    tagline: "Productivity / Management",
+  },
+  {
+    id: 2,
+    title: "Memories Social Media App",
+    img: "https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
+    liveUrl: "https://diaries-manager.web.app/",
+    tagline: "Social Media / Management",
+  },
+];
+
+export const websitePortfolio = [
+  {
+    id: 1,
+    title: "TechBerg Blog",
+    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
+    repositoryUrl: "https://github.com/developer-junaid/Blog-Site/",
+    liveUrl: "https://techberg-blog.netlify.app/",
+    tagline: "Blog / Marketing",
+  },
+  {
+    id: 2,
+    title: "Shoe Store",
+    img: "https://images.unsplash.com/photo-1539874202413-c1f47b33169f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    repositoryUrl: "https://github.com/developer-junaid/Nike-Shoe-Store",
+    liveUrl: "https://nike-shoe-store.netlify.app/",
+    tagline: "Ecommerce / Store",
+  },
+];

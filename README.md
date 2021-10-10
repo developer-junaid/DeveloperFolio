@@ -1,10 +1,10 @@
-# 👨‍💻 Personal DevFolio
+# 👨‍💻 Personal DevFolio (2.0)
 
 ### _Personal Portfolio built using ReactJs and Animation libraries, hope you like it. Tweak it and use it !!_
 
-### Demo Video
+### Demo Video (2.0)
 
-:link: https://youtu.be/ZamUKgjzB3Q
+:link:
 
 ### Link :link: https://developerjunaid.com/
 

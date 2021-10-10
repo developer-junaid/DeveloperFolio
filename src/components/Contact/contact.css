@@ -1,0 +1,78 @@
+.contact {
+  display: flex;
+  min-height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.contact .content {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact .left {
+  flex: 1;
+  overflow: hidden;
+}
+
+.contact .left img {
+  height: 100%;
+}
+
+.contact .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form input {
+  width: 300px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+form textarea {
+  width: 300px;
+  min-height: 200px;
+  width: 300px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+}
+
+form button {
+  width: 150px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    min-height: 55vh;
+  }
+
+  .contact .content {
+    flex-direction: column;
+  }
+  .contact .content {
+    margin-top: 0;
+  }
+
+  .contact .left {
+    display: none;
+  }
+}

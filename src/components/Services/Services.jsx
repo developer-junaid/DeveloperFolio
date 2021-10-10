@@ -20,8 +20,8 @@ const Services = () => {
     >
       <Heading text="Services" />
       <div className="services-cards">
-        {services?.map(({ title, iconSrc, tags }) => (
-          <ServicesCard image={iconSrc} title={title} tags={tags} />
+        {services?.map(({ title, iconSrc, tags }, index) => (
+          <ServicesCard key={index} image={iconSrc} title={title} tags={tags} />
         ))}
       </div>
     </section>

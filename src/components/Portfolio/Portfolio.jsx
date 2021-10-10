@@ -66,8 +66,8 @@ const Portfolio = () => {
       </ul>
       <div className="row">
         {data &&
-          data.map((item) => (
-            <div className="column">
+          data.map((item, index) => (
+            <div className="column" key={index}>
               <img src={item.img} alt={item.title} />
               <div className="overlay">
                 <div className="left">

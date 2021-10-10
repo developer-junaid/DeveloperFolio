@@ -18,7 +18,7 @@
   display: inline-block;
   margin: 0 auto;
   height: 5px;
-  background: #6200b8;
+  background: var(--primary-color);
   width: 30px;
   border-radius: 20px;
 }

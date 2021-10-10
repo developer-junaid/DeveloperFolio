@@ -1,13 +1,20 @@
 .portfolio-list {
-  font-style: 14px;
+  font-size: 1rem;
   margin-right: 50px;
-  padding: 7px;
+  padding: 0.8rem 1.2rem;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.portfolio-list:hover {
+  background: #1d33c0ca;
+  color: white;
 }
 
 .portfolio-list.active {
-  background: var(--primary-color);
+  background: #162bb4ca;
   color: white;
 }
 

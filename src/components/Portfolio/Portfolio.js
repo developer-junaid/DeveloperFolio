@@ -15,6 +15,12 @@ import {
 import { Heading } from "components/Heading/Heading";
 import PortfolioList from "./PortfolioList/PortfolioList";
 
+// Icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkSquareAlt";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons/faGithubSquare";
+
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
@@ -45,7 +51,7 @@ const Portfolio = () => {
       name="portfolio"
       id="portfolio"
     >
-      <Heading text="Portfolio" />
+      <Heading text="Portfolio" style={{ padding: "3rem" }} />
       <ul>
         {portfolioList &&
           portfolioList.map((list) => (
@@ -63,22 +69,30 @@ const Portfolio = () => {
           data.map((item) => (
             <div className="column">
               <img src={item.img} alt={item.title} />
-              {/* <h3>{item.title}</h3> */}
-              {/* <div className="overlay">
-                <h4>VIP Auto Tires and Service</h4>
-                <p>eCommerce / Magento</p>
-              </div> */}
+              <div className="overlay">
+                <div className="left">
+                  <h3>{item.title}</h3>
+                  <p>Ecommerce / Management</p>
+                </div>
+                <div className="right">
+                  <FontAwesomeIcon
+                    icon={faGithubSquare}
+                    size="2x"
+                    className="icon"
+                    style={{ marginRight: "0.6em" }}
+                    title="Github Repo"
+                  />
+                  <FontAwesomeIcon
+                    icon={faExternalLinkSquareAlt}
+                    size="2x"
+                    className="icon"
+                    title="Live view"
+                  />
+                </div>
+              </div>
             </div>
           ))}
       </div>
-      {/* <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://github.com/developer-junaid/"
-        className="button-link"
-      >
-        <button className="button">See More</button>
-      </a> */}
     </section>
   );
 };

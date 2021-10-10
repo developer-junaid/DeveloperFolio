@@ -10,3 +10,9 @@
   background: var(--primary-color);
   color: white;
 }
+
+@media screen and (max-width: 760px) {
+  .portfolio-list {
+    margin-right: 20px;
+  }
+}

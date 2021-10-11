@@ -2,9 +2,7 @@
 
 ### _Personal Portfolio built using ReactJs and Animation libraries, hope you like it. Tweak it and use it !!_
 
-### Demo Video (2.0)
-
-:link:https://youtu.be/soi-rnv9dDQ
+### Demo Video (2.0) :link:https://youtu.be/soi-rnv9dDQ
 
 ### Link :link: https://developerjunaid.com/
 

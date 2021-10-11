@@ -4,7 +4,7 @@
 
 ### Demo Video (2.0)
 
-:link:
+:link:https://youtu.be/soi-rnv9dDQ
 
 ### Link :link: https://developerjunaid.com/
 

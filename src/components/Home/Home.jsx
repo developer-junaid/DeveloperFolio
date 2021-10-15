@@ -105,7 +105,7 @@ const Home = () => {
                 animate="animate"
                 initial="initial"
               >
-                MERN Stack / JAM Stack Developer
+                Fiverr Level One Seller
               </motion.h2>
             )}
           </AnimatePresence>

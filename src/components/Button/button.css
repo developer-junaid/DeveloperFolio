@@ -7,6 +7,7 @@
   background-color: var(--primary-color);
   border: 1px solid transparent;
   color: #fff;
+  min-width: 180px;
   font-weight: 600;
   padding: 0.8rem 2rem;
   border-radius: 2px;
@@ -19,9 +20,21 @@
   transition: all 0.3s ease-in-out 0s;
 }
 
+.none {
+  display: none;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
 @media screen and (min-width: 950px) {
   .button {
     padding: 0.9rem 2.2rem;
     font-size: 1rem;
+  }
+
+  .none {
+    display: inline-block;
   }
 }

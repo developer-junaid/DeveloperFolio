@@ -1,24 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 // Styles
 import "./contact.css";
 
+// Email Js
+import emailjs from "emailjs-com";
+
 // image
 import shakeImage from "../../images/shake.svg";
 
-// Comp
+// Components
 import { Heading } from "../Heading/Heading";
 import Button from "components/Button/Button";
 
 const Contact = () => {
+  const INITIAL_VALUES = { email: "", message: "" };
   const [notification, setNotification] = useState(false);
-  const [values, setValues] = useState({ email: "", message: "" });
+  const [values, setValues] = useState(INITIAL_VALUES);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (event) => {
+  // Email-js
+  const form = useRef();
+
+  const sendEmail = async () => {
+    try {
+      const result = await emailjs.sendForm(
+        `gmail`,
+        `emailjs`,
+        form.current,
+        `user_Ar1zI6cvC6aUG82I1aNsA`
+      );
+      console.log("result ", result.text);
+    } catch (error) {
+      console.log("ERROR", error);
+    }
+  };
+  // Email-js
+
+  const clearForm = () => {
+    setValues(INITIAL_VALUES);
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
     // console.log("form submitted !", values);
     // TODO : Send data to your email
-
+    setLoading(true);
+    await sendEmail();
+    setLoading(false);
+    clearForm();
     setNotification(true);
   };
 
@@ -34,10 +64,10 @@ const Contact = () => {
       <Heading text="Contact" style={{ marginBottom: "3rem" }} />
       <div className="content">
         <div className="left">
-          <img src={shakeImage} alt="" />
+          <img src={shakeImage} alt="shake hands" />
         </div>
         <div className="right">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} ref={form}>
             <input
               type="email"
               name="email"
@@ -53,7 +83,11 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Message"
             ></textarea>
-            <Button text="Send" type="submit" />
+            <Button
+              text={loading ? "Sending..." : "Send"}
+              loading={loading}
+              type="submit"
+            />
             {notification && (
               <span style={{ color: "green", marginTop: "1rem" }}>
                 Thanks, I will reply ASAP :)

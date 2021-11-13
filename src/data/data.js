@@ -100,8 +100,8 @@ export const featuredPortfolio = [
     id: 4,
     title: "Memories Social Media App",
     img: "https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
-    liveUrl: "https://diaries-manager.web.app/",
+    repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
+    liveUrl: "https://memories-manager.netlify.app/",
     tagline: "Social Media / Management",
   },
 ];
@@ -119,8 +119,8 @@ export const webAppPortfolio = [
     id: 2,
     title: "Memories Social Media App",
     img: "https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
-    liveUrl: "https://diaries-manager.web.app/",
+    repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
+    liveUrl: "https://memories-manager.netlify.app/",
     tagline: "Social Media / Management",
   },
 ];

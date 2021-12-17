@@ -4,17 +4,21 @@
 
 ### Demo Video (2.0)
 
-:link:
+### Live :link: https://youtu.be/soi-rnv9dDQ
 
 ### Link :link: https://developerjunaid.com/
 
 ## Images
 
-<img src='./project_images/portfolio.png/' />
+<img src='./project_images/home.png' />
+<img src='./project_images/navbar.png' />
+<img src='./project_images/services.png' />
+<img src='./project_images/portfolio.png' />
+<img src='./project_images/contact.png' />
 
 ## Mobile Responsive
 
-<img src='./project_images/mobile.png/' />
+<img src='./project_images/mobile.png' />
 
 ## Run Locally
 

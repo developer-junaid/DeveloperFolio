@@ -151,3 +151,77 @@ export const websitePortfolio = [
     tagline: "Ecommerce / Store",
   },
 ];
+
+// Testimonials
+export const fiverrTestimonials = [
+  // {
+  //   id: 1,
+  //   text: "text",
+  //   country: "name",
+  //   name: "name",
+  //   url: "https://www.fiverr.com/developerjunaid/",
+  // },
+  {
+    id: 1,
+    text: "Great communication skills, very good english and easy to work with! thanks for the excellent work and I hope we will work together in the future again!",
+    country: "Italy",
+    name: "Leo Matter",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 2,
+    text: "Junaid represents among the highest levels of customer service I have experienced. Information was accurate, responses to queries were turned around very fast. Answers were clear and where necessary detailed enough for us to make informed decisions quickly. Thanks so much we will be working with you in future.",
+    country: "Pakistan",
+    name: "Arslan",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 3,
+    text: "Very professional and know what he is doing, will be working with you again in the future!",
+    country: "Belgium",
+    name: "Walid",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 4,
+    text: "this developer is the one of a kind with great communication skills!",
+    country: "Denmark",
+    name: "dgaa1991",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 5,
+    text: "Perfect man for your job",
+    country: "Cyprus",
+    name: "worldwidefame",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 6,
+    text: "From my very first message to last, the seller communicated everything clearly and asked all the right questions unlike others asking for budget. The code is very clean (easy to maintain and good commenting). Very quick delivery, ill be ordering again soon. Thanks again!!",
+    country: "UK",
+    name: "Ahmed",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 7,
+    text: "2nd order done already, one of the quickest delivery on Fiverr. Again, task was done alot better than expected, thank you!",
+    country: "UK",
+    name: "Ahmed",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 8,
+    text: "Great service, fast and responsive!",
+    country: "Belgium",
+    name: "Walid",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 9,
+    text: "good work, thank you",
+    country: "Belgium",
+    name: "Walid",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+];

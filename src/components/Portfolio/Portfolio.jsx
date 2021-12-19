@@ -25,7 +25,7 @@ const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
 
-  console.log("FEATURED: ", featuredPortfolio);
+  // console.log("FEATURED: ", featuredPortfolio);
 
   useEffect(() => {
     switch (selected) {

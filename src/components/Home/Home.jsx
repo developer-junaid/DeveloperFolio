@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from "react";
-import man from "images/dev.png";
-import { motion, AnimatePresence } from "framer-motion";
-// Router
+import React from "react";
+
+// SVG
+import man from "images/dev.svg";
+
+// Animation
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+
+// CSS
 import "./home.css";
 
 const contentVariants = {
@@ -21,112 +26,19 @@ const contentVariants = {
   },
 };
 
-const childrenVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-      type: "spring",
-      delay: 0.5,
-    },
-  },
-
-  exit: {
-    opacity: 0,
-    y: -200,
-    transition: { duration: 0.2 },
-  },
-};
-
 const Home = () => {
-  // State
-  const [showHeadingOne, setShowHeadingOne] = useState(true);
-  const [showHeadingTwo, setShowHeadingTwo] = useState(false);
-  const [showHeadingThree, setShowHeadingThree] = useState(false);
-
-  // Timeout
-  useEffect(() => {
-    setTimeout(() => {
-      if (showHeadingOne) {
-        setShowHeadingOne(false);
-        setShowHeadingThree(false);
-        setShowHeadingTwo(true);
-      } else if (showHeadingTwo) {
-        setShowHeadingOne(false);
-        setShowHeadingTwo(false);
-        setShowHeadingThree(true);
-      } else {
-        setShowHeadingOne(true);
-        setShowHeadingTwo(false);
-        setShowHeadingThree(false);
-      }
-    }, 3000);
-  }, [showHeadingOne, showHeadingTwo]);
-
   return (
     <section className="home-container" id="home" name="home">
       <motion.div
-        className="content-container"
+        className="content"
         variants={contentVariants}
         initial="initial"
         animate="animate"
       >
-        <h4 className="welcome-content">WELCOME TO MY WORLD</h4>
-        <br />
-        <h1 className="main-heading">Hi, I’m Junaid</h1>
-        {/* Animate Skill Content */}
-        <div className="skill-animation">
-          <AnimatePresence>
-            {showHeadingOne && (
-              <motion.h2
-                className="skill-content"
-                variants={childrenVariants}
-                exit="exit"
-                animate="animate"
-                initial="initial"
-              >
-                Full Stack Web Developer
-              </motion.h2>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-            {showHeadingTwo && (
-              <motion.h2
-                className="skill-content"
-                variants={childrenVariants}
-                exit="exit"
-                animate="animate"
-                initial="initial"
-              >
-                Fiverr Level One Seller
-              </motion.h2>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-            {showHeadingThree && (
-              <motion.h2
-                className="skill-content"
-                variants={childrenVariants}
-                exit="exit"
-                animate="animate"
-                initial="initial"
-              >
-                ReactJS / GatsbyJs Developer
-              </motion.h2>
-            )}
-          </AnimatePresence>
-        </div>
-        {/* // */}
+        <h1>I’m Junaid</h1>
+        <p>I am a Full stack developer and Level one seller at Fiverr. </p>
         <Link
-          className="button home-btn"
+          className="home-btn"
           to={"portfolio"}
           hashSpy={true}
           spy={true}
@@ -140,11 +52,11 @@ const Home = () => {
       </motion.div>
 
       <motion.div
-        className="svg-container"
+        className="svg"
         animate={{ translateY: [-20, 0, -20, 0] }}
         transition={{ yoyo: Infinity, duration: 6 }}
       >
-        <img className="svg" src={man} alt="" />
+        <img src={man} alt="Developer" />
       </motion.div>
     </section>
   );

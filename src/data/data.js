@@ -90,10 +90,10 @@ export const featuredPortfolio = [
   },
   {
     id: 3,
-    title: "Shoe Store",
-    img: "https://images.unsplash.com/photo-1539874202413-c1f47b33169f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    repositoryUrl: "https://github.com/developer-junaid/Nike-Shoe-Store",
-    liveUrl: "https://nike-shoe-store.netlify.app/",
+    title: "Ecommerce Store",
+    img: "https://images.unsplash.com/photo-1582004531564-50f300aae039?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZWNvbW1lcmNlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    repositoryUrl: "https://github.com/developer-junaid/Buy-It",
+    liveUrl: "https://buyit-shoes.netlify.app/",
     tagline: "Ecommerce / Store",
   },
   {
@@ -137,9 +137,91 @@ export const websitePortfolio = [
   {
     id: 2,
     title: "Shoe Store",
-    img: "https://images.unsplash.com/photo-1539874202413-c1f47b33169f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    img: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHNob2VzJTIwc2hvcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
     repositoryUrl: "https://github.com/developer-junaid/Nike-Shoe-Store",
     liveUrl: "https://nike-shoe-store.netlify.app/",
     tagline: "Ecommerce / Store",
+  },
+  {
+    id: 3,
+    title: "Ecommerce Store",
+    img: "https://images.unsplash.com/photo-1582004531564-50f300aae039?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZWNvbW1lcmNlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    repositoryUrl: "https://github.com/developer-junaid/Buy-It",
+    liveUrl: "https://buyit-shoes.netlify.app/",
+    tagline: "Ecommerce / Store",
+  },
+];
+
+// Testimonials
+export const fiverrTestimonials = [
+  // {
+  //   id: 1,
+  //   text: "text",
+  //   country: "name",
+  //   name: "name",
+  //   url: "https://www.fiverr.com/developerjunaid/",
+  // },
+  {
+    id: 1,
+    text: "Great communication skills, very good english and easy to work with! thanks for the excellent work and I hope we will work together in the future again!",
+    country: "Italy",
+    name: "Leo Matter",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 2,
+    text: "Junaid represents among the highest levels of customer service I have experienced. Information was accurate, responses to queries were turned around very fast. Answers were clear and where necessary detailed enough for us to make informed decisions quickly. Thanks so much we will be working with you in future.",
+    country: "Pakistan",
+    name: "Arslan",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 3,
+    text: "Very professional and know what he is doing, will be working with you again in the future!",
+    country: "Belgium",
+    name: "Walid",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 4,
+    text: "this developer is the one of a kind with great communication skills!",
+    country: "Denmark",
+    name: "dgaa1991",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 5,
+    text: "Perfect man for your job",
+    country: "Cyprus",
+    name: "worldwidefame",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 6,
+    text: "From my very first message to last, the seller communicated everything clearly and asked all the right questions unlike others asking for budget. The code is very clean (easy to maintain and good commenting). Very quick delivery, ill be ordering again soon. Thanks again!!",
+    country: "UK",
+    name: "Ahmed",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 7,
+    text: "2nd order done already, one of the quickest delivery on Fiverr. Again, task was done alot better than expected, thank you!",
+    country: "UK",
+    name: "Ahmed",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 8,
+    text: "Great service, fast and responsive!",
+    country: "Belgium",
+    name: "Walid",
+    url: "https://www.fiverr.com/developerjunaid/",
+  },
+  {
+    id: 9,
+    text: "good work, thank you",
+    country: "Belgium",
+    name: "Walid",
+    url: "https://www.fiverr.com/developerjunaid/",
   },
 ];

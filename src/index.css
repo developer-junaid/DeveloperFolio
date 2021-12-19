@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #14279b;
+  --primary-color: #3d5a80;
 }
 
 * {
@@ -10,7 +10,7 @@
 
 body {
   width: 100%;
-  background: radial-gradient(at top left, rgb(0, 0, 0) 20%, #0a020ac0 160%);
+  background: white;
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 1200px;

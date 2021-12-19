@@ -6,6 +6,7 @@ import Home from "components/Home/Home";
 import Portfolio from "components/Portfolio/Portfolio";
 import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
+import Testimonials from "components/Testimonials/Testimonials";
 
 // Animation
 import Aos from "aos";
@@ -16,7 +17,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 2000, offset: 200 });
+    Aos.init({ duration: 2000, offset: 10 });
   }, []);
 
   return (
@@ -26,6 +27,7 @@ function App() {
       <Home />
       <Services />
       <Portfolio />
+      <Testimonials />
       <Contact />
     </div>
   );

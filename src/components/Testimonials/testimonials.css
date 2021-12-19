@@ -9,6 +9,4 @@
 .testimonials ul {
   padding: 1rem 2rem;
   list-style: none;
-  display: flex;
-  flex-direction: column;
 }

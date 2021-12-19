@@ -10,6 +10,9 @@ import { fiverrTestimonials } from "data/data";
 import { Heading } from "components/Heading/Heading";
 import Testimonial from "./Testimonial/Testimonial";
 
+// Corousel
+import { Carousel } from "react-responsive-carousel";
+
 const Portfolio = () => {
   return (
     <section

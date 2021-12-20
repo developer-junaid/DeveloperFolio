@@ -6,7 +6,6 @@
 
 ### Live :link: https://youtu.be/soi-rnv9dDQ
 
-
 ### Link :link: https://developerjunaid.com/
 
 ## Images
@@ -15,6 +14,7 @@
 <img src='./project_images/navbar.png' />
 <img src='./project_images/services.png' />
 <img src='./project_images/portfolio.png' />
+<img src='./project_images/testimonials.png' />
 <img src='./project_images/contact.png' />
 
 ## Mobile Responsive

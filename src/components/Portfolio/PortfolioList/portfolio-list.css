@@ -9,12 +9,12 @@
 }
 
 .portfolio-list:hover {
-  background: #1d33c0ca;
+  background: var(--primary-color);
   color: white;
 }
 
 .portfolio-list.active {
-  background: #162bb4ca;
+  background: var(--primary-color);
   color: white;
 }
 

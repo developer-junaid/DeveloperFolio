@@ -7,25 +7,24 @@ import "./portfolio.css";
 import {
   portfolioList,
   featuredPortfolio,
-  webAppPortfolio,
-  websitePortfolio,
+  web3Portfolio,
+  frontendPortfolio,
+  fullstackPortfolio,
 } from "data/data";
 
 // components
 import { Heading } from "components/Heading/Heading";
-import PortfolioList from "./PortfolioList/PortfolioList";
 
 // Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkSquareAlt";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons/faGithubSquare";
+import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
-
-  // console.log("FEATURED: ", featuredPortfolio);
 
   useEffect(() => {
     switch (selected) {
@@ -33,12 +32,16 @@ const Portfolio = () => {
         setData(featuredPortfolio);
         break;
 
-      case "webApp":
-        setData(webAppPortfolio);
+      case "web3":
+        setData(web3Portfolio);
         break;
 
-      case "website":
-        setData(websitePortfolio);
+      case "frontend":
+        setData(frontendPortfolio);
+        break;
+
+      case "fullstack":
+        setData(fullstackPortfolio);
         break;
 
       default:
@@ -54,10 +57,10 @@ const Portfolio = () => {
       id="portfolio"
     >
       <Heading text="Portfolio" style={{ padding: "3rem" }} />
-      <ul>
+      <div className="list">
         {portfolioList &&
           portfolioList.map((list) => (
-            <PortfolioList
+            <PortfolioItem
               title={list.title}
               key={list.id}
               active={selected === list.id}
@@ -68,7 +71,7 @@ const Portfolio = () => {
               tagline={list.tagline}
             />
           ))}
-      </ul>
+      </div>
       <div className="row">
         {data &&
           data.map((item, index) => (

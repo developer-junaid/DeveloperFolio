@@ -54,6 +54,13 @@ export const services = [
       "https://img.icons8.com/external-flatart-icons-flat-flatarticons/2x/external-excel-taxes-flatart-icons-flat-flatarticons.png",
     tags: ["Excel", "HTML", "CSS", "Javascript", "Typescript", "ReactJs"],
   },
+
+  {
+    title: "Web 3.0 Development",
+    iconSrc:
+      "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/116_Ethereum_logo_logos-128.png",
+    tags: ["ReactJs", "Opensea API", "Thirdweb", "Typescript", "NextJs"],
+  },
 ];
 
 export const portfolioList = [
@@ -62,82 +69,102 @@ export const portfolioList = [
     title: "Featured",
   },
   {
-    id: "webApp",
-    title: "Web App",
+    id: "frontend",
+    title: "Front-End",
   },
   {
-    id: "website",
-    title: "Website",
+    id: "fullstack",
+    title: "Full-Stack",
+  },
+  {
+    id: "web3",
+    title: "Web 3.0",
   },
 ];
 
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Diaries Manager",
-    img: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/202080094/original/5f338db02a4293531252ebee42b0410895c80dfa/develop-react-js-redux-scss-firebase-web-app-or-website.png",
-    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
-    liveUrl: "https://diaries-manager.web.app/",
-    tagline: "Productivity / Management",
+    title: "Ecommerce Store",
+    img: "https://i.imgur.com/HBKjrC6.png",
+    repositoryUrl: "https://github.com/developer-junaid/Buy-It",
+    liveUrl: "https://buyit-shoes.netlify.app/",
+    tagline: "Ecommerce / Stripe Payments",
   },
   {
     id: 2,
-    title: "TechBerg Blog",
-    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-    repositoryUrl: "https://github.com/developer-junaid/Blog-Site/",
-    liveUrl: "https://techberg-blog.netlify.app/",
-    tagline: "Blog / Marketing",
+    title: "React Web3 App",
+    img: "https://i.imgur.com/OxClJvP.png",
+    repositoryUrl: "https://github.com/developer-junaid/React-NFT-App",
+    liveUrl: "https://react-nft-project.netlify.app/",
+    tagline: "Web3 / NFT Listing",
   },
   {
     id: 3,
-    title: "Ecommerce Store",
-    img: "https://images.unsplash.com/photo-1582004531564-50f300aae039?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZWNvbW1lcmNlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    repositoryUrl: "https://github.com/developer-junaid/Buy-It",
-    liveUrl: "https://buyit-shoes.netlify.app/",
-    tagline: "Ecommerce / Store",
+    title: "Memories Social Media App",
+    img: "https://i.imgur.com/1tPbhdS.png",
+    repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
+    liveUrl: "https://memories-manager.netlify.app/",
+    tagline: "Social Media / Management",
   },
   {
     id: 4,
-    title: "Memories Social Media App",
-    img: "https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-    repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
-    liveUrl: "https://memories-manager.netlify.app/",
-    tagline: "Social Media / Management",
+    title: "Uber Eats UI",
+    img: "https://i.imgur.com/VVnLdLf.png",
+    repositoryUrl: "https://github.com/developer-junaid/Uber-Eats-Clone",
+    liveUrl: "https://uber-eats-landing-page.netlify.app/",
+    tagline: "UI / Food App",
   },
 ];
 
-export const webAppPortfolio = [
+export const frontendPortfolio = [
   {
     id: 1,
-    title: "Diaries Manager",
-    img: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/202080094/original/5f338db02a4293531252ebee42b0410895c80dfa/develop-react-js-redux-scss-firebase-web-app-or-website.png",
-    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
-    liveUrl: "https://diaries-manager.web.app/",
-    tagline: "Productivity / Management",
+    title: "Mobile First Diaries UI",
+    img: "https://i.imgur.com/mL0tRfZ.png",
+    repositoryUrl: "https://github.com/developer-junaid/Mobile-First-Landing",
+    liveUrl: "https://mobile-first-design.netlify.app/",
+    tagline: "UI / Mobile First",
   },
   {
     id: 2,
-    title: "Memories Social Media App",
-    img: "https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-    repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
-    liveUrl: "https://memories-manager.netlify.app/",
-    tagline: "Social Media / Management",
+    title: "Corona Virus Tracker",
+    img: "https://i.imgur.com/JX2aJe3.png",
+    repositoryUrl: "https://github.com/developer-junaid/Corona-Virus-Tracker",
+    liveUrl: "https://online-corona-tracker.web.app/",
+    tagline: "ReactJs / API",
+  },
+  {
+    id: 2,
+    title: "Glass UI",
+    img: "https://i.imgur.com/xzcGWI6.png",
+    repositoryUrl: "https://github.com/developer-junaid/Glass-Website-CSS",
+    liveUrl: "https://glass-ui-website.netlify.app/",
+    tagline: "UI / Glass Effect",
+  },
+  {
+    id: 4,
+    title: "Uber Eats UI",
+    img: "https://i.imgur.com/VVnLdLf.png",
+    repositoryUrl: "https://github.com/developer-junaid/Uber-Eats-Clone",
+    liveUrl: "https://uber-eats-landing-page.netlify.app/",
+    tagline: "UI / Food App",
   },
 ];
 
-export const websitePortfolio = [
+export const fullstackPortfolio = [
   {
     id: 1,
-    title: "TechBerg Blog",
-    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
+    title: "Blog Website",
+    img: "https://i.imgur.com/gT565YO.png",
     repositoryUrl: "https://github.com/developer-junaid/Blog-Site/",
     liveUrl: "https://techberg-blog.netlify.app/",
     tagline: "Blog / Marketing",
   },
   {
     id: 2,
-    title: "Shoe Store",
-    img: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHNob2VzJTIwc2hvcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+    title: "Nike Store",
+    img: "https://i.imgur.com/td6QZtC.png",
     repositoryUrl: "https://github.com/developer-junaid/Nike-Shoe-Store",
     liveUrl: "https://nike-shoe-store.netlify.app/",
     tagline: "Ecommerce / Store",
@@ -145,22 +172,50 @@ export const websitePortfolio = [
   {
     id: 3,
     title: "Ecommerce Store",
-    img: "https://images.unsplash.com/photo-1582004531564-50f300aae039?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZWNvbW1lcmNlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    img: "https://i.imgur.com/HBKjrC6.png",
     repositoryUrl: "https://github.com/developer-junaid/Buy-It",
     liveUrl: "https://buyit-shoes.netlify.app/",
-    tagline: "Ecommerce / Store",
+    tagline: "Ecommerce / Stripe Payments",
+  },
+  {
+    id: 4,
+    title: "Diaries Manager",
+    img: "https://i.imgur.com/5dj36pO.png",
+    repositoryUrl: "https://github.com/developer-junaid/Diaries-Manager-App",
+    liveUrl: "https://diaries-manager.web.app/",
+    tagline: "Productivity / Management",
+  },
+  {
+    id: 5,
+    title: "Memories Social Media App",
+    img: "https://i.imgur.com/1tPbhdS.png",
+    repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
+    liveUrl: "https://memories-manager.netlify.app/",
+    tagline: "Social Media / Management",
+  },
+  {
+    id: 6,
+    title: "Todo List",
+    img: "https://i.imgur.com/LdjTLgO.png",
+    repositoryUrl: "https://github.com/developer-junaid/Jamstack-Todolist",
+    liveUrl: "https://todo-list-serverless.netlify.app/",
+    tagline: "Todo List / Management",
+  },
+];
+
+export const web3Portfolio = [
+  {
+    id: 1,
+    title: "React Web3 App",
+    img: "https://i.imgur.com/OxClJvP.png",
+    repositoryUrl: "https://github.com/developer-junaid/React-NFT-App",
+    liveUrl: "https://react-nft-project.netlify.app/",
+    tagline: "Web3 / NFT Listing",
   },
 ];
 
 // Testimonials
 export const fiverrTestimonials = [
-  // {
-  //   id: 1,
-  //   text: "text",
-  //   country: "name",
-  //   name: "name",
-  //   url: "https://www.fiverr.com/developerjunaid/",
-  // },
   {
     id: 1,
     text: "Great communication skills, very good english and easy to work with! thanks for the excellent work and I hope we will work together in the future again!",

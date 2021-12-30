@@ -1,0 +1,25 @@
+.portfolio-item {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.portfolio-item.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+@media screen and (min-width: 701px) {
+  .portfolio-item {
+    font-size: 1rem;
+  }
+}

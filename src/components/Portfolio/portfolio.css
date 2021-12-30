@@ -6,17 +6,19 @@
   width: 100%;
 }
 
-.portfolio ul {
+.portfolio .list {
   margin: 10px;
   padding: 0;
   list-style: none;
   display: flex;
+  width: 85%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
   padding: 0 2rem;
   justify-content: center;
   align-items: center;
@@ -128,5 +130,10 @@
 
   .column:hover .overlay {
     bottom: 0px;
+  }
+
+  .portfolio .list {
+    width: 50%;
+    justify-content: space-evenly;
   }
 }

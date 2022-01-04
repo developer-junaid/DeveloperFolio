@@ -14,6 +14,9 @@ export const services = [
       "Material-UI",
       "Bootstrap",
       "Firebase",
+      "Vite",
+      "Figma",
+      "Canva",
     ],
   },
   {
@@ -52,14 +55,51 @@ export const services = [
     title: "Excel to Web Conversion",
     iconSrc:
       "https://img.icons8.com/external-flatart-icons-flat-flatarticons/2x/external-excel-taxes-flatart-icons-flat-flatarticons.png",
-    tags: ["Excel", "HTML", "CSS", "Javascript", "Typescript", "ReactJs"],
+    tags: [
+      "Excel",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Typescript",
+      "ReactJs",
+      "React-Admin",
+      "React-Table",
+    ],
   },
 
   {
     title: "Web 3.0 Development",
     iconSrc:
       "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/116_Ethereum_logo_logos-128.png",
-    tags: ["ReactJs", "Opensea API", "Thirdweb", "Typescript", "NextJs"],
+    tags: [
+      "ReactJs",
+      "Typescript",
+      "NextJs",
+      "Opensea API",
+      "Thirdweb",
+      "NFT-listing",
+      "NFT-minting",
+    ],
+  },
+  {
+    title: "dApp Development (Blockchain)",
+    iconSrc:
+      "https://cdn-icons.flaticon.com/png/512/1171/premium/1171561.png?token=exp=1641276583~hmac=47ed10f71b8d092894044b05a25d41e7",
+    tags: [
+      "ReactJs",
+      "Solidity",
+      "Hardhat",
+      "Waffle",
+      "Ethers (library)",
+      "Metamask Wallet",
+      "Alchemy (Deployment)",
+      "web3.js",
+    ],
+  },
+  {
+    title: "Ecommerce Development",
+    iconSrc: "https://img.icons8.com/office/344/bank-cards.png",
+    tags: ["ReactJs", "Typescript", "NextJs", "Stripe", "Strapi", "GatsbyJs"],
   },
 ];
 
@@ -85,22 +125,14 @@ export const portfolioList = [
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Ecommerce Store",
-    img: "https://i.imgur.com/HBKjrC6.png",
-    repositoryUrl: "https://github.com/developer-junaid/Buy-It",
-    liveUrl: "https://buyit-shoes.netlify.app/",
-    tagline: "Ecommerce / Stripe Payments",
+    title: "TransferKrypt",
+    img: "https://i.imgur.com/K4GroFa.png",
+    repositoryUrl: "https://github.com/developer-junaid/Transfer-Krypt",
+    liveUrl: "https://transferkrypt.netlify.app/",
+    tagline: "Transfer Crypto / Blockchain",
   },
   {
     id: 2,
-    title: "React Web3 App",
-    img: "https://i.imgur.com/OxClJvP.png",
-    repositoryUrl: "https://github.com/developer-junaid/React-NFT-App",
-    liveUrl: "https://react-nft-project.netlify.app/",
-    tagline: "Web3 / NFT Listing",
-  },
-  {
-    id: 3,
     title: "Memories Social Media App",
     img: "https://i.imgur.com/1tPbhdS.png",
     repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
@@ -108,12 +140,20 @@ export const featuredPortfolio = [
     tagline: "Social Media / Management",
   },
   {
+    id: 3,
+    title: "Ecommerce Store",
+    img: "https://i.imgur.com/HBKjrC6.png",
+    repositoryUrl: "https://github.com/developer-junaid/Buy-It",
+    liveUrl: "https://buyit-shoes.netlify.app/",
+    tagline: "Ecommerce / Stripe Payments",
+  },
+  {
     id: 4,
-    title: "Uber Eats UI",
-    img: "https://i.imgur.com/VVnLdLf.png",
-    repositoryUrl: "https://github.com/developer-junaid/Uber-Eats-Clone",
-    liveUrl: "https://uber-eats-landing-page.netlify.app/",
-    tagline: "UI / Food App",
+    title: "React Web3 App",
+    img: "https://i.imgur.com/OxClJvP.png",
+    repositoryUrl: "https://github.com/developer-junaid/React-NFT-App",
+    liveUrl: "https://react-nft-project.netlify.app/",
+    tagline: "Web3 / NFT Listing",
   },
 ];
 
@@ -211,6 +251,14 @@ export const web3Portfolio = [
     repositoryUrl: "https://github.com/developer-junaid/React-NFT-App",
     liveUrl: "https://react-nft-project.netlify.app/",
     tagline: "Web3 / NFT Listing",
+  },
+  {
+    id: 2,
+    title: "TransferKrypt",
+    img: "https://i.imgur.com/K4GroFa.png",
+    repositoryUrl: "https://github.com/developer-junaid/Transfer-Krypt",
+    liveUrl: "https://transferkrypt.netlify.app/",
+    tagline: "Transfer Crypto / Blockchain",
   },
 ];
 

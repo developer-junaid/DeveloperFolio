@@ -66,7 +66,6 @@ export const services = [
       "React-Table",
     ],
   },
-
   {
     title: "Web 3.0 Development",
     iconSrc:
@@ -84,7 +83,7 @@ export const services = [
   {
     title: "dApp Development (Blockchain)",
     iconSrc:
-      "https://cdn-icons.flaticon.com/png/512/1171/premium/1171561.png?token=exp=1641276583~hmac=47ed10f71b8d092894044b05a25d41e7",
+      "https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/000000/external-blockchain-cryptocurrency-vitaliy-gorbachev-blue-vitaly-gorbachev-1.png",
     tags: [
       "ReactJs",
       "Solidity",

@@ -91,7 +91,7 @@ const Portfolio = () => {
                         icon={faGithubSquare}
                         size="2x"
                         className="icon"
-                        style={{ marginRight: "0.6em" }}
+                        style={{ marginRight: "0.3em" }}
                         title="Github Repo"
                       />
                     </a>
@@ -101,7 +101,7 @@ const Portfolio = () => {
                         icon={faUserLock}
                         size="2x"
                         className="icon"
-                        style={{ marginRight: "0.6em" }}
+                        style={{ marginRight: "0.3em" }}
                         title="Private Repo"
                       />
                     </a>

@@ -1,6 +1,16 @@
-.portfolio-item {
+/* .portfolio-item {
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+} */
+
+.portfolio-item {
+  font-size: 0.6rem;
+  padding: 0.6rem 0.8rem;
   border: 1px solid gray;
   border-radius: 10px;
   cursor: pointer;
@@ -18,7 +28,22 @@
   color: white;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 500px) {
+  .portfolio-item {
+    /* font-size: 1rem; */
+  }
+  .portfolio-item {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .portfolio-item {
     font-size: 1rem;
   }

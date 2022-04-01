@@ -25,6 +25,7 @@
 }
 
 .column {
+  border: 2px solid red;
   display: flex;
   flex: 25%;
   max-width: 25%;
@@ -68,10 +69,11 @@
 
 .overlay h3 {
   font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .overlay p {
-  font-size: medium;
+  font-size: 0.7rem;
   color: rgb(245, 241, 241);
 }
 
@@ -89,11 +91,20 @@
 
 .right .icon:hover {
   color: white;
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 /* MEDIA */
 
+@media screen and (min-width: 500px) {
+  .overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 700px) {
   .column {
     flex: 100%;
@@ -133,7 +144,7 @@
   }
 
   .portfolio .list {
-    width: 50%;
+    width: 60%;
     justify-content: space-evenly;
   }
 }

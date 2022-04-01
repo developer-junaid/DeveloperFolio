@@ -259,6 +259,14 @@ export const web3Portfolio = [
     liveUrl: "https://transferkrypt.netlify.app/",
     tagline: "Transfer Crypto / Blockchain",
   },
+  {
+    id: 3,
+    title: "Zen Coin",
+    img: "https://i.imgur.com/h8c1ZNK.png",
+    repositoryUrl: "private",
+    liveUrl: "https://zen-coin.netlify.app/",
+    tagline: "DApp / DeFi",
+  },
 ];
 
 // Testimonials

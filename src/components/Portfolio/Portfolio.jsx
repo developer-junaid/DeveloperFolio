@@ -20,6 +20,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkSquareAlt";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons/faGithubSquare";
+import { faUserLock } from "@fortawesome/free-solid-svg-icons/faUserLock";
+
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
 const Portfolio = () => {
@@ -83,15 +85,27 @@ const Portfolio = () => {
                   {item.tagline && <p>{item.tagline}</p>}
                 </div>
                 <div className="right">
-                  <a href={item.repositoryUrl}>
-                    <FontAwesomeIcon
-                      icon={faGithubSquare}
-                      size="2x"
-                      className="icon"
-                      style={{ marginRight: "0.6em" }}
-                      title="Github Repo"
-                    />
-                  </a>
+                  {item.repositoryUrl !== "private" ? (
+                    <a href={item.repositoryUrl}>
+                      <FontAwesomeIcon
+                        icon={faGithubSquare}
+                        size="2x"
+                        className="icon"
+                        style={{ marginRight: "0.6em" }}
+                        title="Github Repo"
+                      />
+                    </a>
+                  ) : (
+                    <a href="#_">
+                      <FontAwesomeIcon
+                        icon={faUserLock}
+                        size="2x"
+                        className="icon"
+                        style={{ marginRight: "0.6em" }}
+                        title="Private Repo"
+                      />
+                    </a>
+                  )}
 
                   <a
                     href={item.liveUrl}

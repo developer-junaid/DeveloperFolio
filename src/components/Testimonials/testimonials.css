@@ -22,18 +22,40 @@
   padding: 1rem 2rem;
   border-radius: 2px;
   box-shadow: 1px 3px 5px gray;
+  position: relative;
+}
+
+.testimonial-card .svg-image-container {
+  border: 1px solid white;
+  width: 70px;
+  background-color: white;
+  padding: 0.2rem;
+  padding-right: 0.5rem;
+  position: absolute;
+  top: -30px;
+  left: 27px;
+  border-radius: 20px;
+}
+
+.svg-image-container img {
+  width: 100%;
 }
 
 .testimonial-card > .buttons-container {
   display: flex;
   justify-content: end;
   margin-top: 1rem;
-  border: 1px solid white;
+  align-items: center;
 }
 
 .svg {
+  transition: all 0.3s ease;
   fill: white;
   cursor: pointer;
+}
+
+.svg:hover {
+  fill: #1dca65;
 }
 
 .testimonial-card .source-icon {

@@ -1,24 +1,24 @@
 import React from "react";
 
 // Styles
-import "./testimonial.css";
+import "../testimonials.css";
 
 // Icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt";
 
 const Testimonial = ({ testimonial }) => {
   return (
-    <div className="testimonial-card">
-      <div className="source-icon">fiverr.</div>
+    <>
+      {/* <div className="source-icon">fiverr.</div> */}
       <div className="details">
         <p className="text">{testimonial.text}</p>
         <p className="name">
           {testimonial.name}
-          <span className="country"> - {testimonial.country}</span>{" "}
+          <span className="country">({testimonial.country})</span>
         </p>
 
-        <a
+        {/* <a
           href={testimonial.url}
           target="_blank"
           rel="noopener noreferrer"
@@ -30,9 +30,9 @@ const Testimonial = ({ testimonial }) => {
             size="sm"
             className="icon"
           />
-        </a>
+        </a> */}
       </div>
-    </div>
+    </>
   );
 };
 

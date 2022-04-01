@@ -25,7 +25,6 @@
 }
 
 .column {
-  border: 2px solid red;
   display: flex;
   flex: 25%;
   max-width: 25%;
@@ -95,7 +94,6 @@
 }
 
 /* MEDIA */
-
 @media screen and (min-width: 500px) {
   .overlay h3 {
     font-size: 1.2rem;

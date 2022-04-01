@@ -40,7 +40,10 @@ const Portfolio = () => {
       name="testimonial"
       id="testimonials"
     >
-      <Heading text="Client Testimonials" style={{ padding: "3rem" }} />
+      <Heading
+        text={`Client Testimonials (${fiverrTestimonials.length})`}
+        style={{ padding: "3rem" }}
+      />
       <div className="testimonials">
         {fiverrTestimonials &&
           fiverrTestimonials.map((testimonial) => (

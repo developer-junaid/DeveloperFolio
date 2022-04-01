@@ -10,21 +10,26 @@
   margin-top: 3rem;
   color: black;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
 .heading-container span {
   display: inline-block;
   margin: 0 auto;
-  height: 5px;
+  height: 3px;
   background: var(--primary-color);
-  width: 30px;
+  width: 20px;
   border-radius: 20px;
 }
 
 @media screen and (min-width: 600px) {
   .heading {
     font-size: 3rem;
+  }
+
+  .heading-container span {
+    height: 5px;
+    width: 35px;
   }
 }

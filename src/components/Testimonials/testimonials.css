@@ -1,5 +1,6 @@
 .none {
-  display: none;
+  display: none !important;
+  opacity: 0;
 }
 
 .testimonial-section {
@@ -13,7 +14,10 @@
 .testimonials {
   padding: 1rem 2rem;
   display: flex;
-  min-height: 200px;
+  min-height: 350px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial-card {
@@ -23,10 +27,16 @@
   border-radius: 2px;
   box-shadow: 1px 3px 5px gray;
   position: relative;
+  transition: all 2s ease;
+  opacity: 1;
+}
+
+.block {
+  display: block;
 }
 
 .testimonial-card .svg-image-container {
-  border: 1px solid white;
+  border: none;
   width: 70px;
   background-color: white;
   padding: 0.2rem;
@@ -84,21 +94,29 @@
   margin-left: 0.5rem;
 }
 
+.source {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
 .details .name {
-  margin-top: 1.5rem;
   font-size: medium;
   color: white;
   text-align: left;
 }
 
-.details .url {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-  color: rgb(132, 207, 19);
+.source .link {
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.source .link:hover {
+  color: #1dca65;
 }
 
 .details .icon {
@@ -112,23 +130,6 @@
 
   .details .text {
     font-weight: 400;
-  }
-
-  .details .url {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-  }
-
-  .url:hover {
-    color: rgb(10, 202, 10);
-  }
-
-  .testimonial-card .details {
-    padding: 0 1rem;
+    font-size: large;
   }
 }

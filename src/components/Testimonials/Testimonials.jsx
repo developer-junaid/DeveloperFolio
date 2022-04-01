@@ -14,7 +14,24 @@ import { Heading } from "components/Heading/Heading";
 import Testimonial from "./Testimonial/Testimonial";
 
 const Portfolio = () => {
-  const [activeTestimonial, setActiveTestimonial] = useState(2);
+  const [activeTestimonial, setActiveTestimonial] = useState(1);
+
+  const nextSlide = (index) => {
+    if (index === fiverrTestimonials.length) {
+      setActiveTestimonial(1);
+    } else {
+      setActiveTestimonial(index + 1);
+    }
+  };
+
+  const prevSlide = (index) => {
+    if (index - 1 === 0) {
+      console.log("set to ", fiverrTestimonials.length);
+      setActiveTestimonial(fiverrTestimonials.length);
+    } else {
+      setActiveTestimonial(index - 1);
+    }
+  };
 
   return (
     <section
@@ -28,8 +45,9 @@ const Portfolio = () => {
         {fiverrTestimonials &&
           fiverrTestimonials.map((testimonial) => (
             <div
+              key={testimonial.id}
               className={`testimonial-card ${
-                testimonial.id !== activeTestimonial ? "none" : ""
+                testimonial.id !== activeTestimonial ? "none" : "block"
               }`}
             >
               <div className="svg-image-container">
@@ -40,7 +58,7 @@ const Portfolio = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   height="28"
-                  onClick={() => console.log("Clicked Previous")}
+                  onClick={() => prevSlide(testimonial.id)}
                   className="svg"
                 >
                   <path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" />
@@ -49,7 +67,7 @@ const Portfolio = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   height="28"
-                  onClick={() => console.log("Clicked Next")}
+                  onClick={() => nextSlide(testimonial.id)}
                   className="svg"
                   style={{ marginLeft: "1rem" }}
                 >

@@ -11,7 +11,10 @@ import castMember from "./castMember";
 import movie from "./movie";
 import person from "./person";
 import screening from "./screening";
+
+// My Schemas
 import testimonial from "./testimonial";
+import portfolio from "./portfolio";
 
 import plotSummary from "./plotSummary";
 import plotSummaries from "./plotSummaries";
@@ -29,6 +32,7 @@ export default createSchema({
     person,
     screening,
     testimonial,
+    portfolio,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

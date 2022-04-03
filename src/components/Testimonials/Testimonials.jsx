@@ -10,12 +10,11 @@ import testimonialSVG from "images/review.png";
 import { Heading } from "components/Heading/Heading";
 import Testimonial from "./Testimonial/Testimonial";
 
-const Portfolio = ({ data }) => {
+const Portfolio = ({ testimonials }) => {
   const [activeTestimonial, setActiveTestimonial] = useState(1);
 
-  console.log(data);
   const nextSlide = (index) => {
-    if (index === data?.testimonials?.length) {
+    if (index === testimonials?.length) {
       setActiveTestimonial(1);
     } else {
       setActiveTestimonial(index + 1);
@@ -24,8 +23,8 @@ const Portfolio = ({ data }) => {
 
   const prevSlide = (index) => {
     if (index - 1 === 0) {
-      console.log("set to ", data?.testimonials.length);
-      setActiveTestimonial(data?.testimonials.length);
+      console.log("set to ", testimonials.length);
+      setActiveTestimonial(testimonials.length);
     } else {
       setActiveTestimonial(index - 1);
     }
@@ -40,13 +39,13 @@ const Portfolio = ({ data }) => {
     >
       <Heading
         text={`Client Testimonials (${
-          data?.testimonials ? data?.testimonials?.length : null
+          testimonials ? testimonials?.length : null
         })`}
         style={{ padding: "3rem" }}
       />
       <div className="testimonials">
-        {data &&
-          data.testimonials.map((testimonial) => (
+        {testimonials &&
+          testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
               className={`testimonial-card ${

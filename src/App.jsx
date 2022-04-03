@@ -18,20 +18,51 @@ import { Menu } from "components/Menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [data, setData] = useState(null);
+  const [projects, setProjects] = useState([]);
+  const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "testimonial"]{
-        id,
-        name,
-        text,
-        country,
-        url
-      }`
+        `*[_type in ["testimonial", "portfolio"]]{
+          _type == "testimonial" => {
+            id,
+            name,
+            text,
+            country,
+            url
+          },
+          _type == "portfolio" => {
+            id,
+            title,
+            tagline,
+            category,
+            liveUrl,
+            repositoryUrl,
+            img{
+              asset->{url}
+            },
+          },
+        }
+        
+        `
       )
-      .then((data) => setData({ testimonials: data }))
+      .then((data) => {
+        let tempTestimonials = [];
+        let tempProjects = [];
+
+        data.map((doc) => {
+          if (doc.country) {
+            // It is a testimonial
+            tempTestimonials.push(doc);
+          } else if (doc.liveUrl) {
+            // It is a project
+            tempProjects.push(doc);
+          }
+        });
+        setTestimonials(tempTestimonials);
+        setProjects(tempProjects);
+      })
       .catch(console.error);
   }, []);
 
@@ -45,8 +76,8 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
       <Services />
-      <Portfolio />
-      <Testimonials data={data} />
+      <Portfolio projects={projects} />
+      <Testimonials testimonials={testimonials} />
       <Contact />
     </div>
   );

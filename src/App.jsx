@@ -8,6 +8,9 @@ import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
 import Testimonials from "components/Testimonials/Testimonials";
 
+// Sanity
+import sanityClient from "client";
+
 // Animation
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -15,6 +18,22 @@ import { Menu } from "components/Menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "testimonial"]{
+        id,
+        name,
+        text,
+        country,
+        url
+      }`
+      )
+      .then((data) => setData({ testimonials: data }))
+      .catch(console.error);
+  }, []);
 
   useEffect(() => {
     Aos.init({ duration: 2000, offset: 10 });
@@ -27,7 +46,7 @@ function App() {
       <Home />
       <Services />
       <Portfolio />
-      <Testimonials />
+      <Testimonials data={data} />
       <Contact />
     </div>
   );

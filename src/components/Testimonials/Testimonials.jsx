@@ -3,9 +3,6 @@ import React, { useState } from "react";
 // Styles
 import "./testimonials.css";
 
-// Data
-import { fiverrTestimonials } from "data/data";
-
 // Icon
 import testimonialSVG from "images/review.png";
 
@@ -13,11 +10,12 @@ import testimonialSVG from "images/review.png";
 import { Heading } from "components/Heading/Heading";
 import Testimonial from "./Testimonial/Testimonial";
 
-const Portfolio = () => {
+const Portfolio = ({ data }) => {
   const [activeTestimonial, setActiveTestimonial] = useState(1);
 
+  console.log(data);
   const nextSlide = (index) => {
-    if (index === fiverrTestimonials.length) {
+    if (index === data?.testimonials?.length) {
       setActiveTestimonial(1);
     } else {
       setActiveTestimonial(index + 1);
@@ -26,8 +24,8 @@ const Portfolio = () => {
 
   const prevSlide = (index) => {
     if (index - 1 === 0) {
-      console.log("set to ", fiverrTestimonials.length);
-      setActiveTestimonial(fiverrTestimonials.length);
+      console.log("set to ", data?.testimonials.length);
+      setActiveTestimonial(data?.testimonials.length);
     } else {
       setActiveTestimonial(index - 1);
     }
@@ -41,16 +39,18 @@ const Portfolio = () => {
       id="testimonials"
     >
       <Heading
-        text={`Client Testimonials (${fiverrTestimonials.length})`}
+        text={`Client Testimonials (${
+          data?.testimonials ? data?.testimonials?.length : null
+        })`}
         style={{ padding: "3rem" }}
       />
       <div className="testimonials">
-        {fiverrTestimonials &&
-          fiverrTestimonials.map((testimonial) => (
+        {data &&
+          data.testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
               className={`testimonial-card ${
-                testimonial.id !== activeTestimonial ? "none" : "block"
+                Number(testimonial.id) !== activeTestimonial ? "none" : "block"
               }`}
             >
               <div className="svg-image-container">
@@ -61,7 +61,7 @@ const Portfolio = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   height="28"
-                  onClick={() => prevSlide(testimonial.id)}
+                  onClick={() => prevSlide(Number(testimonial.id))}
                   className="svg"
                 >
                   <path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" />
@@ -70,7 +70,7 @@ const Portfolio = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   height="28"
-                  onClick={() => nextSlide(testimonial.id)}
+                  onClick={() => nextSlide(Number(testimonial.id))}
                   className="svg"
                   style={{ marginLeft: "1rem" }}
                 >

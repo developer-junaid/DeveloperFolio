@@ -3,15 +3,6 @@ import React, { useEffect, useState } from "react";
 // Styles
 import "./portfolio.css";
 
-// Data
-import {
-  portfolioList,
-  featuredPortfolio,
-  web3Portfolio,
-  frontendPortfolio,
-  fullstackPortfolio,
-} from "data/data";
-
 // components
 import { Heading } from "components/Heading/Heading";
 
@@ -24,32 +15,32 @@ import { faUserLock } from "@fortawesome/free-solid-svg-icons/faUserLock";
 
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
-const Portfolio = () => {
+const Portfolio = ({ projects }) => {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
+  const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
-    switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
+    let tempList = [];
+    projects.map(({ category }) => {
+      if (!tempList.includes(category)) {
+        tempList.push(category);
+      }
 
-      case "web3":
-        setData(web3Portfolio);
-        break;
+      return null;
+    });
+    setProjectList(tempList);
+  }, [projects]);
 
-      case "frontend":
-        setData(frontendPortfolio);
-        break;
+  useEffect(() => {
+    projectList.map((list) => {
+      if (selected === list) {
+        setData(projects.filter((project) => project.category === list));
+      }
 
-      case "fullstack":
-        setData(fullstackPortfolio);
-        break;
-
-      default:
-        break;
-    }
-  }, [selected]);
+      return null;
+    });
+  }, [selected, projectList, projects]);
 
   return (
     <section
@@ -60,25 +51,22 @@ const Portfolio = () => {
     >
       <Heading text="Portfolio" style={{ padding: "3rem" }} />
       <div className="list">
-        {portfolioList &&
-          portfolioList.map((list) => (
+        {projectList &&
+          projectList.map((list) => (
             <PortfolioItem
-              title={list.title}
-              key={list.id}
-              active={selected === list.id}
+              title={list}
+              key={list}
+              active={selected === list}
               setSelected={setSelected}
-              id={list.id}
-              repoUrl={list.repositoryUrl}
-              liveUrl={list.liveUrl}
-              tagline={list.tagline}
+              id={list}
             />
           ))}
       </div>
       <div className="row">
-        {data &&
+        {data.length &&
           data.map((item, index) => (
             <div className="column" key={index}>
-              <img src={item.img} alt={item.title} />
+              <img src={item?.img.asset.url} alt={item.title} />
               <div className="overlay">
                 <div className="left">
                   <h3>{item.title}</h3>

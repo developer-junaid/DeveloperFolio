@@ -1,8 +1,6 @@
-# 👨‍💻 Personal DevFolio (2.0)
+# 👨‍💻 Personal DevFolio (3.0)
 
-### _Personal Portfolio built using ReactJs and Animation libraries, hope you like it. Tweak it and use it !!_
-
-
+### _Personal Portfolio built using ReactJs, Sanity CMS and Animation libraries, hope you like it. Tweak it and use it !!_
 
 ### Demo Video (2.0) :link: https://youtu.be/soi-rnv9dDQ
 
@@ -41,3 +39,4 @@
 
 - Firebase
 - Github Actions
+- Sanity.io (CMS)

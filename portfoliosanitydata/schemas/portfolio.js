@@ -54,6 +54,21 @@ export default {
     },
   ],
   preview: {
-    select: { title: "id" },
+    select: {
+      title: "id",
+      name: "title",
+      media: "img",
+      category: "category",
+    },
+    prepare(selection) {
+      return {
+        title: `${selection.title ? `${selection.title}:` : ""} ${
+          selection.name
+        } `,
+        date: selection.date,
+        subtitle: selection.category,
+        media: selection.media,
+      };
+    },
   },
 };

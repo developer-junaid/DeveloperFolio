@@ -26,6 +26,8 @@ const Portfolio = ({ projects }) => {
       if (!tempList.includes(category)) {
         tempList.push(category);
       }
+
+      return null;
     });
     setProjectList(tempList);
   }, [projects]);
@@ -35,8 +37,10 @@ const Portfolio = ({ projects }) => {
       if (selected === list) {
         setData(projects.filter((project) => project.category === list));
       }
+
+      return null;
     });
-  }, [selected, projectList]);
+  }, [selected, projectList, projects]);
 
   return (
     <section

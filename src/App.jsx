@@ -14,17 +14,21 @@ import sanityClient from "client";
 // Animation
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+// Components
 import { Menu } from "components/Menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [projects, setProjects] = useState([]);
+  const [services, setServices] = useState([]);
+
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type in ["testimonial", "portfolio"]]{
+        `*[_type in ["testimonial", "portfolio","service"]]{
           _type == "testimonial" => {
             id,
             name,
@@ -43,13 +47,20 @@ function App() {
               asset->{url}
             },
           },
+          _type == "service" => {
+            title,
+            tags,
+            icon{
+              asset->{url}
+            },
+          },
         }
-        
         `
       )
       .then((data) => {
         let tempTestimonials = [];
         let tempProjects = [];
+        let tempServices = [];
 
         data.map((doc) => {
           if (doc.country) {
@@ -58,10 +69,15 @@ function App() {
           } else if (doc.liveUrl) {
             // It is a project
             tempProjects.push(doc);
+          } else {
+            tempServices.push(doc);
           }
+
+          return null;
         });
         setTestimonials(tempTestimonials);
         setProjects(tempProjects);
+        setServices(tempServices);
       })
       .catch(console.error);
   }, []);
@@ -75,7 +91,7 @@ function App() {
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
-      <Services />
+      <Services services={services} />
       <Portfolio projects={projects} />
       <Testimonials testimonials={testimonials} />
       <Contact />

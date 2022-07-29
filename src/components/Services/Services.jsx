@@ -19,12 +19,7 @@ const Services = ({ services }) => {
       <div className="services-cards">
         {services &&
           services?.map(({ title, icon, tags }, index) => (
-            <ServicesCard
-              key={index}
-              image={icon.asset.url}
-              title={title}
-              tags={tags}
-            />
+            <ServicesCard key={index} image={icon} title={title} tags={tags} />
           ))}
       </div>
     </section>

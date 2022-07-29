@@ -2,6 +2,7 @@ import React from "react";
 import "./services-card.css";
 
 export const ServicesCard = ({ image, tags, title }) => {
+  console.log("IMAGE ", image);
   return (
     <div className="services-card">
       <img src={image} alt={title} />

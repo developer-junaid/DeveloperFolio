@@ -8,6 +8,11 @@ import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
 import Testimonials from "components/Testimonials/Testimonials";
 
+// Data
+import services from "data/services";
+import projects from "data/projects";
+import testimonials from "data/testimonials";
+
 // Animation
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -17,10 +22,9 @@ import { Menu } from "components/Menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [projects, setProjects] = useState([]);
-  const [services, setServices] = useState([]);
-
-  const [testimonials, setTestimonials] = useState([]);
+  // const [projects, setProjects] = useState([]);
+  // const [services, setServices] = useState([]);
+  // const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
     Aos.init({ duration: 2000, offset: 10 });

@@ -66,7 +66,7 @@ const Portfolio = ({ projects }) => {
         {data.length &&
           data.map((item, index) => (
             <div className="column" key={index}>
-              <img src={item?.img.asset.url} alt={item.title} />
+              <img src={item?.img} alt={item.title} />
               <div className="overlay">
                 <div className="left">
                   <h3>{item.title}</h3>

@@ -1,15 +1,25 @@
 const projects = [
   {
     id: "1",
-    title: "TransferKrypt",
-    tagline: "Transfer Crypto / Blockchain",
-    repositoryUrl: "https://github.com/developer-junaid/Transfer-Krypt",
-    liveUrl: "https://transferkrypt.netlify.app/",
+    title: "Apkhub (Apps Listing)",
+    tagline: "Apps Listing / Games",
+    repositoryUrl: "private",
+    liveUrl: "https://apkhub.vercel.app/",
     category: "featured",
-    img: "https://i.imgur.com/K4GroFa.png",
+    img: "https://i.imgur.com/hVuuJto.png",
   },
   {
     id: "2",
+    title: "MenaJobs  (Job Portal)",
+    tagline: "Job Website / Job Portal",
+    repositoryUrl: "private",
+    liveUrl: "https://menajobs.io/",
+    category: "featured",
+    img: "https://i.imgur.com/Wb56pBZ.png",
+  },
+
+  {
+    id: "3",
     title: "Memories Social Media App",
     tagline: "Social Media / Management",
     repositoryUrl: "https://github.com/developer-junaid/MERN-Memories-App",
@@ -18,7 +28,7 @@ const projects = [
     img: "https://i.imgur.com/1tPbhdS.png",
   },
   {
-    id: "3",
+    id: "4",
     title: "Ecommerce Store",
     tagline: "Ecommerce / Stripe Payments",
     repositoryUrl: "https://github.com/developer-junaid/Buy-It",
@@ -26,15 +36,7 @@ const projects = [
     category: "featured",
     img: "https://i.imgur.com/HBKjrC6.png",
   },
-  {
-    id: "4",
-    title: "React NFT Listing App",
-    tagline: "Web3 / NFT Listing",
-    repositoryUrl: "https://github.com/developer-junaid/React-NFT-App",
-    liveUrl: "https://react-nft-project.netlify.app/",
-    category: "featured",
-    img: "https://i.imgur.com/OxClJvP.png",
-  },
+
   {
     id: "5",
     title: "Mobile First Diaries UI",
@@ -80,6 +82,7 @@ const projects = [
     category: "web3",
     img: "https://i.imgur.com/OxClJvP.png",
   },
+
   {
     id: "10",
     title: "TransferKrypt",
@@ -181,12 +184,12 @@ const projects = [
   },
   {
     id: "21",
-    title: "MenaJobs  (Job Portal)",
-    tagline: "Job Website / Job Portal",
-    repositoryUrl: "private",
-    liveUrl: "https://menajobs.io/",
+    title: "TransferKrypt",
+    tagline: "Transfer Crypto / Blockchain",
+    repositoryUrl: "https://github.com/developer-junaid/Transfer-Krypt",
+    liveUrl: "https://transferkrypt.netlify.app/",
     category: "featured",
-    img: "https://i.imgur.com/Wb56pBZ.png",
+    img: "https://i.imgur.com/K4GroFa.png",
   },
   {
     id: "22",
@@ -196,6 +199,15 @@ const projects = [
     liveUrl: "https://menajobs.io/",
     category: "fullstack",
     img: "https://i.imgur.com/Wb56pBZ.png",
+  },
+  {
+    id: "23",
+    title: "Apkhub (Apps Listing)",
+    tagline: "Apps Listing / Games",
+    repositoryUrl: "private",
+    liveUrl: "https://apkhub.vercel.app/",
+    category: "fullstack",
+    img: "https://i.imgur.com/hVuuJto.png",
   },
 ];
 

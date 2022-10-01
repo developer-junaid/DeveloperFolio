@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 // SVG
 import man from "images/dev.svg";
@@ -9,6 +10,7 @@ import { motion } from "framer-motion";
 
 // CSS
 import "./home.css";
+
 
 const contentVariants = {
   initial: {
@@ -27,6 +29,7 @@ const contentVariants = {
 };
 
 const Home = () => {
+
   return (
     <section className="home-container" id="home" name="home">
       <motion.div
@@ -36,7 +39,21 @@ const Home = () => {
         animate="animate"
       >
         <h1>I’m Junaid</h1>
-        <p>I am a Full stack developer and Level one seller at Fiverr. </p>
+        <p>I am a
+          <span style={{ color: "rgb(97, 89, 89)", fontSize: "1.5rem", fontWeight: 600, marginLeft: "1.5%" }}>
+            <Typewriter options={{
+              autoStart: true,
+              loop: true,
+              delay: 60,
+              cursor: "_",
+              deleteSpeed: "40",
+              strings: [
+                "Full stack developer",
+                "Level one seller at Fiverr"
+              ]
+            }} />
+          </span>
+        </p>
         <Link
           className="home-btn"
           to={"portfolio"}

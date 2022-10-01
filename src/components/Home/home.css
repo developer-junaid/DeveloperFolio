@@ -55,8 +55,7 @@
 }
 
 /* Medium */
-@media screen and (min-width: 481px) {
-}
+@media screen and (min-width: 481px) {}
 
 /* Large */
 @media screen and (min-width: 900px) {
@@ -91,13 +90,14 @@
   .content p {
     padding: 0;
     width: 30rem;
+    display: flex;
+    align-items: center;
   }
 }
 
+
 /* Extra Large */
-@media screen and (min-width: 1025) {
-}
+@media screen and (min-width: 1025) {}
 
 /* XXL */
-@media screen and (min-width: 1201) {
-}
+@media screen and (min-width: 1201) {}

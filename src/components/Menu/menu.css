@@ -43,3 +43,12 @@
   color: rgba(255, 255, 255, 0.986);
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 50%;
+  }
+  .menu ul {
+    font-size: 1.5rem;
+  }
+}

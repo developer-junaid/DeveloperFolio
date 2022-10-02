@@ -49,6 +49,17 @@
     width: 50%;
   }
   .menu ul {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+/* For Galaxy Fold Devices */
+
+@media screen and (max-width: 300px) {
+  .menu ul {
+    font-size: 1.1rem;
   }
 }

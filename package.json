@@ -22,7 +22,7 @@
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
     "react-simple-typewriter": "^4.0.2",
-    "typewriter-effect": "^2.19.0"
+    "react-typed": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

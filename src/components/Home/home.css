@@ -31,6 +31,7 @@
   margin: 1rem 0;
   padding: 0 1rem;
   color: rgb(97, 89, 89);
+  align-items: center;
 }
 
 .content .home-btn {

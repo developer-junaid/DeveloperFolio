@@ -1,5 +1,5 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+import Typed from "react-typed"
 
 // SVG
 import man from "images/dev.svg";
@@ -40,18 +40,13 @@ const Home = () => {
       >
         <h1>I’m Junaid</h1>
         <p>I am a
-          <span style={{ color: "rgb(97, 89, 89)", fontSize: "1.5rem", fontWeight: 600, marginLeft: "1.5%" }}>
-            <Typewriter options={{
-              autoStart: true,
-              loop: true,
-              delay: 60,
-              cursor: "_",
-              deleteSpeed: "40",
-              strings: [
-                "Full stack developer",
-                "Level one seller at Fiverr"
-              ]
-            }} />
+          <span style={{fontSize:"1.5rem",fontWeight:"600",marginLeft:"2%"}}>
+            <Typed
+              strings={['Full Stack Developer', 'Level One Seller at Fiverr']}
+              typeSpeed={50}
+              backSpeed={50}
+              loop
+            />
           </span>
         </p>
         <Link

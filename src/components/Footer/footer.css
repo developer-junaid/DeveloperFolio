@@ -1,0 +1,34 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 30px;
+  color: gray;
+  border-top: 0.5px solid gray;
+}
+.social-section{
+    display: flex;
+}
+.icons{
+    color: var(--primary-color) !important;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+
+
+/* Large */
+@media screen and (max-width: 600px) {
+    .footer-container {
+        margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+  
+  }
+  

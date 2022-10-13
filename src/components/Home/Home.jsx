@@ -1,4 +1,5 @@
 import React from "react";
+import Typed from "react-typed"
 
 // SVG
 import man from "images/dev.svg";
@@ -9,6 +10,7 @@ import { motion } from "framer-motion";
 
 // CSS
 import "./home.css";
+
 
 const contentVariants = {
   initial: {
@@ -27,6 +29,7 @@ const contentVariants = {
 };
 
 const Home = () => {
+
   return (
     <section className="home-container" id="home" name="home">
       <motion.div
@@ -36,7 +39,16 @@ const Home = () => {
         animate="animate"
       >
         <h1>I’m Junaid</h1>
-        <p>I am a Full stack developer and Level one seller at Fiverr. </p>
+        <p>I am a
+          <span style={{fontSize:"1.5rem",fontWeight:"600",marginLeft:"2%"}}>
+            <Typed
+              strings={['Full Stack Developer', 'Level One Seller at Fiverr']}
+              typeSpeed={50}
+              backSpeed={50}
+              loop
+            />
+          </span>
+        </p>
         <Link
           className="home-btn"
           to={"portfolio"}

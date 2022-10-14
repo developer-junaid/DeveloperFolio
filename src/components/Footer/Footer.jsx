@@ -1,8 +1,5 @@
 import React from "react";
 import "./footer.css";
-
-//Assets
-import GithubIcons from "images/icons/github.svg";
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -51,7 +48,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="copywrite-section">
-          <p>© 2022. Designed with a cup of ☕ . All right reserved.</p>
+          <p>© 2022. Designed with a cup of <span role="img" aria-label="Coffee">☕</span> . All right reserved.</p>
       </div>
     </div>
   );

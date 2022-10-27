@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 // Components
 import Nav from "components/Nav/Nav";
 import Home from "components/Home/Home";
-import Portfolio from "components/Portfolio/Portfolio";
+import  Menu  from "components/Menu/Menu";
+import Portfolio from "components/Portfolio";
 import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
 import Testimonials from "components/Testimonials/Testimonials";
-
+import  Footer  from "components/Footer/Footer";
 // Sanity
 import sanityClient from "client";
 
@@ -15,8 +16,6 @@ import sanityClient from "client";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-// Components
-import { Menu } from "components/Menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -95,6 +94,7 @@ function App() {
       <Portfolio projects={projects} />
       <Testimonials testimonials={testimonials} />
       <Contact />
+      <Footer />
     </div>
   );
 }

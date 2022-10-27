@@ -3,7 +3,7 @@ import "./menu.css";
 // Router
 import { NavLink } from "components/Nav/NavLink/NavLink";
 
-export const Menu = ({ menuOpen, setMenuOpen }) => {
+const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
@@ -32,3 +32,5 @@ export const Menu = ({ menuOpen, setMenuOpen }) => {
     </div>
   );
 };
+
+export default Menu;

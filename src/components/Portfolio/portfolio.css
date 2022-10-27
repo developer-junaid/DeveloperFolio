@@ -29,16 +29,17 @@
   flex: 25%;
   max-width: 25%;
   width: 100%;
-  margin-right: 1.2rem;
-  margin-top: 1.2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
   align-self: normal !important;
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px gray;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   color: white;
   transition: all 0.6s ease;
   position: relative;
   align-items: flex-end;
   justify-content: center;
+   background-color: white;
 }
 
 .column img {

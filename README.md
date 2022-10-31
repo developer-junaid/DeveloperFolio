@@ -27,10 +27,10 @@
 ### To Run Sanity CMS Locally
 
 - Sign Up to [Sanity](https://www.sanity.io/)
-- Navigate to portfoliosanitydata using terminal Run: `cd portfoliosanitydata`
+- Navigate to /portfoliosanitydata folder in project using terminal Run: `cd portfoliosanitydata`
 - Install dependencies Run: `npm install`
-- Install Sanity Cli Run: `npm install -g @sanity/cli`
-- Login to sanity using cli run: `sanity login` (Select your preferred method)
+- Install Sanity CLI Run: `npm install -g @sanity/cli`
+- Login to sanity using CLI run: `sanity login` (Select your preferred method)
 - Initialize sanity project run: `sanity init`
 - We are going to see a list of questions for us to answer in the next steps. Let's walk through those!
 - - Create new project — Hit Enter.
@@ -41,7 +41,7 @@
 - - Now Replace `schemas` folder with the folder from my repository
 - Run Sanity Studio in the browser, first navigate to sanity project : `cd portfoliosanitydata`
 - Run: `sanity start`
-- Visit localhost:3333 to view live studio and add your data
+- Visit  [localhost:3333](http://localhost:3333/) to view live studio and add your data
 
 ### Connecting React App with Sanity Locally
 

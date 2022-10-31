@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 600px) {
   .menu {
-    width: 50%;
+    width: 60%;
   }
   .menu ul {
     font-size: 1.3rem;
@@ -60,6 +60,6 @@
 
 @media screen and (max-width: 300px) {
   .menu ul {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }

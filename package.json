@@ -21,7 +21,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.1",
-    "react-simple-typewriter": "^4.0.2",
     "react-typed": "^1.2.0"
   },
   "scripts": {

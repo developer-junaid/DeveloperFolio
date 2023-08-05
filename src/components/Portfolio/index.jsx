@@ -1,46 +1,46 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 
 // Styles
-import "./portfolio.css";
+import "./portfolio.css"
 
 // components
-import { Heading } from "components/Heading/Heading";
+import { Heading } from "components/Heading/Heading"
 
 // Icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkSquareAlt";
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons/faGithubSquare";
-import { faUserLock } from "@fortawesome/free-solid-svg-icons/faUserLock";
+import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkSquareAlt"
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons/faGithubSquare"
+import { faUserLock } from "@fortawesome/free-solid-svg-icons/faUserLock"
 
-import PortfolioItem from "./PortfolioItem/PortfolioItem";
+import PortfolioItem from "./PortfolioItem/PortfolioItem"
 
 const Portfolio = ({ projects }) => {
-  const [selected, setSelected] = useState("featured");
-  const [data, setData] = useState([]);
-  const [projectList, setProjectList] = useState([]);
+  const [selected, setSelected] = useState("featured")
+  const [data, setData] = useState([])
+  const [projectList, setProjectList] = useState([])
 
   useEffect(() => {
-    let tempList = [];
+    let tempList = []
     projects.map(({ category }) => {
       if (!tempList.includes(category)) {
-        tempList.push(category);
+        tempList.push(category)
       }
 
-      return null;
-    });
-    setProjectList(tempList);
-  }, [projects]);
+      return null
+    })
+    setProjectList(tempList)
+  }, [projects])
 
   useEffect(() => {
     projectList.map((list) => {
       if (selected === list) {
-        setData(projects.filter((project) => project.category === list));
+        setData(projects.filter((project) => project.category === list))
       }
 
-      return null;
-    });
-  }, [selected, projectList, projects]);
+      return null
+    })
+  }, [selected, projectList, projects])
 
   return (
     <section
@@ -95,25 +95,36 @@ const Portfolio = ({ projects }) => {
                     </a>
                   )}
 
-                  <a
-                    href={item.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faExternalLinkSquareAlt}
-                      size="2x"
-                      className="icon"
-                      title="Live view"
-                    />
-                  </a>
+                  {item.liveUrl !== "private" ? (
+                    <a
+                      href={item.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faExternalLinkSquareAlt}
+                        size="2x"
+                        className="icon"
+                        title="Live view"
+                      />{" "}
+                    </a>
+                  ) : (
+                    <a href="#_" rel="noopener noreferrer">
+                      <FontAwesomeIcon
+                        icon={faUserLock}
+                        size="2x"
+                        className="icon"
+                        title="Private Link"
+                      />{" "}
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

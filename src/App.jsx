@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 
 // Components
+<<<<<<< HEAD
 import Nav from "components/Nav/Nav";
 import Home from "components/Home/Home";
 import  Menu  from "components/Menu/Menu";
@@ -9,22 +10,37 @@ import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
 import Testimonials from "components/Testimonials/Testimonials";
 import  Footer  from "components/Footer/Footer";
+=======
+import Nav from "components/Nav/Nav"
+import Home from "components/Home/Home"
+import Portfolio from "components/Portfolio/Portfolio"
+import Contact from "components/Contact/Contact"
+import Services from "components/Services/Services"
+import Testimonials from "components/Testimonials/Testimonials"
+
+>>>>>>> development
 // Sanity
-import sanityClient from "client";
+import sanityClient from "client"
 
 // Animation
-import Aos from "aos";
-import "aos/dist/aos.css";
+import Aos from "aos"
+import "aos/dist/aos.css"
 
+<<<<<<< HEAD
+=======
+// Components
+import { Menu } from "components/Menu/Menu"
+>>>>>>> development
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [projects, setProjects] = useState([]);
-  const [services, setServices] = useState([]);
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [projects, setProjects] = useState([])
+  const [services, setServices] = useState([])
 
-  const [testimonials, setTestimonials] = useState([]);
+  const [testimonials, setTestimonials] = useState([])
 
   useEffect(() => {
+    console.log("USE EFFECT ---------")
     sanityClient
       .fetch(
         `*[_type in ["testimonial", "portfolio","service"]]{
@@ -57,33 +73,36 @@ function App() {
         `
       )
       .then((data) => {
-        let tempTestimonials = [];
-        let tempProjects = [];
-        let tempServices = [];
+        let tempTestimonials = []
+        let tempProjects = []
+        let tempServices = []
 
+        console.log("DATA ", data)
         data.map((doc) => {
           if (doc.country) {
             // It is a testimonial
-            tempTestimonials.push(doc);
+            tempTestimonials.push(doc)
           } else if (doc.liveUrl) {
             // It is a project
-            tempProjects.push(doc);
+            tempProjects.push(doc)
           } else {
-            tempServices.push(doc);
+            tempServices.push(doc)
           }
 
-          return null;
-        });
-        setTestimonials(tempTestimonials);
-        setProjects(tempProjects);
-        setServices(tempServices);
+          return null
+        })
+        setTestimonials(tempTestimonials)
+        setProjects(tempProjects)
+        setServices(tempServices)
       })
-      .catch(console.error);
-  }, []);
+      .catch(console.error)
+
+    console.log("BLOCK END")
+  }, [])
 
   useEffect(() => {
-    Aos.init({ duration: 2000, offset: 10 });
-  }, []);
+    Aos.init({ duration: 2000, offset: 10 })
+  }, [])
 
   return (
     <div className="app-container">
@@ -96,7 +115,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

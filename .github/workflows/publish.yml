@@ -1,0 +1,29 @@
+name: Generate a build and push to another branch
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-lates
+    name: Build and Push
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v2
+
+      - name: Install all dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build # Build Command
+
+      - name: Push
+        run: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build #the branch to push to hostinger
+          FOLDER: build #directory of code
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} #Will be added automatically by Github
+          MESSAGE: "Build: ({sha}) {msg}" #Commit message

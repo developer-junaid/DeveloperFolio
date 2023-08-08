@@ -1,16 +1,16 @@
-import React from "react";
-import Typed from "react-typed";
+import React from "react"
+import Typed from "react-typed"
 
 // SVG
-import man from "images/dev.svg";
+import man from "images/dev.svg"
 
 // Animation
-import {  Link } from "react-scroll";
-import { motion } from "framer-motion";
+import { Link } from "react-scroll"
+import { motion } from "framer-motion"
 
 // CSS
-import "./home.css";
-import Button from "components/Button/Button";
+import "./home.css"
+import Button from "components/Button/Button"
 
 const contentVariants = {
   initial: {
@@ -26,7 +26,7 @@ const contentVariants = {
       when: "beforeChildren",
     },
   },
-};
+}
 
 const Home = () => {
   return (
@@ -42,7 +42,7 @@ const Home = () => {
         <p>
           I am a
           <span
-            style={{ fontSize: "1.5rem", fontWeight: "600", marginLeft: "2%" }}
+            style={{ fontSize: "1.5rem ", fontWeight: "600", marginLeft: "2%" }}
           >
             <Typed
               strings={["Full Stack Developer", "Level One Seller at Fiverr"]}
@@ -62,7 +62,7 @@ const Home = () => {
           offset={-100}
           duration={500}
         >
-        <Button text={"See my work"} type="submit" />
+          <Button text={"See my work"} type="submit" />
         </Link>
       </motion.div>
 
@@ -74,7 +74,7 @@ const Home = () => {
         <img src={man} alt="Developer" />
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

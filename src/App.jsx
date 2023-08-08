@@ -24,7 +24,6 @@ function App() {
   const [testimonials, setTestimonials] = useState([])
 
   useEffect(() => {
-    console.log("USE EFFECT ---------")
     sanityClient
       .fetch(
         `*[_type in ["testimonial", "portfolio","service"]]{
@@ -61,7 +60,6 @@ function App() {
         let tempProjects = []
         let tempServices = []
 
-        console.log("DATA ", data)
         data.map((doc) => {
           if (doc.country) {
             // It is a testimonial
@@ -80,8 +78,6 @@ function App() {
         setServices(tempServices)
       })
       .catch(console.error)
-
-    console.log("BLOCK END")
   }, [])
 
   useEffect(() => {

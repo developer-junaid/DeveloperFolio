@@ -56,6 +56,12 @@
   
 }
 
+@media screen and (min-width: 485px) and (max-width: 599px) {
+  .menu{
+    right: -400px;
+  }
+}
+
 /* For Galaxy Fold Devices */
 
 @media screen and (max-width: 300px) {

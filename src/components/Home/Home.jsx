@@ -37,17 +37,18 @@ const Home = () => {
         initial="initial"
         animate="animate"
       >
-        <h2>Hi Devs!</h2>
+        <h2>Peace be upon you !</h2>
         <h1>I’m Junaid</h1>
-        <p>
+        <p style={{ fontSize: "1.2rem ", fontWeight: "600" }}>
           I am a
-          <span
-            style={{ fontSize: "1.5rem ", fontWeight: "600", marginLeft: "2%" }}
-          >
+          <span style={{ marginLeft: "8px" }}>
             <Typed
-              strings={["Full Stack Developer", "Level One Seller at Fiverr"]}
-              typeSpeed={50}
-              backSpeed={50}
+              strings={[
+                "Fullstack Engineer (Stay Gold USA)",
+                "Founder and CEO (Devnito UAE)",
+              ]}
+              typeSpeed={60}
+              backSpeed={60}
               loop
             />
           </span>

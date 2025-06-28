@@ -147,3 +147,32 @@
     justify-content: space-evenly;
   }
 }
+
+.project-description {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.tech-tag {
+  background: #1dca65;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}

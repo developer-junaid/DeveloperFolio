@@ -1,16 +1,19 @@
-import React from "react"
-import Typed from "react-typed"
+import React from "react";
+import Typed from "react-typed";
 
 // SVG
-import man from "images/dev.svg"
+import man from "images/dev.svg";
 
 // Animation
-import { Link } from "react-scroll"
-import { motion } from "framer-motion"
+import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 // CSS
-import "./home.css"
-import Button from "components/Button/Button"
+import "./home.css";
+import Button from "components/Button/Button";
+
+// Constants
+import { TYPED_STRINGS } from "../../constants";
 
 const contentVariants = {
   initial: {
@@ -26,7 +29,7 @@ const contentVariants = {
       when: "beforeChildren",
     },
   },
-}
+};
 
 const Home = () => {
   return (
@@ -38,24 +41,16 @@ const Home = () => {
         animate="animate"
       >
         <h2>Peace be upon you !</h2>
-        <h1>I’m Junaid</h1>
+        <h1>I'm Junaid</h1>
         <p style={{ fontSize: "1.2rem ", fontWeight: "600" }}>
           I am a
           <span style={{ marginLeft: "8px" }}>
-            <Typed
-              strings={[
-                "Fullstack Engineer (Stay Gold USA)",
-                "Founder and CEO (Devnito UAE)",
-              ]}
-              typeSpeed={60}
-              backSpeed={60}
-              loop
-            />
+            <Typed strings={TYPED_STRINGS} typeSpeed={60} backSpeed={60} loop />
           </span>
         </p>
         <Link
           // className="home-btn"
-          to={"portfolio"}
+          to="portfolio"
           hashSpy={true}
           spy={true}
           smooth={true}
@@ -75,7 +70,7 @@ const Home = () => {
         <img src={man} alt="Developer" />
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

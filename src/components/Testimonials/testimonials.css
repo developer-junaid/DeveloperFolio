@@ -123,6 +123,63 @@
   margin-left: 0.3rem;
 }
 
+/* New styles for enhanced testimonials */
+.details .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 2px solid #1dca65;
+}
+
+.details .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.details .rating .star {
+  color: #ccc;
+}
+
+.details .rating .star.filled {
+  color: #ffd700;
+}
+
+.details .rating .star.empty {
+  color: #ccc;
+}
+
+.details .rating-text {
+  color: white;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.details .client-info {
+  flex: 1;
+}
+
+.details .position {
+  color: #1dca65;
+  font-weight: 400;
+}
+
+.details .company {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+
 @media screen and (min-width: 900px) {
   .testimonial-card {
     width: 50rem;

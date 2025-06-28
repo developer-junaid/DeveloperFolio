@@ -8,6 +8,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import testimonial from "./testimonial";
 import portfolio from "./portfolio";
 import service from "./service";
+import siteSettings from "./siteSettings";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -18,9 +19,10 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    testimonial,
-    portfolio,
-    service,
+    siteSettings, // Global site settings (should be first)
+    portfolio,    // Portfolio projects
+    service,      // Services offered
+    testimonial,  // Client testimonials
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
   ]),

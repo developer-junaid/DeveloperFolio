@@ -1,0 +1,51 @@
+.service-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.features {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.features h4 {
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  color: #666;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.features li:before {
+  content: "•";
+  color: #1dca65;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.tag {
+  background: #1dca65;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: 0.1rem;
+} 

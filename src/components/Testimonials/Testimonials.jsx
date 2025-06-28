@@ -6,11 +6,11 @@ import "./testimonials.css";
 // Icon
 import testimonialSVG from "images/review.png";
 
-// components
+// Components
 import { Heading } from "components/Heading/Heading";
 import Testimonial from "./Testimonial/Testimonial";
 
-const Portfolio = ({ testimonials }) => {
+const Testimonials = ({ testimonials = [], loading = false }) => {
   const [activeTestimonial, setActiveTestimonial] = useState(1);
 
   const nextSlide = (index) => {
@@ -23,7 +23,6 @@ const Portfolio = ({ testimonials }) => {
 
   const prevSlide = (index) => {
     if (index - 1 === 0) {
-      console.log("set to ", testimonials.length);
       setActiveTestimonial(testimonials.length);
     } else {
       setActiveTestimonial(index - 1);
@@ -38,9 +37,7 @@ const Portfolio = ({ testimonials }) => {
       id="testimonials"
     >
       <Heading
-        text={`Client Testimonials (${
-          testimonials ? testimonials?.length : null
-        })`}
+        text={`Client Testimonials (${testimonials?.length || 0})`}
         style={{ padding: "3rem" }}
       />
       <div className="testimonials">
@@ -76,7 +73,22 @@ const Portfolio = ({ testimonials }) => {
                   <path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
                 </svg>
               </div>
-              <Testimonial key={testimonial.id} testimonial={testimonial} />
+              <Testimonial
+                key={testimonial.id}
+                testimonial={{
+                  ...testimonial,
+                  // Ensure backward compatibility
+                  name: testimonial.name,
+                  text: testimonial.text,
+                  country: testimonial.country,
+                  url: testimonial.url,
+                  // New fields
+                  position: testimonial.position,
+                  company: testimonial.company,
+                  rating: testimonial.rating,
+                  avatar: testimonial.avatar,
+                }}
+              />
             </div>
           ))}
       </div>
@@ -84,4 +96,4 @@ const Portfolio = ({ testimonials }) => {
   );
 };
 
-export default Portfolio;
+export default Testimonials;
